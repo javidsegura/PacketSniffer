@@ -1,0 +1,15 @@
+1) "packet_sniffer.c:112:11: warning: 'pcap_lookupdev' is deprecated: use 'pcap_findalldevs' and use the first device [-Wdeprecated-declarations]
+    dev = pcap_lookupdev(errbuf);
+          ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/pcap/pcap.h:408:1: note: 'pcap_lookupdev' has been explicitly marked deprecated here
+PCAP_DEPRECATED(pcap_lookupdev, "use 'pcap_findalldevs' and use the first device");
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/pcap/funcattrs.h:294:53: note: expanded from macro 'PCAP_DEPRECATED'
+  #define PCAP_DEPRECATED(func, msg)    __attribute__((deprecated(msg)))
+                                                       ^
+1 warning generated."
+
+
+FEATURES
+
+1. Enumarate packets and store to csv
