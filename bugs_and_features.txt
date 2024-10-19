@@ -13,3 +13,9 @@ PCAP_DEPRECATED(pcap_lookupdev, "use 'pcap_findalldevs' and use the first device
 FEATURES
 
 1. Enumarate packets and store to csv
+2. Add error handling
+3. Modularization
+4. Add timestamp
+5. Expand categorization
+6. UI reading with gradio
+7. Categorize source port  
