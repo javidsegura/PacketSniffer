@@ -1,3 +1,5 @@
+/* Sets up the packet sniffer */
+
 #include <pcap.h>
 #include <stdio.h>
 #include "packet_handler.h"
@@ -64,7 +66,7 @@ int main() {
         pcap_close(handle);
         return 2;
     }
-    
+    // 6.5 Applying packet filter
     if (pcap_setfilter(handle, &fp) == -1) { // Sending the compiled filter to the session
         fprintf(stderr, "Couldn't install filter %s: %s\n", filter_exp, pcap_geterr(handle));
         pcap_freealldevs(alldevs);
@@ -74,9 +76,9 @@ int main() {
 
     // 7) Capture packets in an infinite loop
     printf("Starting to capture packets... Press Ctrl+C to stop.\n");
-    while (1) {
-        pcap_loop(handle, 1, packet_handler, NULL);  // The second parameter represents the number of packets to sniff 
-    }
+
+    pcap_loop(handle, -1, packet_handler, NULL);  // The second parameter represents the number of packets to sniff 
+    
 
     // 8) Clean resources
     pcap_freecode(&fp); // Freeing allocated memory for the filter struct

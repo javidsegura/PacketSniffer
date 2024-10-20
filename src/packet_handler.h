@@ -1,3 +1,8 @@
+/* Auxiliary function that analyzes the content of a given captured packet */
+
+#ifndef PACKET_HANDLER_H
+#define PACKET_HANDLER_H
+
 #include <pcap.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -35,7 +40,7 @@ void packet_handler(u_char *user_data, const struct pcap_pkthdr *pkthdr, const u
     // 0) Adding package identifier
     add_int_to_csv(PACKET_ID++);
     
-    // 0) Print and add the timestamp
+    // 1) Print and add the timestamp
     time_t raw_time = pkthdr->ts.tv_sec;   // Extract the seconds part of the timestamp
     struct tm *time_info = localtime(&raw_time);
     char timestamp[64];
@@ -43,10 +48,9 @@ void packet_handler(u_char *user_data, const struct pcap_pkthdr *pkthdr, const u
     printf("Timestamp: %s\n", timestamp);
     add_str_to_csv(timestamp);
 
-    // Cast the packet to Ethernet header
     eth_header = (struct ether_header *) packet;
 
-    // 1) Print Ethernet header information
+    // 2) Print Ethernet header information
     printf("Ethernet Header:\n");
     char *src_mac = ether_ntoa((const struct ether_addr *)&eth_header->ether_shost);
     printf("   Source MAC: %s\n", src_mac); // either_ntoa transforms bit address into hex
@@ -56,12 +60,12 @@ void packet_handler(u_char *user_data, const struct pcap_pkthdr *pkthdr, const u
     printf("   Destination MAC: %s\n", dest_mac);
     add_str_to_csv(dest_mac);
 
-    // Check if the packet contains an IP packet (EtherType = 0x0800)
+    // 3) Check if its an IP packet (and not an ARP packet)
     if (ntohs(eth_header->ether_type) == ETHERTYPE_IP) {
         
         ip_header = (struct ip *)(packet + sizeof(struct ether_header));
         
-        // 2) Print IP header information
+        // 4) Print IP header information
         char *src_ip = inet_ntoa(ip_header->ip_src);
         char *dest_ip = inet_ntoa(ip_header->ip_dst);
         printf("\nIP Header:\n");
@@ -72,7 +76,7 @@ void packet_handler(u_char *user_data, const struct pcap_pkthdr *pkthdr, const u
         int protocol = ip_header->ip_p;
         
 
-        // 3) Categorizing the packet
+        // 5) Categorizing the packet
         char *category;
         if (protocol == IPPROTO_TCP) {
 
@@ -135,3 +139,5 @@ void packet_handler(u_char *user_data, const struct pcap_pkthdr *pkthdr, const u
     new_line_csv();
     flush_csv();
 }
+
+#endif

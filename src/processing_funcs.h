@@ -1,6 +1,5 @@
 /* Includes auxiliary functions for packet handler */
 
-// Avoiding cyclical definition:
 #ifndef PROCESSING_FUNCS_H
 #define PROCESSING_FUNCS_H 
 #include <pcap.h>

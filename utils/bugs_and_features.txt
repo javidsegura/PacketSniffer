@@ -36,3 +36,4 @@ Device: stf0
 13. Staaaaats
 14. Send packets to other IPs
 15. Deharcoding path names + device usage
+16. sniffer_enabled goes True when sending a packet?
