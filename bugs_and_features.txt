@@ -19,3 +19,6 @@ FEATURES
 5. Expand categorization
 6. UI reading with gradio
 7. Categorize source port  
+8. Passing IP user-friendly name 
+9. Adding timestamp of file!
+10. What more extra info can be obtained from the structures?
