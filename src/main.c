@@ -37,7 +37,7 @@ int main() {
         return 1;
     }
 
-    device = dev->name; // Get the name of the first device
+    device = "en0"; // Get the name of the first device
     printf("Sniffing on device named: %s\n", device);
 
     // 4) Get network info (IP and subnet mask) for the selected device

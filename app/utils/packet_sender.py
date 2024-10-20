@@ -30,4 +30,3 @@ def send_packet(target_ip:str ='10.192.67.245', target_port:int = 80, payload:st
     # Send the HTTP packet
     print(f"Sending custom payload to {target_ip}:{target_port}")
     send(http_packet)
-

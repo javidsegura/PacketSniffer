@@ -56,13 +56,13 @@ def main():
     st.header("Send Packet")
     packet_data = st.text_input("Enter packet content:")
     if st.button("Send Packet"):
-        result = send_packet(packet_data)
+        result = send_packet(payload=str(packet_data))
         st.write(result)
 
     st.header("Hex to String Translation")
-    hex_input = st.text_input("Enter ID of the packet: ")
+    record_id = st.text_input("Enter ID of the packet: ")
     if st.button("Translate"):
-        translated = hex_to_string(hex_input)
+        translated = hex_to_string(int(record_id))
         st.write(f"Translated string: {translated}")
 
 if __name__ == "__main__":

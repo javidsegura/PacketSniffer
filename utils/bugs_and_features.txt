@@ -35,3 +35,4 @@ Device: stf0
 12. Dont harcode IP
 13. Staaaaats
 14. Send packets to other IPs
+15. Deharcoding path names + device usage
