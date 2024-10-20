@@ -1,6 +1,6 @@
 from scapy.all import *
 
-def send_http_request(target_ip, target_port):
+def send_packet(target_ip:str ='10.192.67.245', target_port:int = 80, payload:str = "hello world"):
     # Create an IP layer
     ip = IP(dst=target_ip)
     
@@ -18,7 +18,7 @@ def send_http_request(target_ip, target_port):
     time.sleep(1)
 
     # Custom payload as a binary string
-    payload_data = "wassup nigga".encode('utf-8')  # Convert string to binary
+    payload_data = payload.encode('utf-8')  # Convert string to binary
     payload_length = len(payload_data)
 
     # Create the TCP layer with the payload
@@ -31,7 +31,3 @@ def send_http_request(target_ip, target_port):
     print(f"Sending custom payload to {target_ip}:{target_port}")
     send(http_packet)
 
-if __name__ == "__main__":
-    target_ip = "10.192.67.245"  # Replace with your target IP address
-    target_port = 80              # HTTP port
-    send_http_request(target_ip, target_port)

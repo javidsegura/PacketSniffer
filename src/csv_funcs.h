@@ -14,7 +14,7 @@ void create_csv(){
     results_csv = fopen("../utils/PacketsResultsCSV.csv", "w");
 
     if (results_csv == NULL){
-        printf("Could not open file succesfully!");
+        printf("Could not open file succesfully!. Terminating program...");
         exit(1);
     }    
     fputs("packet_id,time_stamp,src_mac,dest_mac,src_ip,dest_ip,protoc,src_port,dest_port,category,payload\n", results_csv);

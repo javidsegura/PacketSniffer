@@ -2,11 +2,12 @@ CC = gcc
 
 TARGET = src/packet_sniffer
 
-SRC = src/packet_sniffer.c
+SRC = src/main.c
 
 LIBS = -lpcap
 
-all: $(TARGET)
+#  What dis doing?
+all: $(TARGET) 
 
 $(TARGET): $(SRC)
 	$(CC) $(SRC) -o $(TARGET) $(LIBS)
