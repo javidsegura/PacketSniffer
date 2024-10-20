@@ -3,37 +3,22 @@
 
 FEATURES
 
-1. Whats with the bash script?
+1. You cant send a packed to a different ip address / port
 2. Add error handling
 5. Expand categorization
-6. UI reading with gradio
 7. Categorize source port  
 8. Passing IP user-friendly name 
 10. What more extra info can be obtained from the structures?
 
-11. Device: en0
-Device: awdl0
-Device: llw0
-Device: utun0
-Device: utun1
-Device: utun2
-Device: utun3
-Device: utun4
-Device: lo0
-Device: anpi0
-Device: anpi1
-Device: en3
-Device: en4
-Device: en1
-Device: en2
-Device: bridge0
-Device: ap1
-Device: en7
-Device: gif0
-Device: stf0
-
 12. Dont harcode IP
-13. Staaaaats
+13. Staaaaats => st.metric
 14. Send packets to other IPs
 15. Deharcoding path names + device usage
 16. sniffer_enabled goes True when sending a packet?
+17. Add icons to buttons
+18. Number of packets read
+19. Use st.tabs
+20. Loading page for running sniffer
+21. Column configurations
+22. Containers for state buttons 
+23. Placeholders

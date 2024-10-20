@@ -11,3 +11,5 @@ def filter_packets(src_ip:str = "10.192.67.245", dest_port:int = 80):
         return (f"Error filtering packets: {e}")
 
 
+
+print(filter_packets())
