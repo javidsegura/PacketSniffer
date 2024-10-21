@@ -44,13 +44,23 @@ def main():
 
     # Starting and stopping the sniffer
     with col1:
-        st.subheader("Raw CSV Data")
-        if not st.session_state.SNIFFER_RUNNING and not st.session_state.JUST_STARTED:
-            try:
-                df = pd.read_csv("../utils/PacketsResultsCSV.csv")
-                st.dataframe(df)
-            except FileNotFoundError:
-                st.warning("An error occured: CSV file not found.")
+        raw_csv_tab, filtered_csv_tab = st.tabs(["Raw CSV Data", "Filtered CSV Data"])
+        with raw_csv_tab:
+            st.subheader("Raw CSV Data")
+            if not st.session_state.SNIFFER_RUNNING and not st.session_state.JUST_STARTED:
+                try:
+                    df = pd.read_csv("../utils/PacketsResultsCSV.csv")
+                    st.dataframe(df)
+                except FileNotFoundError:
+                    st.warning("An error occured: CSV file not found.")
+        
+        with filtered_csv_tab:
+            st.subheader("Filtered CSV Data")
+            if not st.session_state.SNIFFER_RUNNING and not st.session_state.JUST_STARTED:
+                filtered_df = filter_packets()
+                st.dataframe(filtered_df)
+
+
 
         btn1, btn2 = st.columns([.5,.5])
         with btn1:
@@ -76,10 +86,6 @@ def main():
 
 
     with col2:
-        st.subheader("Filtered CSV Data")
-        if not st.session_state.SNIFFER_RUNNING and not st.session_state.JUST_STARTED:
-            filtered_df = filter_packets()
-            st.dataframe(filtered_df)
 
         col_send, col_read = st.columns(2)
         with col_send:
