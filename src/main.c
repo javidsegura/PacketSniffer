@@ -23,13 +23,13 @@ int main() {
     }
 
     // 2) Print all devices
-    printf("Available devices:\n");
-    for (dev = alldevs; dev != NULL; dev = dev->next) {
-        printf("Device: %s", dev->name);
-        if (dev->description)
-            printf(" - %s", dev->description);
-        printf("\n");
-    }
+    //printf("Available devices:\n");
+    //for (dev = alldevs; dev != NULL; dev = dev->next) {
+        //printf("Device: %s", dev->name);
+        //if (dev->description)
+            //printf(" - %s", dev->description);
+        //printf("\n");
+    //}
 
     // 3) Select the first available device from the list
     dev = alldevs;
@@ -40,7 +40,7 @@ int main() {
     }
 
     device = "en0"; // Get the name of the first device
-    printf("Sniffing on device named: %s\n", device);
+    //printf("Sniffing on device named: %s\n", device);
 
     // 4) Get network info (IP and subnet mask) for the selected device
     if (pcap_lookupnet(device, &net, &mask, errbuf) == -1) {
@@ -75,7 +75,7 @@ int main() {
     }
 
     // 7) Capture packets in an infinite loop
-    printf("Starting to capture packets... Press Ctrl+C to stop.\n");
+    //printf("Starting to capture packets... Press Ctrl+C to stop.\n");
 
     pcap_loop(handle, -1, packet_handler, NULL);  // The second parameter represents the number of packets to sniff 
     

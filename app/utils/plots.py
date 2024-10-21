@@ -2,9 +2,18 @@ import pandas as pd
 import plotly.express as px
 from collections import Counter
 import plotly.graph_objs as go
+import json
+import os
 
 
 path = "/Users/javierdominguezsegura/Programming/College/Sophomore/Cprogramming/PacketSniffer/utils/PacketsResultsCSV.csv"
+
+# Load the port categories from the JSON file
+current_dir = os.path.dirname(os.path.abspath(__file__))
+json_path = os.path.join(current_dir, 'ports_categorization.json')
+
+with open(json_path, 'r') as f:
+    port_categories = json.load(f)
 
 
 
@@ -144,12 +153,20 @@ def top_ports_graphs(ip_address):
     return fig_ports
 
 def categorize_port(port):
-    if port in range(1, 1024):
-        return "Well-known ports"
-    elif port in range(1024, 49151):
-        return "Registered ports"
+    port_str = str(port)
+    if port_str in port_categories:
+        return port_categories[port_str]
+    elif 0 <= port <= 1023:
+        return "Well-known"
+    elif 1024 <= port <= 49151:
+        return "Registered"
+    elif 49152 <= port <= 65535:
+        return "Dynamic/Private"
     else:
-        return "Dynamic and/or Private ports"
+        return "Unknown"
+     
+     
+    
 
 
 

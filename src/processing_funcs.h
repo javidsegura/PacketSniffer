@@ -29,18 +29,18 @@ void print_payload(const u_char *payload, int len) {
     /*
     Prints array of binary elements. 
     */
-    printf("Payload (%d bytes):\n", len);
+    //printf("Payload (%d bytes):\n", len);
     for (int i = 0; i < len; i++) {
         if (i % 16 == 0) { // Make rows of 16 elements 
-            printf("\n");
+            //printf("\n");
         }
-        printf("%02x ", payload[i]);  // Print in hex
+        //printf("%02x ", payload[i]);  // Print in hex
         if (i == 20){ // Limit payload print to stdout
-            printf("..........");
+            //printf("..........");
             break;
         }
     }
-    printf("\n\n");
+    //printf("\n\n");
 }
 
 
