@@ -1,6 +1,5 @@
 
 
-
 FEATURES
 
 1. You cant send a packed to a different ip address / port
@@ -10,9 +9,8 @@ FEATURES
 8. Passing IP user-friendly name 
 10. What more extra info can be obtained from the structures?
 
-12. Dont harcode IP
 13. Staaaaats => st.metric
-14. Send packets to other IPs
+14. Send packets to other IPs :star:
 15. Deharcoding path names + device usage
 16. sniffer_enabled goes True when sending a packet?
 17. Add icons to buttons
@@ -22,3 +20,4 @@ FEATURES
 21. Column configurations
 22. Containers for state buttons 
 23. Placeholders
+24. Replace radio by header

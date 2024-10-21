@@ -18,6 +18,8 @@ def stop_sniffer():
 
 HOST_IP_ADDRESS = ip_address = subprocess.check_output(['ipconfig', 'getifaddr', 'en0']).decode('utf-8').strip() #or 10.192.67.245
 PORT = 80
+SENT_PACKETS = 0
+CAPTURED_PACKETS = 0
 
 # Keeping session variables on track
 if 'SNIFFER_RUNNING' not in st.session_state:
@@ -34,11 +36,7 @@ def main():
 
     st.set_page_config(page_title="Package Sniffer",layout="wide")
     st.title("Packet Sniffer and Analyzer")
-
-    # Display the IP address
-    st.write(f"Current IP Address: {st.session_state.IP_ADDRESS_TRACKING}")
-    #st.write(f"Local IP Address: {HOST_IP_ADDRESS}")
-    st.write(f"Current port: {st.session_state.PORT_TRACKING}")
+    st.caption("A powerful tool for capturing, analyzing, and sending packets on your network")
 
     col1, col2 = st.columns(2)
 
@@ -49,7 +47,12 @@ def main():
             st.subheader("Raw CSV Data")
             if not st.session_state.SNIFFER_RUNNING and not st.session_state.JUST_STARTED:
                 try:
+                    global CAPTURED_PACKETS
+                    global SENT_PACKETS
+                    CAPTURED_PACKETS = 0
+                    SENT_PACKETS = 0
                     df = pd.read_csv("../utils/PacketsResultsCSV.csv")
+                    CAPTURED_PACKETS = len(df)
                     st.dataframe(df)
                 except FileNotFoundError:
                     st.warning("An error occured: CSV file not found.")
@@ -59,7 +62,6 @@ def main():
             if not st.session_state.SNIFFER_RUNNING and not st.session_state.JUST_STARTED:
                 filtered_df = filter_packets()
                 st.dataframe(filtered_df)
-
 
 
         btn1, btn2 = st.columns([.5,.5])
@@ -84,10 +86,9 @@ def main():
                     st.rerun()
             
 
-
     with col2:
-
         col_send, col_read = st.columns(2)
+                
         with col_send:
             # Sending packet
             st.header("Send Packet")
@@ -97,6 +98,7 @@ def main():
                     st.warning("ERROR: No packet data input has been provided.")
                 elif st.session_state.SNIFFER_RUNNING:
                     try:
+                        SENT_PACKETS += 1
                         result = send_packet(payload=packet_data)
                         st.write(result)
                     except Exception as e:
@@ -119,7 +121,16 @@ def main():
                         st.warning("ERROR: ID not found or payload couldnt be translated")
                 else:
                     st.warning("ERROR: Sniffer is still live or no packet has been yet captured.")
+        
+        st.divider()
+        col_config, col_stats = st.columns(2)
 
+        with col_config:
+            st.metric(label="IP Address", value=st.session_state.IP_ADDRESS_TRACKING)
+            st.metric(label="Port", value=st.session_state.PORT_TRACKING)
+        with col_stats:
+            st.metric(label="Packets Captured", value=CAPTURED_PACKETS, delta=-18)
+            st.metric(label="Packets Sent", value=SENT_PACKETS)
 
 
 
@@ -154,6 +165,12 @@ def main():
     if customer_port:
         st.session_state.PORT_TRACKING = int(customer_port)
         st.success(f"Port updated to: {customer_port}")
+    
+    st.divider()
+    # Display the IP address
+    st.write(f"Current IP Address: {st.session_state.IP_ADDRESS_TRACKING}")
+    #st.write(f"Local IP Address: {HOST_IP_ADDRESS}")
+    st.write(f"Current port: {st.session_state.PORT_TRACKING}")
 
 
 
