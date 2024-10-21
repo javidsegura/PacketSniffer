@@ -6,6 +6,8 @@ import plotly.graph_objs as go
 
 path = "/Users/javierdominguezsegura/Programming/College/Sophomore/Cprogramming/PacketSniffer/utils/PacketsResultsCSV.csv"
 
+
+
 def time_graph(filter_by_ip=False, ip_address=None):
 
       """ IP address is address being tracked """
@@ -24,13 +26,28 @@ def time_graph(filter_by_ip=False, ip_address=None):
       # Create the graph
       fig = px.line(packet_counts, x='time_stamp', y='packet_count', title="Packet traffic over time",
                                     labels={'time_stamp': 'Timestamp', 'packet_count': 'Number of Packets'})
+      
+      fig.update_traces(line=dict(color="#008bff"))  # Set the line color to #008bff
+
                         
       # Customize the layout
-      fig.update_layout(xaxis_title='Timestamp',
-                                          yaxis_title='Number of Packets',
-                                          hovermode='x unified')   
+      fig.update_layout(title=dict(
+        text='Packet traffic over time',  # Title text
+        font=dict(
+            family='Sans-serif',  # Font family
+            size=14,  # You can adjust the size here
+            color='#767676'  # Text color
+        ),
+      ),
+      font=dict(
+            family="Sans-serif",  # Font family for overall chart text
+            color="#767676"  # Color for axis and tick labels
+      ), xaxis_title='Timestamp',
+                                                yaxis_title='Number of Packets',
+                                                hovermode='x unified')   
 
       return fig
+
 
 def top_ips_graphs(filter_by_ip=False, ip_address=None):
     # Read the CSV file
@@ -53,9 +70,17 @@ def top_ips_graphs(filter_by_ip=False, ip_address=None):
         go.Bar(name='Packets Sent', x=[ip for ip, _ in top_3_src], y=[count for _, count in top_3_src])
     ])
 
+    fig_senders.update_traces(marker=dict(color="#008bff"))
+
+
     # Customize the layout for senders
-    fig_senders.update_layout(
-        title='Top 3 IPs by Packets Sent',
+    fig_senders.update_layout(title=dict(
+        text='Top 3 IP senders',  # Title text
+        font=dict(
+            family='Sans-serif',  # Font family
+            size=14,  # You can adjust the size here
+            color='#767676'  # Text color
+        )),
         xaxis_title='IP Address',
         yaxis_title='Number of Packets Sent',
     )
@@ -65,14 +90,23 @@ def top_ips_graphs(filter_by_ip=False, ip_address=None):
         go.Bar(name='Packets Received', x=[ip for ip, _ in top_3_dest], y=[count for _, count in top_3_dest])
     ])
 
+    fig_receivers.update_traces(marker=dict(color="#008bff"))
+
     # Customize the layout for receivers
     fig_receivers.update_layout(
-        title='Top 3 IPs by Packets Received',
+        title=dict(
+        text='Top 3 IP receivers',  # Title text
+        font=dict(
+            family='Sans-serif',  # Font family
+            size=14,  # You can adjust the size here
+            color='#767676'  # Text color
+        )),
         xaxis_title='IP Address',
-        yaxis_title='Number of Packets Received',
+        yaxis_title='Number of Packets Received'
     )
 
     return fig_senders, fig_receivers
+
 
 def top_ports_graphs(ip_address):
     df = pd.read_csv(path)
@@ -89,7 +123,7 @@ def top_ports_graphs(ip_address):
     # Create the pie chart for top ports
     fig_ports = go.Figure(data=[
         go.Pie(
-            labels=[f"Port {port}" for port, _ in top_3_ports],
+            labels=[f"Port {port} ({categorize_port(port)})" for port, category in top_3_ports],
             values=[count for _, count in top_3_ports],
             hoverinfo='label+percent',
             textinfo='value'
@@ -98,10 +132,24 @@ def top_ports_graphs(ip_address):
 
     # Customize the layout for ports
     fig_ports.update_layout(
-        title=f'Top 3 Ports for Incoming Traffic to {ip_address}',
+        title=dict(
+        text=f"Top 3 Ports for Incoming Traffic to '{ip_address}'",  # Title text
+        font=dict(
+            family='Sans-serif',  # Font family
+            size=14,  # You can adjust the size here
+            color='#767676'  # Text color
+        ))
     )
 
     return fig_ports
+
+def categorize_port(port):
+    if port in range(1, 1024):
+        return "Well-known ports"
+    elif port in range(1024, 49151):
+        return "Registered ports"
+    else:
+        return "Dynamic and/or Private ports"
 
 
 

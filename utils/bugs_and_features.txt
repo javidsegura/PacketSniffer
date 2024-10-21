@@ -23,6 +23,7 @@ FEATURES
 24. Replace radio by header
 25. Sents packets metric not working => may need to use a session variable. Same for delta on captured packets
 26. Add third tab with IP-specific track
+27. Remove sniffert stopped on sucess after a few secs
 
 PHASE 2:
 -1. Send packtes to other IP

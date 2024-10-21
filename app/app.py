@@ -5,8 +5,8 @@ import pandas as pd
 import subprocess
 import os
 import pandas as pd
-import plotly.express as px
-from datetime import datetime
+from time import sleep
+
 
 # Import your custom modules
 from utils.packet_interpretation import self_sent_filter
@@ -34,23 +34,22 @@ if 'IP_ADDRESS_TRACKING' not in st.session_state:
     st.session_state.IP_ADDRESS_TRACKING = str(HOST_IP_ADDRESS)
 if 'PORT_TRACKING' not in st.session_state:
     st.session_state.PORT_TRACKING = 80
-if 'N_PACKETS_SENT' not in st.session_state:
-    st.session_state.N_PACKETS_SENT = 0
+
 
 
 def main():
 
     st.set_page_config(page_title="Package Sniffer",layout="wide", page_icon="utils/imgs/favicon.png")
     st.title("Packet Sniffer and Analyzer")
-    st.caption("A powerful tool for capturing, analyzing, and sending packets on your network")
+    st.caption("A powerful tool for capturing, analyzing, and sending packets over your network")
 
-    col1, col2 = st.columns(2)
+    col1, col2 = st.columns(2, gap="medium")
     message_container = st.empty()
     st.divider()    
 
     # Defines section 1 (starting, stoping and displaying packets)
     with col1:
-        btn1, btn2 = st.columns([.5,.5])
+        btn1, btn2 = st.columns([.5,.5], gap="small")
         with btn1:
             if st.button("Start Packet Sniffer", type="primary", icon=":material/play_arrow:"):
                 if not st.session_state.SNIFFER_RUNNING:
@@ -75,8 +74,6 @@ def main():
             if not st.session_state.SNIFFER_RUNNING and not st.session_state.JUST_STARTED:
                 try:
                     global CAPTURED_PACKETS
-                    CAPTURED_PACKETS = 0
-                    st.session_state.N_PACKETS_SENT = 0
                     df = pd.read_csv("../utils/PacketsResultsCSV.csv")
                     CAPTURED_PACKETS = len(df)
                     st.dataframe(df)
@@ -87,12 +84,17 @@ def main():
             if not st.session_state.SNIFFER_RUNNING and not st.session_state.JUST_STARTED:
                 filtered_df = self_sent_filter()
                 st.dataframe(filtered_df)
+        
+        if st.session_state.SNIFFER_RUNNING:
+            st.markdown("""
+            <div style="display: flex; justify-content: center;">
+                <img src="https://media.tenor.com/On7kvXhzml4AAAAi/loading-gif.gif" alt="Alt Text" style="height: 120px;">
+            </div>""", unsafe_allow_html=True)
 
             
     # Defines section 2 (sending, reading, metrics)
     with col2:
-        col_send, col_read = st.columns(2)
-                
+        col_send, col_read = st.columns(2)   
         with col_send:
             # Sending packet
             st.header("Send Packet")
@@ -102,7 +104,6 @@ def main():
                     st.warning("ERROR: No packet data input has been provided.")
                 elif st.session_state.SNIFFER_RUNNING:
                     try:
-                        st.session_state.N_PACKETS_SENT += 1
                         result = send_packet(payload=packet_data)
                         st.write(result)
                     except Exception as e:
@@ -135,8 +136,6 @@ def main():
         with col_stats:
             st.metric(label="Packets Captured", value=CAPTURED_PACKETS)
             st.metric(label="Packets Sent", value=len(self_sent_filter()))
-
-        
     
 
     # Sidebar settings
@@ -187,7 +186,7 @@ def main():
                 with receivers_col:
                     st.plotly_chart(ips_fig[1], use_container_width=True) 
             else:
-                st.warning("No data available. Start the packet sniffer to capture packets.")
+                st.warning("No data available. Start the packet sniffer to capture packets.", icon=":material/warning:")
                 
         with ip_traffic:
             if CAPTURED_PACKETS > 0:
@@ -202,7 +201,7 @@ def main():
                     ports_fig = top_ports_graphs(ip_address=st.session_state.IP_ADDRESS_TRACKING)
                     st.plotly_chart(ports_fig, use_container_width=True) 
             else:
-                st.warning("No data available. Start the packet sniffer to capture packets.")
+                st.warning("No data available. Start the packet sniffer to capture packets.", icon=":material/warning:")
             
 
         
