@@ -1,5 +1,7 @@
 """ Sends packet to a target IP and port"""
 
+""" These needs to be implemeneted in C => refer to: https://www.geeksforgeeks.org/socket-programming-cc/ """
+
 from scapy.all import *
 
 def send_packet(target_ip:str ='10.192.67.245', target_port:int = 80, payload:str = "hello world"):

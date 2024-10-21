@@ -4,11 +4,15 @@ import streamlit as st
 import pandas as pd
 import subprocess
 import os
+import pandas as pd
+import plotly.express as px
+from datetime import datetime
 
 # Import your custom modules
-from utils.packet_interpretation import filter_packets
+from utils.packet_interpretation import self_sent_filter
 from utils.packet_sender import send_packet
 from utils.translate_hex import hex_to_string
+from utils.plots import time_graph, top_ips_graphs, top_ports_graphs
 
 def start_sniffer():
     os.system("../src/packet_sniffer &")
@@ -18,8 +22,8 @@ def stop_sniffer():
 
 HOST_IP_ADDRESS = ip_address = subprocess.check_output(['ipconfig', 'getifaddr', 'en0']).decode('utf-8').strip() #or 10.192.67.245
 PORT = 80
-SENT_PACKETS = 0
 CAPTURED_PACKETS = 0
+
 
 # Keeping session variables on track
 if 'SNIFFER_RUNNING' not in st.session_state:
@@ -29,63 +33,63 @@ if 'JUST_STARTED' not in st.session_state:
 if 'IP_ADDRESS_TRACKING' not in st.session_state:
     st.session_state.IP_ADDRESS_TRACKING = str(HOST_IP_ADDRESS)
 if 'PORT_TRACKING' not in st.session_state:
-    st.session_state.PORT_TRACKING = int(PORT)
+    st.session_state.PORT_TRACKING = 80
+if 'N_PACKETS_SENT' not in st.session_state:
+    st.session_state.N_PACKETS_SENT = 0
 
 
 def main():
 
-    st.set_page_config(page_title="Package Sniffer",layout="wide")
+    st.set_page_config(page_title="Package Sniffer",layout="wide", page_icon="utils/imgs/favicon.png")
     st.title("Packet Sniffer and Analyzer")
     st.caption("A powerful tool for capturing, analyzing, and sending packets on your network")
 
     col1, col2 = st.columns(2)
+    message_container = st.empty()
+    st.divider()    
 
-    # Starting and stopping the sniffer
+    # Defines section 1 (starting, stoping and displaying packets)
     with col1:
-        raw_csv_tab, filtered_csv_tab = st.tabs(["Raw CSV Data", "Filtered CSV Data"])
+        btn1, btn2 = st.columns([.5,.5])
+        with btn1:
+            if st.button("Start Packet Sniffer", type="primary", icon=":material/play_arrow:"):
+                if not st.session_state.SNIFFER_RUNNING:
+                    st.session_state.SNIFFER_RUNNING = True 
+                    st.session_state.JUST_STARTED = False
+                    start_sniffer()
+                    message_container.success("Packet sniffer started!", icon=":material/check_circle:")
+                else:
+                    message_container.warning("Sniffer is already running", icon=":material/warning:")
+
+        with btn2:
+            if st.button("Stop Packet Sniffer", icon=":material/pause:"):
+                if st.session_state.SNIFFER_RUNNING:
+                    stop_sniffer()
+                    message_container.success("Sniffer has been stopped!", icon=":material/check_circle:")
+                    st.session_state.SNIFFER_RUNNING = False
+                else:
+                    message_container.warning("Sniffer is already stopped", icon=":material/warning:")
+
+        raw_csv_tab, sent_packets, filtered_packets = st.tabs(["All packets", "Sent packets", "Filtered packets"])
         with raw_csv_tab:
-            st.subheader("Raw CSV Data")
             if not st.session_state.SNIFFER_RUNNING and not st.session_state.JUST_STARTED:
                 try:
                     global CAPTURED_PACKETS
-                    global SENT_PACKETS
                     CAPTURED_PACKETS = 0
-                    SENT_PACKETS = 0
+                    st.session_state.N_PACKETS_SENT = 0
                     df = pd.read_csv("../utils/PacketsResultsCSV.csv")
                     CAPTURED_PACKETS = len(df)
                     st.dataframe(df)
                 except FileNotFoundError:
                     st.warning("An error occured: CSV file not found.")
         
-        with filtered_csv_tab:
-            st.subheader("Filtered CSV Data")
+        with sent_packets:
             if not st.session_state.SNIFFER_RUNNING and not st.session_state.JUST_STARTED:
-                filtered_df = filter_packets()
+                filtered_df = self_sent_filter()
                 st.dataframe(filtered_df)
 
-
-        btn1, btn2 = st.columns([.5,.5])
-        with btn1:
-            if st.button("Start Packet Sniffer"):
-                if not st.session_state.SNIFFER_RUNNING:
-                    st.session_state.SNIFFER_RUNNING = True 
-                    st.session_state.JUST_STARTED = False
-                    start_sniffer()
-                    st.success("Packet sniffer started!")
-                else:
-                    st.warning("Sniffer is already running")
-
-        with btn2:
-            if st.button("Stop Packet Sniffer"):
-                if not st.session_state.SNIFFER_RUNNING:
-                    st.warning("Sniffer is already stopped")
-                else:
-                    stop_sniffer()
-                    st.success("Sniffer has been stopped!")
-                    st.session_state.SNIFFER_RUNNING = False
-                    st.rerun()
             
-
+    # Defines section 2 (sending, reading, metrics)
     with col2:
         col_send, col_read = st.columns(2)
                 
@@ -98,7 +102,7 @@ def main():
                     st.warning("ERROR: No packet data input has been provided.")
                 elif st.session_state.SNIFFER_RUNNING:
                     try:
-                        SENT_PACKETS += 1
+                        st.session_state.N_PACKETS_SENT += 1
                         result = send_packet(payload=packet_data)
                         st.write(result)
                     except Exception as e:
@@ -126,52 +130,83 @@ def main():
         col_config, col_stats = st.columns(2)
 
         with col_config:
-            st.metric(label="IP Address", value=st.session_state.IP_ADDRESS_TRACKING)
-            st.metric(label="Port", value=st.session_state.PORT_TRACKING)
+            st.metric(label="IP Tracking", value=st.session_state.IP_ADDRESS_TRACKING) # Tracking IP address
+            st.metric(label="Port Tracking", value=st.session_state.PORT_TRACKING) # Tracking port
         with col_stats:
-            st.metric(label="Packets Captured", value=CAPTURED_PACKETS, delta=-18)
-            st.metric(label="Packets Sent", value=SENT_PACKETS)
+            st.metric(label="Packets Captured", value=CAPTURED_PACKETS)
+            st.metric(label="Packets Sent", value=len(self_sent_filter()))
 
-
-
-
-
-
-    st.divider()
-    st.header("SETTINGS")
-    st.header("Select ip address to track: ")
-    st.write(f"Current IP Address: {st.session_state.IP_ADDRESS_TRACKING}")
-    ip_option = st.radio(
-        "Choose IP address option:",
-        ("Use host IP address", "Enter custom IP")
-    )
-
-    if ip_option == "Use host IP address":
-        if st.session_state.IP_ADDRESS_TRACKING != HOST_IP_ADDRESS:
-            st.session_state.IP_ADDRESS_TRACKING = str(HOST_IP_ADDRESS)
-        st.success(f"Using host IP: {st.session_state.IP_ADDRESS_TRACKING}")
-    else:
-        custom_ip = st.text_input("Enter custom IP address:")
-        if custom_ip != st.session_state.IP_ADDRESS_TRACKING:
-            if custom_ip:
-                if st.button("Update IP Address"):
-                    st.session_state.IP_ADDRESS_TRACKING = str(custom_ip)
-                    st.success(f"IP Address updated to: {custom_ip}")
- 
-
-    st.header("Select port to track: ")
-    st.write(f"Current port: {st.session_state.PORT_TRACKING}")
-    customer_port = st.text_input("Enter customer port: ")
-    if customer_port:
-        st.session_state.PORT_TRACKING = int(customer_port)
-        st.success(f"Port updated to: {customer_port}")
+        
     
-    st.divider()
-    # Display the IP address
-    st.write(f"Current IP Address: {st.session_state.IP_ADDRESS_TRACKING}")
-    #st.write(f"Local IP Address: {HOST_IP_ADDRESS}")
-    st.write(f"Current port: {st.session_state.PORT_TRACKING}")
 
+    # Sidebar settings
+    st.sidebar.title("Settings")
+    with st.sidebar:
+        st.metric("Local IP: ", HOST_IP_ADDRESS)
+        st.divider()
+        st.header("Select ip address to track: ")
+        ip_option = st.radio(
+            "Choose IP address option:",
+            ("Use host IP address", "Enter custom IP")
+        )
+
+        if ip_option == "Use host IP address":
+            if st.session_state.IP_ADDRESS_TRACKING != HOST_IP_ADDRESS:
+                st.session_state.IP_ADDRESS_TRACKING = str(HOST_IP_ADDRESS)
+            st.success(f"Using host IP: {st.session_state.IP_ADDRESS_TRACKING}")
+        else:
+            custom_ip = st.text_input("Enter custom IP address:")
+            if custom_ip != st.session_state.IP_ADDRESS_TRACKING:
+                if custom_ip:
+                    if st.button("Update IP Address"):
+                        st.session_state.IP_ADDRESS_TRACKING = str(custom_ip)
+                        st.success(f"IP Address updated to: {custom_ip}")
+    
+
+        st.header("Select port to track: ")
+        st.write(f"Current port: {st.session_state.PORT_TRACKING}")
+        customer_port = st.text_input("Enter customer port: ")
+        if customer_port:
+            st.session_state.PORT_TRACKING = int(customer_port)
+            st.success(f"Port updated to: {customer_port}")
+
+    # DDOS SECTIONS
+    all_traffic, ip_traffic = st.tabs(["All traffic", f"IP-specific traffic ({st.session_state.IP_ADDRESS_TRACKING})"])
+    if st.session_state.SNIFFER_RUNNING:
+        st.write("Packet sniffer is running...")
+    else:
+        with all_traffic:
+            if CAPTURED_PACKETS > 0:
+                time_col, senders_col, receivers_col = st.columns(3)
+                with time_col:
+                    time_fig = time_graph()
+                    st.plotly_chart(time_fig, use_container_width=True) 
+                ips_fig = top_ips_graphs()
+                with senders_col:
+                    st.plotly_chart(ips_fig[0], use_container_width=True) 
+                with receivers_col:
+                    st.plotly_chart(ips_fig[1], use_container_width=True) 
+            else:
+                st.warning("No data available. Start the packet sniffer to capture packets.")
+                
+        with ip_traffic:
+            if CAPTURED_PACKETS > 0:
+                time_col, senders_col, ports_col = st.columns(3)
+                with time_col:
+                    time_fig = time_graph(filter_by_ip=True, ip_address=st.session_state.IP_ADDRESS_TRACKING)
+                    st.plotly_chart(time_fig, use_container_width=True) 
+                tracked_ips_fig = top_ips_graphs(filter_by_ip=True, ip_address=st.session_state.IP_ADDRESS_TRACKING)
+                with senders_col:
+                    st.plotly_chart(tracked_ips_fig[1], use_container_width=True) 
+                with ports_col:
+                    ports_fig = top_ports_graphs(ip_address=st.session_state.IP_ADDRESS_TRACKING)
+                    st.plotly_chart(ports_fig, use_container_width=True) 
+            else:
+                st.warning("No data available. Start the packet sniffer to capture packets.")
+            
+
+        
+       
 
 
 

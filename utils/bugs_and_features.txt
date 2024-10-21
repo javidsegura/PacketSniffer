@@ -21,3 +21,15 @@ FEATURES
 22. Containers for state buttons 
 23. Placeholders
 24. Replace radio by header
+25. Sents packets metric not working => may need to use a session variable. Same for delta on captured packets
+26. Add third tab with IP-specific track
+
+PHASE 2:
+-1. Send packtes to other IP
+0. Socket programming in C
+1. Filtering db tab
+2. DOS prevention
+
+Phase 3: 
+- Add everything to pages 
+- AI summary on data
