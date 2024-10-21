@@ -50,6 +50,7 @@ def main():
             start_sniffer()
             st.success("Packet sniffer started!")
 
+
     with col2:
         if st.button("Stop Packet Sniffer"):
             if not st.session_state.SNIFFER_RUNNING:
@@ -78,38 +79,38 @@ def main():
         st.subheader("Filtered CSV Data")
         if not st.session_state.SNIFFER_RUNNING and not st.session_state.JUST_STARTED:
             filtered_df = filter_packets()
-            print(len(filtered_df))
             st.dataframe(filtered_df)
-
-    # Sending packet
-    st.header("Send Packet")
-    packet_data = st.text_input("Enter packet content:")
-    if st.button("Send Packet"):
-        if not packet_data:
-            st.warning("ERROR: No packet data input has been provided.")
-        elif st.session_state.SNIFFER_RUNNING:
-            try:
-                result = send_packet(payload=packet_data)
-                st.write(result)
-            except Exception as e:
-                st.warning(f"An error occured: {e}")
-        else:
-            st.warning("ERROR: Can't send packet if sniffer is not running.")
-
-    # Reading payload
-    st.header("Read Packet")
-    record_id = st.text_input("Enter ID of the packet: ")
-    if st.button("Translate"):
-        if not record_id:
-            st.warning("ERROR: No ID input has been provided.")
-        elif not st.session_state.SNIFFER_RUNNING and not st.session_state.JUST_STARTED and record_id:
-            translated = hex_to_string(int(record_id))
-            if translated != -1:
-                st.write(f"Packet content: {translated}")
+        
+        # Sending packet
+        st.header("Send Packet")
+        packet_data = st.text_input("Enter packet content:")
+        if st.button("Send Packet"):
+            if not packet_data:
+                st.warning("ERROR: No packet data input has been provided.")
+            elif st.session_state.SNIFFER_RUNNING:
+                try:
+                    result = send_packet(payload=packet_data)
+                    st.write(result)
+                except Exception as e:
+                    st.warning(f"An error occured: {e}")
             else:
-                st.warning("ERROR: ID not found or payload couldnt be translated")
-        else:
-            st.warning("ERROR: Sniffer is still live or no packet has been yet captured.")
+                st.warning("ERROR: Can't send packet if sniffer is not running.")
+
+        # Reading payload
+        st.header("Read Packet")
+        record_id = st.text_input("Enter ID of the packet: ")
+        if st.button("Translate"):
+            if not record_id:
+                st.warning("ERROR: No ID input has been provided.")
+            elif not st.session_state.SNIFFER_RUNNING and not st.session_state.JUST_STARTED and record_id:
+                translated = hex_to_string(int(record_id))
+                if translated != -1:
+                    st.write(f"Packet content: {translated}")
+                else:
+                    st.warning("ERROR: ID not found or payload couldnt be translated")
+            else:
+                st.warning("ERROR: Sniffer is still live or no packet has been yet captured.")
+
 
     st.divider()
     st.header("SETTINGS")
