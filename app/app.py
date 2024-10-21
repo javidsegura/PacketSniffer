@@ -5,8 +5,6 @@ import pandas as pd
 import subprocess
 import os
 import pandas as pd
-from time import sleep
-
 
 # Import your custom modules
 from utils.packet_interpretation import self_sent_filter

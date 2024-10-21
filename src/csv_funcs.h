@@ -17,7 +17,7 @@ void create_csv(){
         printf("Could not open file succesfully!. Terminating program...");
         exit(1);
     }    
-    fputs("packet_id,time_stamp,src_mac,dest_mac,src_ip,dest_ip,protoc,src_port,dest_port,category,payload\n", results_csv);
+    fputs("packet_id,time_stamp,src_mac,dest_mac,src_ip,dest_ip,protoc,src_port,dest_port,port_categ,packet_categ,payload\n", results_csv);
     setbuf(results_csv, NULL);
 }
 

@@ -92,6 +92,7 @@ void packet_handler(u_char *user_data, const struct pcap_pkthdr *pkthdr, const u
             //printf("   Destination Port: %d\n", dest_port);
             add_int_to_csv(src_port);
             add_int_to_csv(dest_port);
+            add_str_to_csv("N/A");
 
             category = categorize_packet(src_port, dest_port, IPPROTO_TCP);
 
@@ -112,6 +113,7 @@ void packet_handler(u_char *user_data, const struct pcap_pkthdr *pkthdr, const u
             //printf("   Destination Port: %d\n", dest_port);
             add_int_to_csv(src_port);
             add_int_to_csv(dest_port);
+            add_str_to_csv("N/A");
 
             category = categorize_packet(src_port, dest_port, IPPROTO_UDP);
 
