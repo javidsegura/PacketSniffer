@@ -44,28 +44,7 @@ def main():
 
     # Starting and stopping the sniffer
     with col1:
-        if st.button("Start Packet Sniffer"):
-            st.session_state.SNIFFER_RUNNING = True 
-            st.session_state.JUST_STARTED = False
-            start_sniffer()
-            st.success("Packet sniffer started!")
-
-
-    with col2:
-        if st.button("Stop Packet Sniffer"):
-            if not st.session_state.SNIFFER_RUNNING:
-                st.warning("Sniffer is already stopped")
-            else:
-                stop_sniffer()
-                st.success("Sniffer has been stopped!")
-                st.session_state.SNIFFER_RUNNING = False
-
-
-    st.header("CSV Data")
-    col3, col4 = st.columns(2)
-
-    # Displaying all the captured packets
-    with col3:
+        
         st.subheader("Raw CSV Data")
         if not st.session_state.SNIFFER_RUNNING and not st.session_state.JUST_STARTED:
             try:
@@ -74,8 +53,27 @@ def main():
             except FileNotFoundError:
                 st.warning("An error occured: CSV file not found.")
 
-    # Displaying packets that were sent by the user
-    with col4:
+        btn1, btn2 = st.columns([.5,.5])
+        with btn1:
+            if st.button("Start Packet Sniffer"):
+                st.session_state.SNIFFER_RUNNING = True 
+                st.session_state.JUST_STARTED = False
+                start_sniffer()
+                st.success("Packet sniffer started!")
+
+        with btn2:
+            if st.button("Stop Packet Sniffer"):
+                if not st.session_state.SNIFFER_RUNNING:
+                    st.warning("Sniffer is already stopped")
+                else:
+                    stop_sniffer()
+                    st.success("Sniffer has been stopped!")
+                    st.session_state.SNIFFER_RUNNING = False
+                    st.rerun()
+            
+
+
+    with col2:
         st.subheader("Filtered CSV Data")
         if not st.session_state.SNIFFER_RUNNING and not st.session_state.JUST_STARTED:
             filtered_df = filter_packets()
@@ -110,6 +108,11 @@ def main():
                     st.warning("ERROR: ID not found or payload couldnt be translated")
             else:
                 st.warning("ERROR: Sniffer is still live or no packet has been yet captured.")
+
+
+
+
+
 
 
     st.divider()
