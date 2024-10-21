@@ -77,7 +77,7 @@ def main():
     with col4:
         st.subheader("Filtered CSV Data")
         if not st.session_state.SNIFFER_RUNNING and not st.session_state.JUST_STARTED:
-            filtered_df = filter_packets(src_ip=st.session_state.IP_ADDRESS_TRACKING, dest_port=st.session_state.PORT_TRACKING)
+            filtered_df = filter_packets()
             print(len(filtered_df))
             st.dataframe(filtered_df)
 
@@ -89,7 +89,7 @@ def main():
             st.warning("ERROR: No packet data input has been provided.")
         elif st.session_state.SNIFFER_RUNNING:
             try:
-                result = send_packet(target_ip=st.session_state.IP_ADDRESS_TRACKING, target_port=st.session_state.PORT_TRACKING, payload=str(packet_data))
+                result = send_packet(payload=packet_data)
                 st.write(result)
             except Exception as e:
                 st.warning(f"An error occured: {e}")
