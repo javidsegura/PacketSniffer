@@ -4,6 +4,8 @@
 
 from scapy.all import *
 
+
+
 def send_packet(target_ip:str ='10.192.67.245', target_port:int = 80, payload:str = "hello world"):
     try:
         # Create an IP layer

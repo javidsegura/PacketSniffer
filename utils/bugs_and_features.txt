@@ -4,31 +4,17 @@ FEATURES
 
 1. You cant send a packed to a different ip address / port
 2. Add error handling
-5. Expand categorization
 7. Categorize source port  
-8. Passing IP user-friendly name 
+8. Passing IP user-friendly name ? 
 10. What more extra info can be obtained from the structures?
 
-13. Staaaaats => st.metric
 14. Send packets to other IPs :star:
-15. Deharcoding path names + device usage
-16. sniffer_enabled goes True when sending a packet?
-17. Add icons to buttons
-18. Number of packets read
-19. Use st.tabs
-20. Loading page for running sniffer
-21. Column configurations
-22. Containers for state buttons 
-23. Placeholders
+15. Deharcode device usage
 24. Replace radio by header
-25. Sents packets metric not working => may need to use a session variable. Same for delta on captured packets
-26. Add third tab with IP-specific track
-27. Remove sniffert stopped on sucess after a few secs
+27. Remove sniffert stopped on sucess after a few secs ?
 28. CSV should be emptied after each session
-29. Dont hardcode paths
 
 PHASE 2:
--1. Send packtes to other IP
 0. Socket programming in C
 1. Filtering db tab
 2. DOS prevention

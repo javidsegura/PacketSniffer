@@ -6,7 +6,7 @@ import json
 import os
 
 
-path = "/Users/javierdominguezsegura/Programming/College/Sophomore/Cprogramming/PacketSniffer/utils/PacketsResultsCSV.csv"
+PATH = ".././utils/PacketsResultsCSV.csv"
 
 # Load the port categories from the JSON file
 current_dir = os.path.dirname(os.path.abspath(__file__))
@@ -20,7 +20,7 @@ with open(json_path, 'r') as f:
 def time_graph(filter_by_ip=False, ip_address=None):
 
       """ IP address is address being tracked """
-      df = pd.read_csv(path)
+      df = pd.read_csv(PATH)
 
       if filter_by_ip:
             # Incoming
@@ -60,7 +60,7 @@ def time_graph(filter_by_ip=False, ip_address=None):
 
 def top_ips_graphs(filter_by_ip=False, ip_address=None):
     # Read the CSV file
-    df = pd.read_csv(path)
+    df = pd.read_csv(PATH)
 
     if filter_by_ip:
         # Incoming
@@ -118,7 +118,7 @@ def top_ips_graphs(filter_by_ip=False, ip_address=None):
 
 
 def top_ports_graphs(ip_address):
-    df = pd.read_csv(path)
+    df = pd.read_csv(PATH)
 
     # Filter for incoming traffic to the specified IP address
     df = df[df['dest_ip'] == ip_address]

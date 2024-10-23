@@ -4,7 +4,7 @@ import pandas as pd
 
 def hex_to_string(record_id:int) -> str | int:
     try:
-        df = pd.read_csv("/Users/javierdominguezsegura/Programming/College/Sophomore/Cprogramming/PacketSniffer/utils/PacketsResultsCSV.csv")
+        df = pd.read_csv(".././utils/PacketsResultsCSV.csv")
         hex_values = df.loc[df["packet_id"] == record_id, "payload"].values[0].split()
 
         # Convert each hex value to a character and join them to form the final string
