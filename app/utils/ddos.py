@@ -1,3 +1,5 @@
+""" Check this out: https://www.cloudflare.com/learning/ddos/syn-flood-ddos-attack/ """
+
 import threading
 from scapy.all import *
 
