@@ -21,4 +21,3 @@ PHASE 2:
 
 Phase 3: 
 - Add everything to pages 
-- AI summary on data

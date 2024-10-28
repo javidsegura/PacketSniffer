@@ -4,8 +4,6 @@
 /* Contains function that create and populate csv where results of sniffing session are stored permanently.*/
 
 #include <stdio.h>
-#include <stdlib.h>
-#include <pcap.h>
 
 FILE *results_csv = NULL;
 
@@ -26,13 +24,18 @@ void new_line_csv() {
     if (results_csv != NULL) {
         fprintf(results_csv, "\n");
     }
-    printf("New entry\n");
 }
 
 void add_str_to_csv(char *str){
       if (str != NULL){
             fprintf(results_csv, "%s,",str);
       }
+}
+
+void add_int_to_csv(int value) {
+    if (results_csv != NULL) {
+        fprintf(results_csv, "%d,", value);
+    }
 }
 
 void add_payload_csv(const u_char *payload, int len){
@@ -42,12 +45,6 @@ void add_payload_csv(const u_char *payload, int len){
                   fprintf(results_csv, "%02x ",payload[i]);
             }
       }
-}
-
-void add_int_to_csv(int value) {
-    if (results_csv != NULL) {
-        fprintf(results_csv, "%d,", value);
-    }
 }
 
 void flush_csv(){
