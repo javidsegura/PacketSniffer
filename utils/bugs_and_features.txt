@@ -2,17 +2,17 @@
 
 FEATURES
 
-1. You cant send a packed to a different ip address / port
+1. You cant send a packet to a different ip address / port
 2. Add error handling
 7. Categorize source port  
 8. Passing IP user-friendly name ? 
-10. What more extra info can be obtained from the structures?
 
 14. Send packets to other IPs :star:
-15. Deharcode device usage
 24. Replace radio by header
 27. Remove sniffert stopped on sucess after a few secs ?
 28. CSV should be emptied after each session
+29. Loading bar somewhere?
+30. Filter through ports
 
 PHASE 2:
 0. Socket programming in C
@@ -21,4 +21,3 @@ PHASE 2:
 
 Phase 3: 
 - Add everything to pages 
-- AI summary on data
