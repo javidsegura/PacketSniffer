@@ -39,8 +39,7 @@ int main() {
         return 1;
     }
 
-    device = "en0"; // Get the name of the first device
-    //printf("Sniffing on device named: %s\n", device);
+    device = "en0"; // en0 is wireless internet network interface
 
     // 4) Get network info (IP and subnet mask) for the selected device
     if (pcap_lookupnet(device, &net, &mask, errbuf) == -1) {

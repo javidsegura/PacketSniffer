@@ -10,7 +10,7 @@ import pandas as pd
 from utils.packet_interpretation import self_sent_filter
 from utils.packet_sender import send_packet
 from utils.translate_hex import hex_to_string
-from utils.plots import time_graph, top_ips_graphs, top_ports_graphs
+
 
 def start_sniffer():
     os.system("../src/packet_sniffer &")
@@ -32,6 +32,8 @@ if 'IP_ADDRESS_TRACKING' not in st.session_state:
     st.session_state.IP_ADDRESS_TRACKING = str(HOST_IP_ADDRESS)
 if 'PORT_TRACKING' not in st.session_state:
     st.session_state.PORT_TRACKING = 80
+if 'CAPTURED_PACKETS' not in st.session_state:
+    st.session_state.CAPTURED_PACKETS = 0
 
 
 
@@ -73,6 +75,7 @@ def main():
                 try:
                     global CAPTURED_PACKETS
                     df = pd.read_csv("../utils/PacketsResultsCSV.csv")
+                    st.session_state.CAPTURED_PACKETS = len(df)
                     CAPTURED_PACKETS = len(df)
                     st.dataframe(df)
                 except FileNotFoundError:
@@ -136,78 +139,7 @@ def main():
             st.metric(label="Packets Sent", value=len(self_sent_filter()))
     
 
-    # Sidebar settings
-    st.sidebar.title("Settings")
-    with st.sidebar:
-        st.metric("Local IP: ", HOST_IP_ADDRESS)
-        st.divider()
-        st.header("Select ip address to track: ")
-        ip_option = st.radio(
-            "Choose IP address option:",
-            ("Use host IP address", "Enter custom IP")
-        )
-
-        if ip_option == "Use host IP address":
-            if st.session_state.IP_ADDRESS_TRACKING != HOST_IP_ADDRESS:
-                st.session_state.IP_ADDRESS_TRACKING = str(HOST_IP_ADDRESS)
-            st.success(f"Using host IP: {st.session_state.IP_ADDRESS_TRACKING}")
-        else:
-            custom_ip = st.text_input("Enter custom IP address:")
-            if custom_ip != st.session_state.IP_ADDRESS_TRACKING:
-                if custom_ip:
-                    if st.button("Update IP Address"):
-                        st.session_state.IP_ADDRESS_TRACKING = str(custom_ip)
-                        st.success(f"IP Address updated to: {custom_ip}")
-    
-
-        st.header("Select port to track: ")
-        st.write(f"Current port: {st.session_state.PORT_TRACKING}")
-        customer_port = st.text_input("Enter customer port: ")
-        if customer_port:
-            st.session_state.PORT_TRACKING = int(customer_port)
-            st.success(f"Port updated to: {customer_port}")
-
-    # DDOS SECTIONS
-    all_traffic, ip_traffic = st.tabs(["All traffic", f"IP-specific traffic ({st.session_state.IP_ADDRESS_TRACKING})"])
-    if st.session_state.SNIFFER_RUNNING:
-        st.write("Packet sniffer is running...")
-    else:
-        with all_traffic:
-            if CAPTURED_PACKETS > 0:
-                time_col, senders_col, receivers_col = st.columns(3)
-                with time_col:
-                    time_fig = time_graph()
-                    st.plotly_chart(time_fig, use_container_width=True) 
-                ips_fig = top_ips_graphs()
-                with senders_col:
-                    st.plotly_chart(ips_fig[0], use_container_width=True) 
-                with receivers_col:
-                    st.plotly_chart(ips_fig[1], use_container_width=True) 
-            else:
-                st.warning("No data available. Start the packet sniffer to capture packets.", icon=":material/warning:")
-                
-        with ip_traffic:
-            if CAPTURED_PACKETS > 0:
-                time_col, senders_col, ports_col = st.columns(3)
-                with time_col:
-                    time_fig = time_graph(filter_by_ip=True, ip_address=st.session_state.IP_ADDRESS_TRACKING)
-                    st.plotly_chart(time_fig, use_container_width=True) 
-                tracked_ips_fig = top_ips_graphs(filter_by_ip=True, ip_address=st.session_state.IP_ADDRESS_TRACKING)
-                with senders_col:
-                    st.plotly_chart(tracked_ips_fig[1], use_container_width=True) 
-                with ports_col:
-                    ports_fig = top_ports_graphs(ip_address=st.session_state.IP_ADDRESS_TRACKING)
-                    st.plotly_chart(ports_fig, use_container_width=True) 
-            else:
-                st.warning("No data available. Start the packet sniffer to capture packets.", icon=":material/warning:")
             
-
-        
-       
-
-
-
-
 
 
 if __name__ == "__main__":

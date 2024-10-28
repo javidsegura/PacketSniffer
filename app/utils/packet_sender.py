@@ -18,7 +18,6 @@ def send_packet(target_ip:str ='10.192.67.245', target_port:int = 80, payload:st
         packet = ip / syn
 
         # Send the SYN packet
-        print(f"Sending SYN packet to {target_ip}:{target_port}")
         send(packet)
 
         # Wait for a short period to allow for SYN-ACK response (optional)
@@ -34,7 +33,6 @@ def send_packet(target_ip:str ='10.192.67.245', target_port:int = 80, payload:st
         http_packet = ip / tcp / Raw(load=payload_data)
 
         # Send the HTTP packet
-        print(f"Sending custom payload to {target_ip}:{target_port}")
         send(http_packet)
 
         return (f"Packet sent to {target_ip}:{target_port}")
