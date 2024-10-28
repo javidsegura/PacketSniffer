@@ -7,7 +7,7 @@ import os
 import pandas as pd
 
 # Import your custom modules
-from utils.packet_interpretation import self_sent_filter
+from utils.packet_interpretation import self_sent_filter, filter_df
 from utils.packet_sender import send_packet
 from utils.translate_hex import hex_to_string
 
@@ -18,9 +18,8 @@ def start_sniffer():
 def stop_sniffer():
     os.system("pkill -f packet_sniffer")
 
-HOST_IP_ADDRESS = ip_address = subprocess.check_output(['ipconfig', 'getifaddr', 'en0']).decode('utf-8').strip() #or 10.192.67.245
+HOST_IP_ADDRESS = str(subprocess.check_output(['ipconfig', 'getifaddr', 'en0']).decode('utf-8').strip()) #or 10.192.67.245
 PORT = 80
-CAPTURED_PACKETS = 0
 
 
 # Keeping session variables on track
@@ -28,12 +27,24 @@ if 'SNIFFER_RUNNING' not in st.session_state:
     st.session_state.SNIFFER_RUNNING = False 
 if 'JUST_STARTED' not in st.session_state:
     st.session_state.JUST_STARTED = True
+# Tracking settings ssv
 if 'IP_ADDRESS_TRACKING' not in st.session_state:
     st.session_state.IP_ADDRESS_TRACKING = str(HOST_IP_ADDRESS)
 if 'PORT_TRACKING' not in st.session_state:
     st.session_state.PORT_TRACKING = 80
+# Packets ssv
 if 'CAPTURED_PACKETS' not in st.session_state:
     st.session_state.CAPTURED_PACKETS = 0
+if 'CAPT_PACKETS_DF' not in st.session_state:
+    st.session_state.CAPT_PACKETS_DF = None
+
+# Filter csv ssv:
+if 'SRC_IP' not in st.session_state:
+    st.session_state.SRC_IP = None
+if 'DEST_IP' not in st.session_state:
+    st.session_state.DEST_IP = None
+if 'PORT' not in st.session_state:
+    st.session_state.PORT = None
 
 
 
@@ -69,22 +80,82 @@ def main():
                 else:
                     message_container.warning("Sniffer is already stopped", icon=":material/warning:")
 
-        raw_csv_tab, sent_packets, filtered_packets = st.tabs(["All packets", "Sent packets", "Filtered packets"])
+        raw_csv_tab, filtered_packets, auto_sent_packets = st.tabs(["All packets","Filter packets","Auto-sent packets"])
         with raw_csv_tab:
             if not st.session_state.SNIFFER_RUNNING and not st.session_state.JUST_STARTED:
                 try:
-                    global CAPTURED_PACKETS
                     df = pd.read_csv("../utils/PacketsResultsCSV.csv")
                     st.session_state.CAPTURED_PACKETS = len(df)
-                    CAPTURED_PACKETS = len(df)
+                    st.session_state.CAPT_PACKETS_DF = df #would this need to be to restarted when rerunning
                     st.dataframe(df)
                 except FileNotFoundError:
                     st.warning("An error occured: CSV file not found.")
-        
-        with sent_packets:
+
+        if not st.session_state.SNIFFER_RUNNING and not st.session_state.JUST_STARTED:
+            with filtered_packets:
+                from_col, to_col, port_col = st.columns(3)
+                with from_col:
+                    st.markdown("SOURCE IP:")
+                    default_value_src = f"{HOST_IP_ADDRESS}"
+                    all_ip_addresses = list(st.session_state.CAPT_PACKETS_DF["src_ip"].unique())
+                    all_ip_addresses.remove(HOST_IP_ADDRESS)
+                    options = [ip_addr for ip_addr in all_ip_addresses]
+
+                    # Checkbox for the user to choose the default option
+                    use_default_src = st.checkbox(f"{default_value_src} (local)", value=True, key=2)
+
+                    # Logic to choose between the default value or a selected option
+                    if use_default_src:
+                        selected_option_src = default_value_src
+                    else:
+                        selected_option_src = st.selectbox("Choose an option:", options,key=1)
+                    st.session_state.SRC_IP = selected_option_src
+
+
+                with to_col:
+                    st.markdown("DESTINATION IP:")
+                    default_value_dest = f"{HOST_IP_ADDRESS}"
+                    all_ip_addresses = list(st.session_state.CAPT_PACKETS_DF["dest_ip"].unique())
+                    all_ip_addresses.remove(HOST_IP_ADDRESS)
+                    options = [ip_addr for ip_addr in all_ip_addresses]
+
+                    # Checkbox for the user to choose the default option
+                    use_default_dest = st.checkbox(f"{default_value_dest} (local)", value=True, key=3)
+
+                    # Logic to choose between the default value or a selected option
+                    if use_default_dest:
+                        selected_option_dest = default_value_dest
+                    else:
+                        selected_option_dest = st.selectbox("Choose an option:", options, key=4)
+                    st.session_state.DEST_IP = selected_option_dest
+
+                with port_col:
+                    default_value_port = f"{PORT}"
+                    
+                    # Checkbox for the user to choose the default option
+                    use_default_port = st.radio("PORT:",options=["All", f"Default ({PORT})","Other"], key=5)
+
+                    # Logic to choose between the default value or a selected option
+                    if use_default_port == f"Default ({PORT})":
+                        selected_option_port = default_value_port
+                    elif use_default_port == f"Other":
+                        selected_option_port = st.text_input(label="Your port",placeholder="Choose an option:", key=6)
+                    else:
+                        selected_option_port = None
+                    st.session_state.PORT = selected_option_port
+
+                filter_csv_btn = st.button("Filter CSV")
+
+                if filter_csv_btn:
+                    filtered_csv = filter_df(st.session_state.SRC_IP, st.session_state.DEST_IP, st.session_state.PORT)
+                    st.dataframe(filtered_csv)
+
+        with auto_sent_packets:
             if not st.session_state.SNIFFER_RUNNING and not st.session_state.JUST_STARTED:
-                filtered_df = self_sent_filter()
+                filtered_df = self_sent_filter(src_ip=HOST_IP_ADDRESS, dest_port=st.session_state.PORT_TRACKING)
                 st.dataframe(filtered_df)
+
+
         
         if st.session_state.SNIFFER_RUNNING:
             st.markdown("""
@@ -105,8 +176,8 @@ def main():
                     st.warning("ERROR: No packet data input has been provided.")
                 elif st.session_state.SNIFFER_RUNNING:
                     try:
-                        result = send_packet(payload=packet_data)
-                        st.write(result)
+                        result = send_packet(src_ip=HOST_IP_ADDRESS, dest_ip= st.session_state.IP_ADDRESS_TRACKING, dest_port= st.session_state.PORT_TRACKING, payload=packet_data)
+                        st.success(result)
                     except Exception as e:
                         st.warning(f"An error occured: {e}")
                 else:
@@ -132,11 +203,17 @@ def main():
         col_config, col_stats = st.columns(2)
 
         with col_config:
-            st.metric(label="IP Tracking", value=st.session_state.IP_ADDRESS_TRACKING) # Tracking IP address
+            if st.session_state.IP_ADDRESS_TRACKING == HOST_IP_ADDRESS:
+                ip_type = "(local)"
+            else:
+                ip_type = "(other)"
+            st.metric(label=f"IP Tracking {ip_type}", value=st.session_state.IP_ADDRESS_TRACKING) # Tracking IP address
             st.metric(label="Port Tracking", value=st.session_state.PORT_TRACKING) # Tracking port
         with col_stats:
-            st.metric(label="Packets Captured", value=CAPTURED_PACKETS)
-            st.metric(label="Packets Sent", value=len(self_sent_filter()))
+            st.metric(label="Packets Captured", value=st.session_state.CAPTURED_PACKETS )
+            st.metric(label="Packets Sent", value=len(self_sent_filter(src_ip=HOST_IP_ADDRESS, dest_port=st.session_state.PORT_TRACKING)))
+
+        st.sidebar.write("10.192.67.245")
     
 
             

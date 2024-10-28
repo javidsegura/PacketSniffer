@@ -12,6 +12,7 @@ FEATURES
 27. Remove sniffert stopped on sucess after a few secs ?
 28. CSV should be emptied after each session
 29. Loading bar somewhere?
+30. Filter through ports
 
 PHASE 2:
 0. Socket programming in C
