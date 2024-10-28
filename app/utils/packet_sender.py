@@ -8,8 +8,8 @@ from scapy.all import *
 
 def send_packet(src_ip:str, dest_ip:str, dest_port:int, payload:str = "hello world"):
     try:   
-        src_ip = None
-        dest_ip = "10.192.67.245"
+        src_ip = None 
+        dest_ip = '10.192.67.245'
         dest_port = 80
 
         #Create IP layer
