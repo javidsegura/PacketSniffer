@@ -10,6 +10,7 @@ import pandas as pd
 from utils.packet_interpretation import self_sent_filter, filter_df
 from utils.packet_sender import send_packet
 from utils.translate_hex import hex_to_string
+from utils.sidebar import get_siderbar
 
 
 
@@ -19,8 +20,9 @@ def start_sniffer():
 def stop_sniffer():
     os.system("pkill -f packet_sniffer")
 
+
 HOST_IP_ADDRESS = str(subprocess.check_output(['ipconfig', 'getifaddr', 'en0']).decode('utf-8').strip()) #or 10.192.67.245
-PORT = 8080
+PORT = 8080 #default values
 
 
 # Keeping session variables on track
@@ -30,7 +32,7 @@ if 'JUST_STARTED' not in st.session_state:
     st.session_state.JUST_STARTED = True
 # Tracking settings ssv
 if 'IP_ADDRESS_TRACKING' not in st.session_state:
-    st.session_state.IP_ADDRESS_TRACKING = None
+    st.session_state.IP_ADDRESS_TRACKING = "None"
 if 'PORT_TRACKING' not in st.session_state:
     st.session_state.PORT_TRACKING = 8080
 # Packets ssv
@@ -38,7 +40,6 @@ if 'CAPTURED_PACKETS' not in st.session_state:
     st.session_state.CAPTURED_PACKETS = 0
 if 'CAPT_PACKETS_DF' not in st.session_state:
     st.session_state.CAPT_PACKETS_DF = None
-
 # Filter csv ssv:
 if 'SRC_IP' not in st.session_state:
     st.session_state.SRC_IP = None
@@ -212,8 +213,9 @@ def main():
         with col_stats:
             st.metric(label="Packets Captured", value=st.session_state.CAPTURED_PACKETS )
             st.metric(label="Packets Sent", value=len(self_sent_filter(src_ip=HOST_IP_ADDRESS, dest_ip=st.session_state.IP_ADDRESS_TRACKING, dest_port=st.session_state.PORT_TRACKING)))
-            
     
+    with st.sidebar:
+            get_siderbar()
 
             
 
