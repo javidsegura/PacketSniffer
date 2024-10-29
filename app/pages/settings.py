@@ -35,3 +35,6 @@ customer_port = st.text_input("Enter customer port: ")
 if customer_port:
             st.session_state.PORT_TRACKING = int(customer_port)
             st.success(f"Port updated to: {customer_port}")
+
+with st.sidebar:
+            st.metric("Local IP address", value=HOST_IP_ADDRESS)

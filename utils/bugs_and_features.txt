@@ -13,6 +13,7 @@ FEATURES
 28. CSV should be emptied after each session
 29. Loading bar somewhere?
 30. Filter through ports
+31. Alias for IP addrs
 
 PHASE 2:
 0. Socket programming in C

@@ -12,6 +12,7 @@ from utils.packet_sender import send_packet
 from utils.translate_hex import hex_to_string
 
 
+
 def start_sniffer():
     os.system("../src/packet_sniffer &")
 
@@ -19,7 +20,7 @@ def stop_sniffer():
     os.system("pkill -f packet_sniffer")
 
 HOST_IP_ADDRESS = str(subprocess.check_output(['ipconfig', 'getifaddr', 'en0']).decode('utf-8').strip()) #or 10.192.67.245
-PORT = 80
+PORT = 8080
 
 
 # Keeping session variables on track
@@ -29,9 +30,9 @@ if 'JUST_STARTED' not in st.session_state:
     st.session_state.JUST_STARTED = True
 # Tracking settings ssv
 if 'IP_ADDRESS_TRACKING' not in st.session_state:
-    st.session_state.IP_ADDRESS_TRACKING = str(HOST_IP_ADDRESS)
+    st.session_state.IP_ADDRESS_TRACKING = None
 if 'PORT_TRACKING' not in st.session_state:
-    st.session_state.PORT_TRACKING = 80
+    st.session_state.PORT_TRACKING = 8080
 # Packets ssv
 if 'CAPTURED_PACKETS' not in st.session_state:
     st.session_state.CAPTURED_PACKETS = 0
@@ -80,7 +81,7 @@ def main():
                 else:
                     message_container.warning("Sniffer is already stopped", icon=":material/warning:")
 
-        raw_csv_tab, filtered_packets, auto_sent_packets = st.tabs(["All packets","Filter packets","Auto-sent packets"])
+        raw_csv_tab, filtered_packets, auto_sent_packets = st.tabs(["All packets","Auto-sent packets","Filter packets"])
         with raw_csv_tab:
             if not st.session_state.SNIFFER_RUNNING and not st.session_state.JUST_STARTED:
                 try:
@@ -90,6 +91,11 @@ def main():
                     st.dataframe(df)
                 except FileNotFoundError:
                     st.warning("An error occured: CSV file not found.")
+        
+        with auto_sent_packets:
+            if not st.session_state.SNIFFER_RUNNING and not st.session_state.JUST_STARTED:
+                filtered_df = self_sent_filter(src_ip=HOST_IP_ADDRESS, dest_ip=st.session_state.IP_ADDRESS_TRACKING, dest_port=st.session_state.PORT_TRACKING)
+                st.dataframe(filtered_df)
 
         if not st.session_state.SNIFFER_RUNNING and not st.session_state.JUST_STARTED:
             with filtered_packets:
@@ -150,12 +156,6 @@ def main():
                     filtered_csv = filter_df(st.session_state.SRC_IP, st.session_state.DEST_IP, st.session_state.PORT)
                     st.dataframe(filtered_csv)
 
-        with auto_sent_packets:
-            if not st.session_state.SNIFFER_RUNNING and not st.session_state.JUST_STARTED:
-                filtered_df = self_sent_filter(src_ip=HOST_IP_ADDRESS, dest_port=st.session_state.PORT_TRACKING)
-                st.dataframe(filtered_df)
-
-
         
         if st.session_state.SNIFFER_RUNNING:
             st.markdown("""
@@ -211,9 +211,8 @@ def main():
             st.metric(label="Port Tracking", value=st.session_state.PORT_TRACKING) # Tracking port
         with col_stats:
             st.metric(label="Packets Captured", value=st.session_state.CAPTURED_PACKETS )
-            st.metric(label="Packets Sent", value=len(self_sent_filter(src_ip=HOST_IP_ADDRESS, dest_port=st.session_state.PORT_TRACKING)))
-
-        st.sidebar.write("10.192.67.245")
+            st.metric(label="Packets Sent", value=len(self_sent_filter(src_ip=HOST_IP_ADDRESS, dest_ip=st.session_state.IP_ADDRESS_TRACKING, dest_port=st.session_state.PORT_TRACKING)))
+            
     
 
             

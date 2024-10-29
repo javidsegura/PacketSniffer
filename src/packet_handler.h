@@ -67,12 +67,12 @@ void packet_handler(u_char *user_data, const struct pcap_pkthdr *pkthdr, const u
         
         // 4) Print IP header information
         char *src_ip = inet_ntoa(ip_header->ip_src);
+        add_str_to_csv(src_ip);
         char *dest_ip = inet_ntoa(ip_header->ip_dst);
+        add_str_to_csv(dest_ip);
         //printf("\nIP Header:\n");
         //printf("   Source IP: %s\n", src_ip);
-        add_str_to_csv(src_ip);
         //printf("   Destination IP: %s\n", dest_ip);
-        add_str_to_csv(dest_ip);
         int protocol = ip_header->ip_p;
         
 
