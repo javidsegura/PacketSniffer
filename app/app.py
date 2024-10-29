@@ -22,7 +22,7 @@ def stop_sniffer():
 
 
 HOST_IP_ADDRESS = str(subprocess.check_output(['ipconfig', 'getifaddr', 'en0']).decode('utf-8').strip()) #or 10.192.67.245
-PORT = 8080 #default values
+PORT = "None" #default values
 
 
 # Keeping session variables on track
@@ -31,10 +31,10 @@ if 'SNIFFER_RUNNING' not in st.session_state:
 if 'JUST_STARTED' not in st.session_state:
     st.session_state.JUST_STARTED = True
 # Tracking settings ssv
-if 'IP_ADDRESS_TRACKING' not in st.session_state:
-    st.session_state.IP_ADDRESS_TRACKING = "None"
+if 'IP_ADDRESS_POINTED' not in st.session_state:
+    st.session_state.IP_ADDRESS_POINTED = "None"
 if 'PORT_TRACKING' not in st.session_state:
-    st.session_state.PORT_TRACKING = 8080
+    st.session_state.PORT_TRACKING = PORT
 # Packets ssv
 if 'CAPTURED_PACKETS' not in st.session_state:
     st.session_state.CAPTURED_PACKETS = 0
@@ -82,7 +82,7 @@ def main():
                 else:
                     message_container.warning("Sniffer is already stopped", icon=":material/warning:")
 
-        raw_csv_tab, filtered_packets, auto_sent_packets = st.tabs(["All packets","Auto-sent packets","Filter packets"])
+        raw_csv_tab, filtered_packets, auto_sent_packets = st.tabs(["All packets","Sent packets","Filtered packets"])
         with raw_csv_tab:
             if not st.session_state.SNIFFER_RUNNING and not st.session_state.JUST_STARTED:
                 try:
@@ -95,7 +95,7 @@ def main():
         
         with auto_sent_packets:
             if not st.session_state.SNIFFER_RUNNING and not st.session_state.JUST_STARTED:
-                filtered_df = self_sent_filter(src_ip=HOST_IP_ADDRESS, dest_ip=st.session_state.IP_ADDRESS_TRACKING, dest_port=st.session_state.PORT_TRACKING)
+                filtered_df = self_sent_filter(src_ip=HOST_IP_ADDRESS, dest_ip=st.session_state.IP_ADDRESS_POINTED, dest_port=st.session_state.PORT_TRACKING)
                 st.dataframe(filtered_df)
 
         if not st.session_state.SNIFFER_RUNNING and not st.session_state.JUST_STARTED:
@@ -121,13 +121,13 @@ def main():
 
                 with to_col:
                     st.markdown("DESTINATION IP:")
-                    default_value_dest = f"{HOST_IP_ADDRESS}"
+                    default_value_dest = f"{st.session_state.IP_ADDRESS_POINTED}"
                     all_ip_addresses = list(st.session_state.CAPT_PACKETS_DF["dest_ip"].unique())
-                    all_ip_addresses.remove(HOST_IP_ADDRESS)
+                    all_ip_addresses.remove(st.session_state.IP_ADDRESS_POINTED)
                     options = [ip_addr for ip_addr in all_ip_addresses]
 
                     # Checkbox for the user to choose the default option
-                    use_default_dest = st.checkbox(f"{default_value_dest} (local)", value=True, key=3)
+                    use_default_dest = st.checkbox(f"{default_value_dest} (pointed)", value=True, key=3)
 
                     # Logic to choose between the default value or a selected option
                     if use_default_dest:
@@ -177,7 +177,7 @@ def main():
                     st.warning("ERROR: No packet data input has been provided.")
                 elif st.session_state.SNIFFER_RUNNING:
                     try:
-                        result = send_packet(src_ip=HOST_IP_ADDRESS, dest_ip= st.session_state.IP_ADDRESS_TRACKING, dest_port= st.session_state.PORT_TRACKING, payload=packet_data)
+                        result = send_packet(src_ip=HOST_IP_ADDRESS, dest_ip= st.session_state.IP_ADDRESS_POINTED, dest_port= st.session_state.PORT_TRACKING, payload=packet_data)
                         st.success(result)
                     except Exception as e:
                         st.warning(f"An error occured: {e}")
@@ -204,15 +204,15 @@ def main():
         col_config, col_stats = st.columns(2)
 
         with col_config:
-            if st.session_state.IP_ADDRESS_TRACKING == HOST_IP_ADDRESS:
+            if st.session_state.IP_ADDRESS_POINTED == HOST_IP_ADDRESS:
                 ip_type = "(local)"
             else:
                 ip_type = "(other)"
-            st.metric(label=f"IP Tracking {ip_type}", value=st.session_state.IP_ADDRESS_TRACKING) # Tracking IP address
+            st.metric(label=f"IP Tracking {ip_type}", value=st.session_state.IP_ADDRESS_POINTED) # Tracking IP address
             st.metric(label="Port Tracking", value=st.session_state.PORT_TRACKING) # Tracking port
         with col_stats:
             st.metric(label="Packets Captured", value=st.session_state.CAPTURED_PACKETS )
-            st.metric(label="Packets Sent", value=len(self_sent_filter(src_ip=HOST_IP_ADDRESS, dest_ip=st.session_state.IP_ADDRESS_TRACKING, dest_port=st.session_state.PORT_TRACKING)))
+            st.metric(label="Packets Sent", value=len(self_sent_filter(src_ip=HOST_IP_ADDRESS, dest_ip=st.session_state.IP_ADDRESS_POINTED, dest_port=st.session_state.PORT_TRACKING)))
     
     with st.sidebar:
             get_siderbar()

@@ -14,6 +14,13 @@ FEATURES
 29. Loading bar somewhere?
 30. Filter through ports
 31. Alias for IP addrs
+32. Sidebar function
+33. All ports info
+34. Location of IP
+35. Tracked by pointed
+
+
+
 
 PHASE 2:
 0. Socket programming in C

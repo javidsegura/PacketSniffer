@@ -13,16 +13,16 @@ def settings_app():
     
     with ip_addr_col:
         st.header("Select IP address to track: ")
-        customer_ip = st.text_input("Enter IP address to track: ")
-        st.caption(f"Current tracked IP: {st.session_state.IP_ADDRESS_TRACKING}")
+        customer_ip = st.text_input("Enter IP address to track: ", placeholder="XX.XXX.XX.XXX")
+        st.caption(f"Current tracked IP: {st.session_state.IP_ADDRESS_POINTED}")
         ip_confirm_btn = st.button("Confirm")
         if ip_confirm_btn and customer_ip:
-                    st.session_state.IP_ADDRESS_TRACKING = str(customer_ip)
-                    st.success(f"IP updated succesfully to {st.session_state.IP_ADDRESS_TRACKING}")
+                    st.session_state.IP_ADDRESS_POINTED = str(customer_ip)
+                    st.success(f"IP updated succesfully to {st.session_state.IP_ADDRESS_POINTED}")
         
     with port_col:
         st.header("Select port to track: ")
-        customer_port = st.text_input("Enter customer port: ")
+        customer_port = st.text_input("Enter customer port: ", placeholder="8080")
         st.caption(f"Current port: {st.session_state.PORT_TRACKING}")
         port_confirm_btn = st.button("Confirm", key = 2)
         if port_confirm_btn and customer_port:

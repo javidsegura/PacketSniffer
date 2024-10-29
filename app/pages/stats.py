@@ -9,7 +9,7 @@ def stats_app():
     st.title("Stats section") 
 
     # DDOS SECTIONS
-    all_traffic, ip_traffic = st.tabs(["All traffic", f"IP-specific traffic ({st.session_state.IP_ADDRESS_TRACKING})"])
+    all_traffic, ip_traffic = st.tabs(["All traffic", f"IP-specific traffic ({st.session_state.IP_ADDRESS_POINTED})"])
     if st.session_state.SNIFFER_RUNNING:
             st.write("Packet sniffer is running...")
     else:
@@ -31,13 +31,13 @@ def stats_app():
                 if st.session_state.CAPTURED_PACKETS > 0:
                     time_col, senders_col, ports_col = st.columns(3)
                     with time_col:
-                        time_fig = time_graph(filter_by_ip=True, ip_address=st.session_state.IP_ADDRESS_TRACKING)
+                        time_fig = time_graph(filter_by_ip=True, ip_address=st.session_state.IP_ADDRESS_POINTED)
                         st.plotly_chart(time_fig, use_container_width=True) 
-                    tracked_ips_fig = top_ips_graphs(filter_by_ip=True, ip_address=st.session_state.IP_ADDRESS_TRACKING)
+                    tracked_ips_fig = top_ips_graphs(filter_by_ip=True, ip_address=st.session_state.IP_ADDRESS_POINTED)
                     with senders_col:
                         st.plotly_chart(tracked_ips_fig[1], use_container_width=True) 
                     with ports_col:
-                        ports_fig = top_ports_graphs(ip_address=st.session_state.IP_ADDRESS_TRACKING)
+                        ports_fig = top_ports_graphs(ip_address=st.session_state.IP_ADDRESS_POINTED)
                         st.plotly_chart(ports_fig, use_container_width=True) 
                 else:
                     st.warning("No data available. Start the packet sniffer to capture packets.", icon=":material/warning:")
