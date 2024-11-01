@@ -123,7 +123,8 @@ def main():
                     st.markdown("DESTINATION IP:")
                     default_value_dest = f"{st.session_state.IP_ADDRESS_POINTED}"
                     all_ip_addresses = list(st.session_state.CAPT_PACKETS_DF["dest_ip"].unique())
-                    all_ip_addresses.remove(st.session_state.IP_ADDRESS_POINTED)
+                    if st.session_state.IP_ADDRESS_POINTED in all_ip_addresses:
+                        all_ip_addresses.remove(st.session_state.IP_ADDRESS_POINTED)
                     options = [ip_addr for ip_addr in all_ip_addresses]
 
                     # Checkbox for the user to choose the default option
@@ -133,6 +134,7 @@ def main():
                     if use_default_dest:
                         selected_option_dest = default_value_dest
                     else:
+                        options.insert(0, "All")
                         selected_option_dest = st.selectbox("Choose an option:", options, key=4)
                     st.session_state.DEST_IP = selected_option_dest
 

@@ -18,6 +18,8 @@ FEATURES
 33. All ports info
 34. Location of IP
 35. Tracked by pointed
+36. "All" filter 
+37. Sniff on attacked device and see attack happening
 
 
 

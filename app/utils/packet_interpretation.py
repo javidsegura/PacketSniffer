@@ -14,6 +14,9 @@ def filter_df(src_ip:str, dest_ip:str, port:str):
     try:
         df = pd.read_csv(".././utils/PacketsResultsCSV.csv")
 
+        if dest_ip == "All":
+            dest_ip = df["dest_ip"].unique()
+
         # Filter ip addresses
         df = df[(df["src_ip"] == src_ip) & (df["dest_ip"] == dest_ip)]
         # Filter through packets with content
