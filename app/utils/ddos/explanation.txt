@@ -1,0 +1,16 @@
+HOW IS THE ATTACKER ATTACKING?
+
+The local server receives a lot of HTML packets with GET requests.
+It eventually receives more data than it can handle and crashes.
+
+All these packets are sent from the same IP address. Different users are simple different connections to the server
+(from the same IP address).
+
+Whats with the loading rate?
+
+If too much traffic is coming from the same IP address, it is banned temporarily.
+
+
+DEFENSE STRATEGY:
+1. When a certain treshold of received data per sec analyse ips.
+2. If an IP has sent too much data in a short period of time, it is banned temporarily.

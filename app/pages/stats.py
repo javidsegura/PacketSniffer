@@ -1,6 +1,7 @@
 import streamlit as st
 from utils.plots import time_graph, top_ips_graphs, top_ports_graphs
 import subprocess
+from sidebar import get_sidebar
 
 
 HOST_IP_ADDRESS = ip_address = subprocess.check_output(['ipconfig', 'getifaddr', 'en0']).decode('utf-8').strip() #or 10.192.67.245
@@ -9,7 +10,7 @@ def stats_app():
     st.title("Stats section") 
 
     # DDOS SECTIONS
-    all_traffic, ip_traffic = st.tabs(["All traffic", f"IP-specific traffic ({st.session_state.IP_ADDRESS_POINTED})"])
+    all_traffic, ip_traffic = st.tabs(["All traffic", f"IP-specific traffic ({st.session_state.IP_ADDRESS_POINTED}) {"(" + st.session_state.IP_ADDRESS_POINTED_ALIAS + ")" if st.session_state.IP_ADDRESS_POINTED_ALIAS != 'None' else ''}"])
     if st.session_state.SNIFFER_RUNNING:
             st.write("Packet sniffer is running...")
     else:
@@ -43,7 +44,7 @@ def stats_app():
                     st.warning("No data available. Start the packet sniffer to capture packets.", icon=":material/warning:")
 
     with st.sidebar:
-                st.metric("Local IP address", value=HOST_IP_ADDRESS)
+            get_sidebar()
 
 
 stats_app()

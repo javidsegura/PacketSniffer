@@ -10,8 +10,6 @@ class StreamlitUser(HttpUser):
         self.client.get("/")
 
 
-""" QUESTIONS: what if you send packets that cant be received?"""
-
 # Run with: locust -f stress.py --host=http://localhost:8501  --processes -1 -u 10000000 -r 2
 #locust -f stress.py --master --host=http://localhost:8501 => Master machine
 #locust -f stress.py --worker --master-host=<MASTER_IP> --processes -1 => Other machines can join the test

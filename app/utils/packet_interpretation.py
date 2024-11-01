@@ -14,18 +14,22 @@ def filter_df(src_ip:str, dest_ip:str, port:str):
     try:
         df = pd.read_csv(".././utils/PacketsResultsCSV.csv")
 
+        if src_ip == "All" and dest_ip == "All":
+            return df
         if dest_ip == "All":
-            dest_ip = df["dest_ip"].unique()
-
-        # Filter ip addresses
-        df = df[(df["src_ip"] == src_ip) & (df["dest_ip"] == dest_ip)]
+            df = df[(df["src_ip"] == src_ip)]
+        elif src_ip == "All":
+            df = df[(df["dest_ip"] == dest_ip)]
+        else:
+            df = df[(df["src_ip"] == src_ip) & (df["dest_ip"] == dest_ip)]
+            
         # Filter through packets with content
         df = df[df["payload"].notna()]
 
         if port:
             df = df[df["dest_port"] == int(port)]
-
         return df
+    
     except Exception as e:
         return (f"Error filtering packets: {e}")
 

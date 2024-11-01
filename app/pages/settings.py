@@ -1,5 +1,6 @@
 import streamlit as st
 import subprocess
+from sidebar import get_sidebar
 
 
 HOST_IP_ADDRESS = ip_address = subprocess.check_output(['ipconfig', 'getifaddr', 'en0']).decode('utf-8').strip() #or 10.192.67.245
@@ -15,6 +16,9 @@ def settings_app():
         st.header("Select IP address to track: ")
         customer_ip = st.text_input("Enter IP address to track: ", placeholder="XX.XXX.XX.XXX")
         st.caption(f"Current tracked IP: {st.session_state.IP_ADDRESS_POINTED}")
+        alias = st.text_input("Enter alias for IP: ", placeholder="my_ip_addr")
+        if alias:
+            st.session_state.IP_ADDRESS_POINTED_ALIAS = alias
         ip_confirm_btn = st.button("Confirm")
         if ip_confirm_btn and customer_ip:
                     st.session_state.IP_ADDRESS_POINTED = str(customer_ip)
@@ -28,11 +32,10 @@ def settings_app():
         if port_confirm_btn and customer_port:
                     st.session_state.PORT_TRACKING = int(customer_port)
                     st.success(f"Port updated succesfully to {st.session_state.PORT_TRACKING}")
-
-
     
+    st.divider()
 
     with st.sidebar:
-                st.metric("Local IP address", value=HOST_IP_ADDRESS)
+                get_sidebar()
 
 settings_app()

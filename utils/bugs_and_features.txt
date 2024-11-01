@@ -2,24 +2,18 @@
 
 FEATURES
 
-1. You cant send a packet to a different ip address / port
 2. Add error handling
 7. Categorize source port  
 8. Passing IP user-friendly name ? 
 
-14. Send packets to other IPs :star:
-24. Replace radio by header
-27. Remove sniffert stopped on sucess after a few secs ?
-28. CSV should be emptied after each session
-29. Loading bar somewhere?
-30. Filter through ports
 31. Alias for IP addrs
-32. Sidebar function
 33. All ports info
 34. Location of IP
 35. Tracked by pointed
 36. "All" filter 
 37. Sniff on attacked device and see attack happening
+38. See incoming packets of attack
+39. Sidebar function
 
 
 
