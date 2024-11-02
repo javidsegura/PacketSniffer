@@ -1,8 +1,7 @@
 .
 ├── PacketsResultsCSV.csv
-├── bugs_and_features.txt
+├── bugsAndFeatures.txt
 ├── documentation.bash
-├── requirements.txt
 └── tree.txt
 
-1 directory, 5 files
+1 directory, 4 files

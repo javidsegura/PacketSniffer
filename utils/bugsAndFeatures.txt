@@ -2,21 +2,17 @@
 
 FEATURES
 
-2. Add error handling
 7. Categorize source port  
-8. Passing IP user-friendly name ? 
-
-31. Alias for IP addrs
 33. All ports info
-34. Location of IP
 35. Tracked by pointed
-36. "All" filter 
 37. Sniff on attacked device and see attack happening
 38. See incoming packets of attack
-39. Sidebar function
+40. How do you find out when the memory is about to run out?
+41. Security metric dashboard 
+42. Attack dashboard 
 
-
-
+42. Improve documentation
+43. Implement socket programming in C (with HTTP payload)
 
 PHASE 2:
 0. Socket programming in C

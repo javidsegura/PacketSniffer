@@ -9,7 +9,7 @@ FILE *results_csv = NULL;
 
 void create_csv(){
     
-    results_csv = fopen("../utils/PacketsResultsCSV.csv", "w");
+    results_csv = fopen("../utils/PacketsResultsCSV.csv", "w"); // This better create the root file
 
     if (results_csv == NULL){
         printf("Could not open file succesfully!. Terminating program...");

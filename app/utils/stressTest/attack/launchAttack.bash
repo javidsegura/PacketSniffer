@@ -1,4 +1,3 @@
-cd ..
 
 read -p "Enter the number of users: " users
 read -p "Enter the spawn rate: " spawn_rate
