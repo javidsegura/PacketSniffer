@@ -1,0 +1,2 @@
+packet_id,time_stamp,src_mac,dest_mac,src_ip,dest_ip,protoc,src_port,dest_port,port_categ,packet_categ,payload
+0,2024-11-03 20:26:29,1c:57:dc:65:81:f2,ff:ff:ff:ff:ff:ff,10.192.67.245,10.192.67.255,UDP,57621,57621,N/A,Other UDP Traffic,53 70 6f 74 55 64 70 30 9a 93 69 2a 92 98 2e c9 00 01 00 04 48 95 c2 03 0d 2d fe 93 0b ea 86 d7 fa a4 db 37 73 8a 97 e8 11 e0 ec 40 
