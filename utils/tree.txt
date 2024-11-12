@@ -1,35 +1,7 @@
 .
-├── Makefile
-├── README.MD
-├── app
-│   ├── app.py
-│   └── utils
-│       ├── __pycache__
-│       │   ├── packet_interpretation.cpython-312.pyc
-│       │   ├── packet_sender.cpython-312.pyc
-│       │   ├── plots.cpython-312.pyc
-│       │   ├── translate_hex.cpython-312.pyc
-│       │   └── variables.cpython-312.pyc
-│       ├── configs.YML
-│       ├── ddos.py
-│       ├── imgs
-│       │   └── favicon.png
-│       ├── packet_interpretation.py
-│       ├── packet_sender.py
-│       ├── plots.py
-│       ├── ports_categorization.json
-│       └── translate_hex.py
-├── src
-│   ├── csv_funcs.h
-│   ├── main.c
-│   ├── packet_handler.h
-│   ├── packet_sniffer
-│   └── processing_funcs.h
-└── utils
-    ├── PacketsResultsCSV.csv
-    ├── bugs_and_features.txt
-    ├── documentation.bash
-    ├── requirements.txt
-    └── tree.txt
+├── PacketsResultsCSV.csv
+├── bugsAndFeatures.txt
+├── documentation.bash
+└── tree.txt
 
-7 directories, 26 files
+1 directory, 4 files

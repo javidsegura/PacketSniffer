@@ -1,0 +1,23 @@
+
+
+FEATURES
+
+7. Categorize source port  
+33. All ports info
+35. Tracked by pointed
+37. Sniff on attacked device and see attack happening
+38. See incoming packets of attack
+40. How do you find out when the memory is about to run out?
+41. Security metric dashboard 
+42. Attack dashboard 
+
+42. Improve documentation
+43. Implement socket programming in C (with HTTP payload)
+
+PHASE 2:
+0. Socket programming in C
+1. Filtering db tab
+2. DOS prevention
+
+Phase 3: 
+- Add everything to pages 

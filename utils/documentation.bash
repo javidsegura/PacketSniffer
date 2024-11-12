@@ -1,7 +1,7 @@
 #!/bin/bash
-
+cd ..
 pip3 freeze > requirements.txt
 
-cd ..
 
-tree > utils/tree.txt
+cd utils
+tree > tree.txt
