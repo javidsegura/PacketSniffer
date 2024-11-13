@@ -1,9 +1,11 @@
 """ Finds the sent packet in the CSV file """
 import pandas as pd
 
+PATH = "../../other/PacketsResultsCSV.csv"
+
 def self_sent_filter(src_ip:str, dest_ip:str, dest_port:int):
     try:
-        df = pd.read_csv(".././utils/PacketsResultsCSV.csv")
+        df = pd.read_csv(PATH)
 
         df = df[(df["src_ip"] == src_ip) & (df["dest_ip"] == dest_ip) & (df["dest_port"] == dest_port) & (df["payload"].isna() == False)]
         return df
@@ -12,7 +14,7 @@ def self_sent_filter(src_ip:str, dest_ip:str, dest_port:int):
     
 def filter_df(src_ip:str, dest_ip:str, port:str):
     try:
-        df = pd.read_csv(".././utils/PacketsResultsCSV.csv")
+        df = pd.read_csv(PATH)
 
         if src_ip == "All" and dest_ip == "All":
             return df
