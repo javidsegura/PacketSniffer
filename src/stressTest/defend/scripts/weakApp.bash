@@ -1,5 +1,9 @@
 #!/bin/bash
 
-#docker run -m 256m --memory-swap 256m -p 8501:8501 myapp # weak memory
+#  Make sure docker image is called myapp
 
-docker run -v /var/run/docker.sock:/var/run/docker.sock -p 8501:8501 --name demoweb -it  weakapp_img /bin/bash 
+docker run -m 64m --memory-swap 64m \
+    -v /var/run/docker.sock:/var/run/docker.sock \
+    -p 8501:8501 \
+    --name demoweb \
+    -it myapp /bin/bash 

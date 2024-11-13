@@ -30,7 +30,7 @@ init_session_vars()
 
 def main():
 
-    st.set_page_config(page_title="Package Sniffer",layout="wide", page_icon="/imgs/favicon.png")
+    st.set_page_config(page_title="Package Sniffer",layout="wide", page_icon="./imgs/favicon.png")
     st.title("Packet Sniffer and Analyzer")
     st.caption("A powerful tool for capturing, analyzing, and sending packets over your network")
 
