@@ -21,7 +21,7 @@ def stop_sniffer():
     os.system("pkill -f packet_sniffer")
 
 
-HOST_IP_ADDRESS = str(subprocess.check_output(['ipconfig', 'getifaddr', 'en0']).decode('utf-8').strip()) # Gets local IP addrss
+HOST_IP_ADDRESS = str(subprocess.check_output(['ipconfig', 'getifaddr', 'en0']).decode('utf-8').strip()) # Gets local IP addrs
 PORT = "None" #default values
 
 init_session_vars()
@@ -62,7 +62,7 @@ def main():
         with raw_csv_tab:
             if not st.session_state.SNIFFER_RUNNING and not st.session_state.JUST_STARTED:
                 try:
-                    df = pd.read_csv("../utils/PacketsResultsCSV.csv")
+                    df = pd.read_csv("../../other/PacketsResultsCSV.csv")
                     st.session_state.CAPTURED_PACKETS = len(df)
                     st.session_state.CAPT_PACKETS_DF = df #would this need to be to restarted when rerunning
                     st.dataframe(df)
