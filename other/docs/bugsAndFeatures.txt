@@ -13,6 +13,10 @@ FEATURES
 
 42. Improve documentation
 43. Implement socket programming in C (with HTTP payload)
+44. Make sure you are able to send packets to another machine and be able to read them 
+
+
+
 
 PHASE 2:
 0. Socket programming in C

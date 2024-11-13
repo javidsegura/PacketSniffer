@@ -15,20 +15,20 @@ from utils.session_state_vars import init_session_vars
 
 
 def start_sniffer():
-    os.system("../src/packet_sniffer &")
+    os.system("../packetSniffer/bin/packet_sniffer &")
 
 def stop_sniffer():
     os.system("pkill -f packet_sniffer")
 
 
-HOST_IP_ADDRESS = str(subprocess.check_output(['ipconfig', 'getifaddr', 'en0']).decode('utf-8').strip()) #or 10.192.67.245
+HOST_IP_ADDRESS = str(subprocess.check_output(['ipconfig', 'getifaddr', 'en0']).decode('utf-8').strip()) # Gets local IP addrss
 PORT = "None" #default values
 
 init_session_vars()
 
 def main():
 
-    st.set_page_config(page_title="Package Sniffer",layout="wide", page_icon="utils/imgs/favicon.png")
+    st.set_page_config(page_title="Package Sniffer",layout="wide", page_icon="/imgs/favicon.png")
     st.title("Packet Sniffer and Analyzer")
     st.caption("A powerful tool for capturing, analyzing, and sending packets over your network")
 

@@ -1,3 +1,5 @@
+
+//  Use this just as reference. C cant read JSON files
 {
     "20": "FTP",
     "21": "FTP",
@@ -41,3 +43,4 @@
     "50000": "SAP",
     "49152": "Dynamic/Private"
 }
+

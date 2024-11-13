@@ -6,7 +6,7 @@ import json
 import os
 
 
-PATH = ".././utils/PacketsResultsCSV.csv"
+PATH = "../../other/PacketsResultsCSV.csv"
 
 # Load the port categories from the JSON file
 current_dir = os.path.dirname(os.path.abspath(__file__))
