@@ -1,0 +1,8 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     packet_sender.so
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _send_packet, symObjAddr: 0x0, symBinAddr: 0x3CF8, symSize: 0x1B4 }
+  - { offsetInCU: 0x7B, offset: 0x7B, size: 0x8, addend: 0x0, symName: _send_packet, symObjAddr: 0x0, symBinAddr: 0x3CF8, symSize: 0x1B4 }
+  - { offsetInCU: 0xE9, offset: 0xE9, size: 0x8, addend: 0x0, symName: __OSSwapInt16, symObjAddr: 0x1B4, symBinAddr: 0x3EAC, symSize: 0x24 }
+...

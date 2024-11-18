@@ -55,6 +55,7 @@ except FileNotFoundError:
     st.warning("Logistic regression model not found. Train the model first.")
 
 def start_sniffer():
+    print("Starting packet sniffer...")
     os.system("../packetSniffer/bin/packet_sniffer &")
 
 def stop_sniffer():
