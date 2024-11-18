@@ -13,6 +13,8 @@ from utils.translate_hex import hex_to_string
 from sidebar import get_sidebar
 from utils.session_state_vars import init_session_vars
 
+PATH = "../../other/PacketsResultsCSV.csv"
+
 
 def start_sniffer():
     os.system("../packetSniffer/bin/packet_sniffer &")
@@ -21,14 +23,14 @@ def stop_sniffer():
     os.system("pkill -f packet_sniffer")
 
 
-HOST_IP_ADDRESS = str(subprocess.check_output(['ipconfig', 'getifaddr', 'en0']).decode('utf-8').strip()) # Gets local IP addrss
+HOST_IP_ADDRESS = str(subprocess.check_output(['ipconfig', 'getifaddr', 'en0']).decode('utf-8').strip()) # Gets local IP addrs
 PORT = "None" #default values
 
 init_session_vars()
 
 def main():
 
-    st.set_page_config(page_title="Package Sniffer",layout="wide", page_icon="/imgs/favicon.png")
+    st.set_page_config(page_title="Package Sniffer",layout="wide", page_icon="./imgs/favicon.png")
     st.title("Packet Sniffer and Analyzer")
     st.caption("A powerful tool for capturing, analyzing, and sending packets over your network")
 
@@ -62,7 +64,7 @@ def main():
         with raw_csv_tab:
             if not st.session_state.SNIFFER_RUNNING and not st.session_state.JUST_STARTED:
                 try:
-                    df = pd.read_csv("../utils/PacketsResultsCSV.csv")
+                    df = pd.read_csv(PATH)
                     st.session_state.CAPTURED_PACKETS = len(df)
                     st.session_state.CAPT_PACKETS_DF = df #would this need to be to restarted when rerunning
                     st.dataframe(df)

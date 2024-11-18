@@ -2,7 +2,7 @@
 
 import pandas as pd
 
-PATH = "../../../other/PacketsResultsCSV.csv"
+PATH = "../../other/PacketsResultsCSV.csv"
 
 def hex_to_string(record_id:int) -> str | int:
     try:

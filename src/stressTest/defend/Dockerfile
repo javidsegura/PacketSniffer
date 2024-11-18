@@ -10,7 +10,7 @@ RUN apt-get update && \
 WORKDIR /home
 COPY . /home
 
-RUN gcc -o bin/packet_sniffer src/main.c -lpcap
+RUN gcc -o bin/packet_sniffer2 src/main.c -lpcap
 RUN pip3 install -r other/utils/requirements.txt
 
 # Add Docker socket mount point
