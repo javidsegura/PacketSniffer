@@ -42,23 +42,23 @@ def main():
     with col1:
         btn1, btn2 = st.columns([.5,.5], gap="small")
         with btn1:
-            if st.button("Start Packet Sniffer", type="primary", icon=":material/play_arrow:"):
+            if st.button("Start Packet Sniffer", type="primary"):#, icon=":material/play_arrow:"):
                 if not st.session_state.SNIFFER_RUNNING:
                     st.session_state.SNIFFER_RUNNING = True 
                     st.session_state.JUST_STARTED = False
                     start_sniffer()
-                    message_container.success("Packet sniffer started!", icon=":material/check_circle:")
+                    message_container.success("Packet sniffer started!") #, icon=":material/check_circle:")
                 else:
-                    message_container.warning("Sniffer is already running", icon=":material/warning:")
+                    message_container.warning("Sniffer is already running") #, icon=":material/warning:")
 
         with btn2:
-            if st.button("Stop Packet Sniffer", icon=":material/pause:"):
+            if st.button("Stop Packet Sniffer"): #, icon=":material/pause:"):
                 if st.session_state.SNIFFER_RUNNING:
                     stop_sniffer()
-                    message_container.success("Sniffer has been stopped!", icon=":material/check_circle:")
+                    message_container.success("Sniffer has been stopped!") #, icon=":material/check_circle:")
                     st.session_state.SNIFFER_RUNNING = False
                 else:
-                    message_container.warning("Sniffer is already stopped", icon=":material/warning:")
+                    message_container.warning("Sniffer is already stopped") #, icon=":material/warning:")
 
         raw_csv_tab, filtered_packets, auto_sent_packets = st.tabs(["All packets","Filtered packets","Sent packets"])
         with raw_csv_tab:
@@ -159,7 +159,10 @@ def main():
                     st.warning("ERROR: No packet data input has been provided.")
                 elif st.session_state.SNIFFER_RUNNING:
                     try:
-                        result = send_packet(src_ip=HOST_IP_ADDRESS, dest_ip= st.session_state.IP_ADDRESS_POINTED, dest_port= st.session_state.PORT_TRACKING, payload=packet_data)
+                        result = send_packet(src_ip=HOST_IP_ADDRESS, 
+                                             dest_ip= st.session_state.IP_ADDRESS_POINTED, 
+                                             dest_port= st.session_state.PORT_TRACKING, 
+                                             payload=packet_data)
                         st.success(result)
                     except Exception as e:
                         st.warning(f"An error occured: {e}")

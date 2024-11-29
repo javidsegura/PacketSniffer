@@ -77,7 +77,8 @@ void packet_handler(u_char *user_data, const struct pcap_pkthdr *pkthdr, const u
         
 
         // 5) Categorizing the packet
-        char *category;
+        char *protocol_category;
+        char *port_category;
         if (protocol == IPPROTO_TCP) {
 
             //printf("   Protocol: TCP\n");  
@@ -92,9 +93,10 @@ void packet_handler(u_char *user_data, const struct pcap_pkthdr *pkthdr, const u
             //printf("   Destination Port: %d\n", dest_port);
             add_int_to_csv(src_port);
             add_int_to_csv(dest_port);
-            add_str_to_csv("N/A");
+            port_category = categorize_port(dest_port);
+            add_str_to_csv(port_category);
 
-            category = categorize_packet(src_port, dest_port, IPPROTO_TCP);
+            protocol_category = categorize_packet(src_port, dest_port, IPPROTO_TCP);
 
             payload = packet + sizeof(struct ether_header) + sizeof(struct ip) + sizeof(struct tcphdr);
             payload_len = pkthdr->len - (sizeof(struct ether_header) + sizeof(struct ip) + sizeof(struct tcphdr));
@@ -113,9 +115,10 @@ void packet_handler(u_char *user_data, const struct pcap_pkthdr *pkthdr, const u
             //printf("   Destination Port: %d\n", dest_port);
             add_int_to_csv(src_port);
             add_int_to_csv(dest_port);
-            add_str_to_csv("N/A");
+            port_category = categorize_port(dest_port);
+            add_str_to_csv(port_category);
 
-            category = categorize_packet(src_port, dest_port, IPPROTO_UDP);
+            protocol_category = categorize_packet(src_port, dest_port, IPPROTO_UDP);
 
             payload = packet + sizeof(struct ether_header) + sizeof(struct ip) + sizeof(struct udphdr);
             payload_len = pkthdr->len - (sizeof(struct ether_header) + sizeof(struct ip) + sizeof(struct udphdr));
@@ -124,7 +127,7 @@ void packet_handler(u_char *user_data, const struct pcap_pkthdr *pkthdr, const u
 
         // Print and log the packet category
         //printf("   Packet Category: %s\n", category);
-        add_str_to_csv(category);
+        add_str_to_csv(protocol_category);
 
         // Print the payload (if any)
         if (payload_len > 0) {

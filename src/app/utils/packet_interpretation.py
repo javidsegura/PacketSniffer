@@ -8,6 +8,7 @@ def self_sent_filter(src_ip:str, dest_ip:str, dest_port:int):
         df = pd.read_csv(PATH)
 
         df = df[(df["src_ip"] == src_ip) & (df["dest_ip"] == dest_ip) & (df["dest_port"] == dest_port) & (df["payload"].isna() == False)]
+
         return df
     except Exception as e:
         return (f"Error filtering packets: {e}")
