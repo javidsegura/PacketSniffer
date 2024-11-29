@@ -1,0 +1,19 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     main
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _categorize_packet, symObjAddr: 0x0, symBinAddr: 0x1000027F4, symSize: 0xA24 }
+  - { offsetInCU: 0x4D, offset: 0x4D, size: 0x8, addend: 0x0, symName: _results_csv, symObjAddr: 0x4838, symBinAddr: 0x100008000, symSize: 0x0 }
+  - { offsetInCU: 0x25E, offset: 0x25E, size: 0x8, addend: 0x0, symName: _PACKET_ID, symObjAddr: 0x4840, symBinAddr: 0x100008008, symSize: 0x0 }
+  - { offsetInCU: 0x471, offset: 0x471, size: 0x8, addend: 0x0, symName: _categorize_packet, symObjAddr: 0x0, symBinAddr: 0x1000027F4, symSize: 0xA24 }
+  - { offsetInCU: 0x4B5, offset: 0x4B5, size: 0x8, addend: 0x0, symName: _print_payload, symObjAddr: 0xA24, symBinAddr: 0x100003218, symSize: 0x88 }
+  - { offsetInCU: 0x503, offset: 0x503, size: 0x8, addend: 0x0, symName: _create_csv, symObjAddr: 0xAAC, symBinAddr: 0x1000032A0, symSize: 0x8C }
+  - { offsetInCU: 0x518, offset: 0x518, size: 0x8, addend: 0x0, symName: _new_line_csv, symObjAddr: 0xB38, symBinAddr: 0x10000332C, symSize: 0x58 }
+  - { offsetInCU: 0x52D, offset: 0x52D, size: 0x8, addend: 0x0, symName: _add_str_to_csv, symObjAddr: 0xB90, symBinAddr: 0x100003384, symSize: 0x54 }
+  - { offsetInCU: 0x551, offset: 0x551, size: 0x8, addend: 0x0, symName: _add_int_to_csv, symObjAddr: 0xBE4, symBinAddr: 0x1000033D8, symSize: 0x5C }
+  - { offsetInCU: 0x575, offset: 0x575, size: 0x8, addend: 0x0, symName: _add_payload_csv, symObjAddr: 0xC40, symBinAddr: 0x100003434, symSize: 0x9C }
+  - { offsetInCU: 0x5C3, offset: 0x5C3, size: 0x8, addend: 0x0, symName: _flush_csv, symObjAddr: 0xCDC, symBinAddr: 0x1000034D0, symSize: 0x1C }
+  - { offsetInCU: 0x5D8, offset: 0x5D8, size: 0x8, addend: 0x0, symName: _packet_handler, symObjAddr: 0xCF8, symBinAddr: 0x1000034EC, symSize: 0x364 }
+  - { offsetInCU: 0x75C, offset: 0x75C, size: 0x8, addend: 0x0, symName: __OSSwapInt16, symObjAddr: 0x105C, symBinAddr: 0x100003850, symSize: 0x24 }
+  - { offsetInCU: 0x784, offset: 0x784, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x1080, symBinAddr: 0x100003874, symSize: 0x310 }
+...

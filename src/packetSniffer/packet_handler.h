@@ -21,7 +21,7 @@ int PACKET_ID = 0;
 // Packet handler function
 void packet_handler(u_char *user_data, const struct pcap_pkthdr *pkthdr, const u_char *packet) {
     /*
-    This is the callback function. Invoked every time pcap_loop sniffes a packet based on the configurations
+    This is the callback function. Invoked every time pcap_loop sniffs a packet based on the configurations
     of the session handle. 
     Logs in stdout packets info
 
@@ -53,14 +53,14 @@ void packet_handler(u_char *user_data, const struct pcap_pkthdr *pkthdr, const u
     // 2) Print Ethernet header information
     //printf("Ethernet Header:\n");
     char *src_mac = ether_ntoa((const struct ether_addr *)&eth_header->ether_shost);
-    //printf("   Source MAC: %s\n", src_mac); // either_ntoa transforms bit address into hex
+    //printf("   Source MAC: %s\n", src_mac); // ether_ntoa transforms bit address into hex
     add_str_to_csv(src_mac);
 
     char *dest_mac = ether_ntoa((const struct ether_addr *)&eth_header->ether_dhost);
     //printf("   Destination MAC: %s\n", dest_mac);
     add_str_to_csv(dest_mac);
 
-    // 3) Check if its an IP packet (and not an ARP packet)
+    // 3) Check if it's an IP packet (and not an ARP packet)
     if (ntohs(eth_header->ether_type) == ETHERTYPE_IP) {
         
         ip_header = (struct ip *)(packet + sizeof(struct ether_header));
@@ -74,10 +74,9 @@ void packet_handler(u_char *user_data, const struct pcap_pkthdr *pkthdr, const u
         //printf("   Source IP: %s\n", src_ip);
         //printf("   Destination IP: %s\n", dest_ip);
         int protocol = ip_header->ip_p;
-        
 
         // 5) Categorizing the packet
-        char *category;
+        const char *category;
         if (protocol == IPPROTO_TCP) {
 
             //printf("   Protocol: TCP\n");  
@@ -92,8 +91,8 @@ void packet_handler(u_char *user_data, const struct pcap_pkthdr *pkthdr, const u
             //printf("   Destination Port: %d\n", dest_port);
             add_int_to_csv(src_port);
             add_int_to_csv(dest_port);
-            add_str_to_csv("N/A");
 
+            // Replace "N/A" with the actual category
             category = categorize_packet(src_port, dest_port, IPPROTO_TCP);
 
             payload = packet + sizeof(struct ether_header) + sizeof(struct ip) + sizeof(struct tcphdr);
@@ -113,25 +112,25 @@ void packet_handler(u_char *user_data, const struct pcap_pkthdr *pkthdr, const u
             //printf("   Destination Port: %d\n", dest_port);
             add_int_to_csv(src_port);
             add_int_to_csv(dest_port);
-            add_str_to_csv("N/A");
 
+            // Replace "N/A" with the actual category
             category = categorize_packet(src_port, dest_port, IPPROTO_UDP);
 
             payload = packet + sizeof(struct ether_header) + sizeof(struct ip) + sizeof(struct udphdr);
             payload_len = pkthdr->len - (sizeof(struct ether_header) + sizeof(struct ip) + sizeof(struct udphdr));
         
+        } else {
+            category = "Unknown Protocol";
         }
 
         // Print and log the packet category
         //printf("   Packet Category: %s\n", category);
-        add_str_to_csv(category);
+        add_str_to_csv((char *)category);
 
         // Print the payload (if any)
         if (payload_len > 0) {
             print_payload(payload, payload_len);
-            add_payload_csv(payload,payload_len);
-        } else {
-            //printf("No payload data.\n");
+            add_payload_csv(payload, payload_len);
         }
     } else {
         //printf("Not an IP packet.\n");

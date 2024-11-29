@@ -11,7 +11,7 @@ void create_csv(){
 
     system("pwd");
     
-    results_csv = fopen("../../other/PacketsResultsCSV.csv", "w"); // This better create the root file
+    results_csv = fopen("other/PacketsResultsCSV.csv", "w"); // This better create the root file
 
     if (results_csv == NULL){
         printf("Could not open file succesfully!. Terminating program...");

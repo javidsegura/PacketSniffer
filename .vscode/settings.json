@@ -3,6 +3,7 @@
             "if_ether.h": "c",
             "udp.h": "c",
             "processing_funcs.h": "c",
-            "packet_handler.h": "c"
+            "packet_handler.h": "c",
+            "socket.h": "c"
       }
 }
