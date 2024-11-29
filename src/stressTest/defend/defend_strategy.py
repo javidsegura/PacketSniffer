@@ -3,12 +3,27 @@ import streamlit as st
 import matplotlib.pyplot as plt
 
 def analyze_traffic():
+
+      path = "other/utils/PacketsResultsCSV.csv"
+      df = pd.read_csv(path)
+
+      # Get ip address that has sent the msot
+
+      temp = df["src_ip"].value_counts()
+
+      print(temp)
+
+      
+
+
+
+
       """
       If most percentage of traffic comes from the same IP, increase confidence.
       If most of the traffic from the prior hour has been sent from the same ip address you are under attack
       """
 
-      path = "other/utils/PacketsResultsCSV.csv"
+      """path = "other/utils/PacketsResultsCSV.csv"
       df = pd.read_csv(path)
 
       # Filter through traffic of the last hour
@@ -63,4 +78,4 @@ def analyze_traffic():
             return False, fig, None
       
 
-      # Count how much percentage of that traffic came in the last 10mins
+      # Count how much percentage of that traffic came in the last 10mins"""
