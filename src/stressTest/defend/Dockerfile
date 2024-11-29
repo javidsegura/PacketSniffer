@@ -10,12 +10,9 @@ RUN apt-get update && \
 WORKDIR /home
 COPY . /home
 
-RUN gcc -o bin/packet_sniffer2 src/main.c -lpcap
-RUN pip3 install -r other/utils/requirements.txt
-
-# Add Docker socket mount point
-VOLUME /var/run/docker.sock
-# Add volume for code persistence
-VOLUME /home
+# RUN gcc -o bin/packet_sniffer2 src/main.c -lpcap
+RUN pip3 install -r requirements.txt --no-cache-dir
 
 EXPOSE 8501
+
+CMD ["streamlit", "run", "demoapp.py"]

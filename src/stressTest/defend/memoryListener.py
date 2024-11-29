@@ -1,7 +1,9 @@
-import os
+""" Maybe this in C?"""
+
 import time
 import psutil
 import threading
+import os
 
 def get_container_memory_usage():
     try:
@@ -33,16 +35,18 @@ def get_container_memory_usage():
         percentage = (usage_bytes / limit_bytes) * 100 if limit_bytes != float('inf') else 0
         
         print(f"Memory Usage: {usage_mb:.2f}MB / {limit_mb:.2f}MB ({percentage:.1f}%)")
+        return usage_mb, limit_mb, percentage
     except Exception as e:
         print(f"Error reading container memory: {e}")
 
 def monitor_memory():
     while True:
-        get_container_memory_usage()
+        usage_mb, limit_mb, percentage = get_container_memory_usage()
+        if percentage > 80:
+            print("Memory usage is greater than 80%! U are under attack")
         time.sleep(3)
 
-# Start monitoring in a background thread
-if __name__ == "__main__":
+def startDefense():
     monitor_thread = threading.Thread(target=monitor_memory, daemon=True)
     monitor_thread.start()
     
@@ -52,3 +56,6 @@ if __name__ == "__main__":
             time.sleep(1)
     except KeyboardInterrupt:
         print("\nStopping memory monitor...")
+
+
+

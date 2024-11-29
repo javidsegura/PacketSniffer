@@ -15,14 +15,17 @@ def settings_app():
     with ip_addr_col:
         st.header("Select IP address to track: ")
         customer_ip = st.text_input("Enter IP address to track: ", placeholder="XX.XXX.XX.XXX")
-        st.caption(f"Current tracked IP: {st.session_state.IP_ADDRESS_POINTED}")
-        alias = st.text_input("Enter alias for IP: ", placeholder="my_ip_addr")
-        if alias:
-            st.session_state.IP_ADDRESS_POINTED_ALIAS = alias
-        ip_confirm_btn = st.button("Confirm")
-        if ip_confirm_btn and customer_ip:
-                    st.session_state.IP_ADDRESS_POINTED = str(customer_ip)
-                    st.success(f"IP updated succesfully to {st.session_state.IP_ADDRESS_POINTED}")
+        if customer_ip == HOST_IP_ADDRESS:
+            st.warning("ERROR: Can't track host IP address.")
+        else:
+            st.caption(f"Current tracked IP: {st.session_state.IP_ADDRESS_POINTED}")
+            alias = st.text_input("Enter alias for IP: ", placeholder="my_ip_addr")
+            if alias:
+                st.session_state.IP_ADDRESS_POINTED_ALIAS = alias
+            ip_confirm_btn = st.button("Confirm")
+            if ip_confirm_btn and customer_ip:
+                st.session_state.IP_ADDRESS_POINTED = str(customer_ip)
+                st.success(f"IP updated succesfully to {st.session_state.IP_ADDRESS_POINTED}")
         
     with port_col:
         st.header("Select port to track: ")

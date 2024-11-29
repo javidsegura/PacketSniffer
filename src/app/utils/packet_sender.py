@@ -6,8 +6,6 @@ from scapy.all import *
 
 def send_packet(src_ip: str, dest_ip: str, dest_port: int, payload: str = "hello world"):
     try:
-        dest_port = 8080
-
         # Set up IP and TCP layers
         ip = IP(dst=dest_ip)
         
