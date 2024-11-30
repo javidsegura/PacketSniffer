@@ -40,10 +40,16 @@ def get_container_memory_usage():
         print(f"Error reading container memory: {e}")
 
 def monitor_memory():
+    counter = 0
     while True:
         usage_mb, limit_mb, percentage = get_container_memory_usage()
-        if percentage > 80:
-            print("Memory usage is greater than 80%! U are under attack")
+        if percentage > 75:
+            if counter == 0:
+                print("!> Memory usage is greater than 75%! Analyzing traffic")
+                os.system("curl -X POST http://host.docker.internal:12345/trigger-defense")
+                counter += 1
+            else:
+                print("!> Memory usage is greater than 75%! Already triggered defense")
         time.sleep(3)
 
 def startDefense():
