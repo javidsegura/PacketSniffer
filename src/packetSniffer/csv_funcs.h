@@ -9,7 +9,7 @@ FILE *results_csv = NULL;
 
 void create_csv(){
 
-    system("pwd");
+    system("date");
     
     results_csv = fopen("../../other/PacketsResultsCSV.csv", "w"); // This better create the root file
 

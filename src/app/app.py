@@ -192,11 +192,13 @@ def main():
                 ip_type = "(local)"
             else:
                 ip_type = f"({st.session_state.IP_ADDRESS_POINTED_ALIAS if st.session_state.IP_ADDRESS_POINTED_ALIAS != 'None' else 'other'})"
-            st.metric(label=f"IP Tracking {ip_type}", value=st.session_state.IP_ADDRESS_POINTED) # Tracking IP address
-            st.metric(label="Port Tracking", value=st.session_state.PORT_TRACKING) # Tracking port
+            st.metric(label=f"IP Pointed {ip_type}", value=st.session_state.IP_ADDRESS_POINTED) # Tracking IP address
+            st.metric(label="Port Pointed", value=st.session_state.PORT_TRACKING) # Tracking port
         with col_stats:
             st.metric(label="Packets Captured", value=st.session_state.CAPTURED_PACKETS )
-            st.metric(label="Packets Sent", value=len(self_sent_filter(src_ip=HOST_IP_ADDRESS, dest_ip=st.session_state.IP_ADDRESS_POINTED, dest_port=st.session_state.PORT_TRACKING)))
+            st.metric(label="Packets Sent", value=len(self_sent_filter(src_ip=HOST_IP_ADDRESS, 
+                                                                       dest_ip=st.session_state.IP_ADDRESS_POINTED, 
+                                                                       dest_port=st.session_state.PORT_TRACKING)))
     
     with st.sidebar:
             get_sidebar()

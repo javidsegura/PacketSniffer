@@ -10,7 +10,7 @@ FEATURES
 47. Let the user configure defense strategy
 48. Dont ban ip ,just flag them and stop the attack
 49. Provide info on the interface being used
-
+50. Notification on attack
 
 
 PHASE 2:

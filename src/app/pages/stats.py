@@ -26,7 +26,7 @@ def stats_app():
                     with receivers_col:
                         st.plotly_chart(ips_fig[1], use_container_width=True) 
                 else:
-                    st.warning("No data available. Start the packet sniffer to capture packets.", icon=":material/warning:")
+                    st.warning("No data available. Start the packet sniffer to capture packets.") #, icon=":material/warning:")
                     
         with ip_traffic:
                 if st.session_state.CAPTURED_PACKETS > 0:
@@ -41,7 +41,7 @@ def stats_app():
                         ports_fig = top_ports_graphs(ip_address=st.session_state.IP_ADDRESS_POINTED)
                         st.plotly_chart(ports_fig, use_container_width=True) 
                 else:
-                    st.warning("No data available. Start the packet sniffer to capture packets.", icon=":material/warning:")
+                    st.warning("No data available. Start the packet sniffer to capture packets.")# , icon=":material/warning:")
 
     with st.sidebar:
             get_sidebar()
