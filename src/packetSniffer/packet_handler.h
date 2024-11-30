@@ -45,19 +45,19 @@ void packet_handler(u_char *user_data, const struct pcap_pkthdr *pkthdr, const u
     struct tm *time_info = localtime(&raw_time);
     char timestamp[64];
     strftime(timestamp, sizeof(timestamp), "%Y-%m-%d %H:%M:%S", time_info);
-    //printf("Timestamp: %s\n", timestamp);
+    printf("Timestamp: %s\n", timestamp);
     add_str_to_csv(timestamp);
 
     eth_header = (struct ether_header *) packet;
 
     // 2) Print Ethernet header information
-    //printf("Ethernet Header:\n");
+    printf("Ethernet Header:\n");
     char *src_mac = ether_ntoa((const struct ether_addr *)&eth_header->ether_shost);
-    //printf("   Source MAC: %s\n", src_mac); // either_ntoa transforms bit address into hex
+    printf("   Source MAC: %s\n", src_mac); // either_ntoa transforms bit address into hex
     add_str_to_csv(src_mac);
 
     char *dest_mac = ether_ntoa((const struct ether_addr *)&eth_header->ether_dhost);
-    //printf("   Destination MAC: %s\n", dest_mac);
+    printf("   Destination MAC: %s\n", dest_mac);
     add_str_to_csv(dest_mac);
 
     // 3) Check if its an IP packet (and not an ARP packet)
@@ -70,9 +70,9 @@ void packet_handler(u_char *user_data, const struct pcap_pkthdr *pkthdr, const u
         add_str_to_csv(src_ip);
         char *dest_ip = inet_ntoa(ip_header->ip_dst);
         add_str_to_csv(dest_ip);
-        //printf("\nIP Header:\n");
-        //printf("   Source IP: %s\n", src_ip);
-        //printf("   Destination IP: %s\n", dest_ip);
+        printf("\nIP Header:\n");
+        printf("   Source IP: %s\n", src_ip);
+        printf("   Destination IP: %s\n", dest_ip);
         int protocol = ip_header->ip_p;
         
 
@@ -81,16 +81,16 @@ void packet_handler(u_char *user_data, const struct pcap_pkthdr *pkthdr, const u
         char *port_category;
         if (protocol == IPPROTO_TCP) {
 
-            //printf("   Protocol: TCP\n");  
+            printf("   Protocol: TCP\n");  
             add_str_to_csv("TCP");
             
             tcp_header = (struct tcphdr *)(packet + sizeof(struct ether_header) + sizeof(struct ip));
             
             int src_port = ntohs(tcp_header->th_sport);
             int dest_port = ntohs(tcp_header->th_dport);
-            //printf("\nTCP Header:\n");
-            //printf("   Source Port: %d\n", src_port);
-            //printf("   Destination Port: %d\n", dest_port);
+            printf("\nTCP Header:\n");
+            printf("   Source Port: %d\n", src_port);
+            printf("   Destination Port: %d\n", dest_port);
             add_int_to_csv(src_port);
             add_int_to_csv(dest_port);
             port_category = categorize_port(dest_port);
@@ -103,16 +103,16 @@ void packet_handler(u_char *user_data, const struct pcap_pkthdr *pkthdr, const u
         
         } else if (protocol == IPPROTO_UDP) {
 
-            //printf("   Protocol: UDP\n");  
+            printf("   Protocol: UDP\n");  
             add_str_to_csv("UDP");
         
             udp_header = (struct udphdr *)(packet + sizeof(struct ether_header) + sizeof(struct ip));
             
             int src_port = ntohs(udp_header->uh_sport);
             int dest_port = ntohs(udp_header->uh_dport);
-            //printf("\nUDP Header:\n");
-            //printf("   Source Port: %d\n", src_port);
-            //printf("   Destination Port: %d\n", dest_port);
+            printf("\nUDP Header:\n");
+            printf("   Source Port: %d\n", src_port);
+            printf("   Destination Port: %d\n", dest_port);
             add_int_to_csv(src_port);
             add_int_to_csv(dest_port);
             port_category = categorize_port(dest_port);
@@ -126,7 +126,7 @@ void packet_handler(u_char *user_data, const struct pcap_pkthdr *pkthdr, const u
         }
 
         // Print and log the packet category
-        //printf("   Packet Category: %s\n", category);
+        printf("   Packet Category: %s\n", protocol_category);
         add_str_to_csv(protocol_category);
 
         // Print the payload (if any)
@@ -134,13 +134,13 @@ void packet_handler(u_char *user_data, const struct pcap_pkthdr *pkthdr, const u
             print_payload(payload, payload_len);
             add_payload_csv(payload,payload_len);
         } else {
-            //printf("No payload data.\n");
+            printf("No payload data.\n");
         }
     } else {
-        //printf("Not an IP packet.\n");
+        printf("Not an IP packet.\n");
         add_str_to_csv("Not an IP packet");
     }
-    //printf("\n----------------------------------------------\n");
+    printf("\n----------------------------------------------\n");
     new_line_csv();
     flush_csv();
 }

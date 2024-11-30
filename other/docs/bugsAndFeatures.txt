@@ -7,6 +7,10 @@ FEATURES
 44. Make sure you are able to send packets to another machine and be able to read them 
 45. Say if network is switched or not
 46. Show results of prevented attack
+47. Let the user configure defense strategy
+48. Dont ban ip ,just flag them and stop the attack
+49. Provide info on the interface being used
+
 
 
 PHASE 2:

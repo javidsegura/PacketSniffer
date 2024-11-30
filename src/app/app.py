@@ -17,7 +17,7 @@ PATH = "../../other/PacketsResultsCSV.csv"
 
 
 def start_sniffer():
-    os.system("../packetSniffer/bin/packet_sniffer &")
+    os.system("../packetSniffer/bin/packet_sniffer > ../packetSniffer/log/logger.txt &")
 
 def stop_sniffer():
     os.system("pkill -f packet_sniffer")
@@ -159,8 +159,7 @@ def main():
                     st.warning("ERROR: No packet data input has been provided.")
                 elif st.session_state.SNIFFER_RUNNING:
                     try:
-                        result = send_packet(src_ip=HOST_IP_ADDRESS, 
-                                             dest_ip= st.session_state.IP_ADDRESS_POINTED, 
+                        result = send_packet(dest_ip= st.session_state.IP_ADDRESS_POINTED, 
                                              dest_port= st.session_state.PORT_TRACKING, 
                                              payload=packet_data)
                         st.success(result)
