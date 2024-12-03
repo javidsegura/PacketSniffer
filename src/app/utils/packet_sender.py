@@ -1,4 +1,4 @@
-""" Sends packet to a target IP and port"""
+""" THESE MODULES BELONGS TO THE ORIGINAL DEMO. Its deprecated."""
 
 """ These needs to be implemeneted in C => refer to: https://www.geeksforgeeks.org/socket-programming-cc/ """
 

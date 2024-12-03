@@ -1,6 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#ifdef _WIN32
+#include <winsock2.h>
+#include <ws2tcpip.h>
+#pragma comment(lib, "ws2_32.lib")
+#else
 #include <unistd.h>
 #include <sys/socket.h>
 #include <netinet/in.h>
@@ -8,6 +13,7 @@
 #include <errno.h>
 #include <netinet/ip.h>
 #include <netinet/udp.h>
+#endif
 
 int send_packet(const char *dest_ip, int dest_port, const char *payload) {
     int sock = socket(AF_INET, SOCK_DGRAM, IPPROTO_UDP);
@@ -61,7 +67,7 @@ int send_packet(const char *dest_ip, int dest_port, const char *payload) {
 
 int main() {
     // Remove root check as it's not needed for UDP sockets
-    send_packet("10.192.67.245", 8080, "hello world");
+    send_packet("10.93.189.226", 8080, "hello world");
     return 0;
 }
 

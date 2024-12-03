@@ -1,6 +1,5 @@
-/Users/javierdominguezsegura/Programming/College/Sophomore/Cprogramming/Sophomore/Final Project/PacketSniffer/src/app
+Mon Dec  2 11:41:59 CET 2024
 Available devices:
-Device: ap1
 Device: en0
 Device: awdl0
 Device: llw0
@@ -17,2362 +16,687 @@ Device: en4
 Device: en1
 Device: en2
 Device: bridge0
+Device: ap1
 Device: gif0
 Device: stf0
 Starting to capture packets...
-Timestamp: 2024-12-01 19:02:12
+Timestamp: 2024-12-02 11:41:59
 Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
+   Source MAC: 94:8e:d3:ba:8:35
+   Destination MAC: 1c:57:dc:65:81:f2
 
 IP Header:
-   Source IP: 35.160.35.184
-   Destination IP: 35.160.35.184
+   Source IP: 10.22.135.115
+   Destination IP: 10.22.135.115
    Protocol: TCP
 
 TCP Header:
-   Source Port: 49307
+   Source Port: 443
+   Destination Port: 58588
+   Packet Category: Other TCP Traffic
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:41:59
+Ethernet Header:
+   Source MAC: 1c:57:dc:65:81:f2
+   Destination MAC: 0:0:a:a:a:a
+
+IP Header:
+   Source IP: 52.12.47.65
+   Destination IP: 52.12.47.65
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 58588
    Destination Port: 443
    Packet Category: Web Traffic (HTTP/HTTPS)
 
 ----------------------------------------------
-Timestamp: 2024-12-01 19:02:12
+Timestamp: 2024-12-02 11:41:59
 Ethernet Header:
    Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
+   Destination MAC: 0:0:a:a:a:a
 
 IP Header:
-   Source IP: 35.160.35.184
-   Destination IP: 35.160.35.184
+   Source IP: 52.12.47.65
+   Destination IP: 52.12.47.65
    Protocol: TCP
 
 TCP Header:
-   Source Port: 49307
+   Source Port: 58590
    Destination Port: 443
    Packet Category: Web Traffic (HTTP/HTTPS)
 
 ----------------------------------------------
-Timestamp: 2024-12-01 19:02:12
+Timestamp: 2024-12-02 11:41:59
 Ethernet Header:
    Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
+   Destination MAC: 0:0:a:a:a:a
 
 IP Header:
-   Source IP: 35.160.35.184
-   Destination IP: 35.160.35.184
+   Source IP: 52.12.47.65
+   Destination IP: 52.12.47.65
    Protocol: TCP
 
 TCP Header:
-   Source Port: 49307
+   Source Port: 58588
    Destination Port: 443
    Packet Category: Web Traffic (HTTP/HTTPS)
 
 ----------------------------------------------
-Timestamp: 2024-12-01 19:02:12
+Timestamp: 2024-12-02 11:41:59
 Ethernet Header:
    Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
+   Destination MAC: 0:0:a:a:a:a
 
 IP Header:
-   Source IP: 35.160.35.184
-   Destination IP: 35.160.35.184
+   Source IP: 52.12.47.65
+   Destination IP: 52.12.47.65
    Protocol: TCP
 
 TCP Header:
-   Source Port: 49307
+   Source Port: 58591
    Destination Port: 443
    Packet Category: Web Traffic (HTTP/HTTPS)
 
 ----------------------------------------------
-Timestamp: 2024-12-01 19:02:12
+Timestamp: 2024-12-02 11:41:59
 Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
+   Source MAC: 94:8e:d3:ba:8:35
+   Destination MAC: 1c:57:dc:65:81:f2
 
 IP Header:
-   Source IP: 152.199.19.160
-   Destination IP: 152.199.19.160
+   Source IP: 10.22.135.115
+   Destination IP: 10.22.135.115
    Protocol: TCP
 
 TCP Header:
-   Source Port: 49237
+   Source Port: 443
+   Destination Port: 58590
+   Packet Category: Other TCP Traffic
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:41:59
+Ethernet Header:
+   Source MAC: 1c:57:dc:65:81:f2
+   Destination MAC: 0:0:a:a:a:a
+
+IP Header:
+   Source IP: 52.12.47.65
+   Destination IP: 52.12.47.65
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 58590
    Destination Port: 443
    Packet Category: Web Traffic (HTTP/HTTPS)
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:41:59
+Ethernet Header:
+   Source MAC: 1c:57:dc:65:81:f2
+   Destination MAC: 0:0:a:a:a:a
+
+IP Header:
+   Source IP: 52.12.47.65
+   Destination IP: 52.12.47.65
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 58590
+   Destination Port: 443
+   Packet Category: Web Traffic (HTTP/HTTPS)
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:41:59
+Ethernet Header:
+   Source MAC: 94:8e:d3:ba:8:35
+   Destination MAC: 1c:57:dc:65:81:f2
+
+IP Header:
+   Source IP: 10.22.135.115
+   Destination IP: 10.22.135.115
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 443
+   Destination Port: 58588
+   Packet Category: Other TCP Traffic
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:41:59
+Ethernet Header:
+   Source MAC: 94:8e:d3:ba:8:35
+   Destination MAC: 1c:57:dc:65:81:f2
+
+IP Header:
+   Source IP: 10.22.135.115
+   Destination IP: 10.22.135.115
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 443
+   Destination Port: 58588
+   Packet Category: Other TCP Traffic
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:41:59
+Ethernet Header:
+   Source MAC: 94:8e:d3:ba:8:35
+   Destination MAC: 1c:57:dc:65:81:f2
+
+IP Header:
+   Source IP: 10.22.135.115
+   Destination IP: 10.22.135.115
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 443
+   Destination Port: 58588
+   Packet Category: Other TCP Traffic
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:41:59
+Ethernet Header:
+   Source MAC: 1c:57:dc:65:81:f2
+   Destination MAC: 0:0:a:a:a:a
+
+IP Header:
+   Source IP: 52.12.47.65
+   Destination IP: 52.12.47.65
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 58588
+   Destination Port: 443
+   Packet Category: Web Traffic (HTTP/HTTPS)
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:41:59
+Ethernet Header:
+   Source MAC: 94:8e:d3:ba:8:35
+   Destination MAC: 1c:57:dc:65:81:f2
+
+IP Header:
+   Source IP: 10.22.135.115
+   Destination IP: 10.22.135.115
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 443
+   Destination Port: 58588
+   Packet Category: Other TCP Traffic
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:41:59
+Ethernet Header:
+   Source MAC: 94:8e:d3:ba:8:35
+   Destination MAC: 1c:57:dc:65:81:f2
+
+IP Header:
+   Source IP: 10.22.135.115
+   Destination IP: 10.22.135.115
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 443
+   Destination Port: 58588
+   Packet Category: Other TCP Traffic
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:41:59
+Ethernet Header:
+   Source MAC: 1c:57:dc:65:81:f2
+   Destination MAC: 0:0:a:a:a:a
+
+IP Header:
+   Source IP: 52.12.47.65
+   Destination IP: 52.12.47.65
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 58588
+   Destination Port: 443
+   Packet Category: Web Traffic (HTTP/HTTPS)
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:41:59
+Ethernet Header:
+   Source MAC: 1c:57:dc:65:81:f2
+   Destination MAC: 0:0:a:a:a:a
+
+IP Header:
+   Source IP: 52.12.47.65
+   Destination IP: 52.12.47.65
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 58588
+   Destination Port: 443
+   Packet Category: Web Traffic (HTTP/HTTPS)
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:41:59
+Ethernet Header:
+   Source MAC: 1c:57:dc:65:81:f2
+   Destination MAC: 0:0:a:a:a:a
+
+IP Header:
+   Source IP: 52.12.47.65
+   Destination IP: 52.12.47.65
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 58588
+   Destination Port: 443
+   Packet Category: Web Traffic (HTTP/HTTPS)
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:41:59
+Ethernet Header:
+   Source MAC: 8e:c7:ee:8:a9:fe
+   Destination MAC: 1:0:5e:7f:ff:fa
+
+IP Header:
+   Source IP: 239.255.255.250
+   Destination IP: 239.255.255.250
+   Protocol: UDP
+
+UDP Header:
+   Source Port: 53994
+   Destination Port: 1900
+   Packet Category: Other UDP Traffic
 No payload data.
 
 ----------------------------------------------
-Timestamp: 2024-12-01 19:02:12
+Timestamp: 2024-12-02 11:41:59
 Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
+   Source MAC: 8e:c7:ee:8:a9:fe
+   Destination MAC: 1:0:5e:7f:ff:fa
 
 IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49307
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:12
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49307
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:12
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 35.160.35.184
-   Destination IP: 35.160.35.184
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49307
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:12
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49237
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:12
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49307
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:12
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49307
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:12
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49307
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:12
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49307
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:12
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 35.160.35.184
-   Destination IP: 35.160.35.184
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49307
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:13
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 10.31.6.11
-   Destination IP: 10.31.6.11
+   Source IP: 239.255.255.250
+   Destination IP: 239.255.255.250
    Protocol: UDP
 
 UDP Header:
-   Source Port: 65467
-   Destination Port: 53
-   Packet Category: DNS Query
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:13
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 10.31.6.11
-   Destination IP: 10.31.6.11
-   Protocol: UDP
-
-UDP Header:
-   Source Port: 61878
-   Destination Port: 53
-   Packet Category: DNS Query
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:13
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 10.31.6.11
-   Destination IP: 10.31.6.11
-   Protocol: UDP
-
-UDP Header:
-   Source Port: 50212
-   Destination Port: 53
-   Packet Category: DNS Query
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:13
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 10.31.6.11
-   Destination IP: 10.31.6.11
-   Protocol: UDP
-
-UDP Header:
-   Source Port: 63900
-   Destination Port: 53
-   Packet Category: DNS Query
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:13
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 17.253.113.202
-   Destination IP: 17.253.113.202
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49319
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:13
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: UDP
-
-UDP Header:
-   Source Port: 53
-   Destination Port: 63900
+   Source Port: 55751
+   Destination Port: 1900
    Packet Category: Other UDP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:13
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: UDP
-
-UDP Header:
-   Source Port: 53
-   Destination Port: 50212
-   Packet Category: Other UDP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:13
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 10.31.6.11
-   Destination IP: 10.31.6.11
-   Protocol: UDP
-
-UDP Header:
-   Source Port: 63697
-   Destination Port: 53
-   Packet Category: DNS Query
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:13
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: UDP
-
-UDP Header:
-   Source Port: 53
-   Destination Port: 63697
-   Packet Category: Other UDP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:13
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 17.253.109.203
-   Destination IP: 17.253.109.203
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49320
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:13
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49319
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:13
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 17.253.113.202
-   Destination IP: 17.253.113.202
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49319
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:13
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 17.253.113.202
-   Destination IP: 17.253.113.202
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49319
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:13
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: UDP
-
-UDP Header:
-   Source Port: 53
-   Destination Port: 61878
-   Packet Category: Other UDP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:13
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49320
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:13
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 17.253.109.203
-   Destination IP: 17.253.109.203
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49320
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:13
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 17.253.109.203
-   Destination IP: 17.253.109.203
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49320
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:13
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: UDP
-
-UDP Header:
-   Source Port: 53
-   Destination Port: 65467
-   Packet Category: Other UDP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:13
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49319
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:13
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49319
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:13
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49319
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:13
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49319
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:13
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 17.253.113.202
-   Destination IP: 17.253.113.202
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49319
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:13
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 17.253.113.202
-   Destination IP: 17.253.113.202
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49319
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:13
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 17.253.109.203
-   Destination IP: 17.253.109.203
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49320
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:13
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49320
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:13
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49320
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:13
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49320
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:13
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49319
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:13
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49319
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:13
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 17.253.109.203
-   Destination IP: 17.253.109.203
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49320
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:13
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 17.253.113.202
-   Destination IP: 17.253.113.202
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49319
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:13
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 17.253.113.202
-   Destination IP: 17.253.113.202
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49319
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:13
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49320
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:13
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49319
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:13
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 17.253.113.202
-   Destination IP: 17.253.113.202
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49319
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:13
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49320
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:13
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 17.253.109.203
-   Destination IP: 17.253.109.203
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49320
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:13
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49319
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:13
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49319
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:13
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49319
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:13
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49319
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:13
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 17.253.113.202
-   Destination IP: 17.253.113.202
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49319
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:13
-Ethernet Header:
-   Source MAC: d4:57:63:c4:21:96
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 60150
-   Destination Port: 7000
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:13
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: d4:57:63:c4:21:96
-
-IP Header:
-   Source IP: 10.93.109.194
-   Destination IP: 10.93.109.194
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 7000
-   Destination Port: 60150
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:13
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 17.253.109.203
-   Destination IP: 17.253.109.203
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49320
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:13
-Ethernet Header:
-   Source MAC: d4:57:63:c4:21:96
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 60150
-   Destination Port: 7000
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:13
-Ethernet Header:
-   Source MAC: d4:57:63:c4:21:96
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 60150
-   Destination Port: 7000
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:13
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49319
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:13
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49319
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:13
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49319
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:13
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49320
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:13
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49320
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:13
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49319
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:13
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: d4:57:63:c4:21:96
-
-IP Header:
-   Source IP: 10.93.109.194
-   Destination IP: 10.93.109.194
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 7000
-   Destination Port: 60150
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:13
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 17.253.109.203
-   Destination IP: 17.253.109.203
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49320
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:13
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 17.253.113.202
-   Destination IP: 17.253.113.202
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49319
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:13
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 17.253.113.202
-   Destination IP: 17.253.113.202
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49319
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:13
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: d4:57:63:c4:21:96
-
-IP Header:
-   Source IP: 10.93.109.194
-   Destination IP: 10.93.109.194
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 7000
-   Destination Port: 60150
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:13
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: d4:57:63:c4:21:96
-
-IP Header:
-   Source IP: 10.93.109.194
-   Destination IP: 10.93.109.194
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 7000
-   Destination Port: 60150
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:13
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49320
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:13
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49319
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:13
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 17.253.109.203
-   Destination IP: 17.253.109.203
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49320
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:13
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 17.253.113.202
-   Destination IP: 17.253.113.202
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49319
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:13
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49319
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:13
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49319
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:13
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 17.253.113.202
-   Destination IP: 17.253.113.202
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49319
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49320
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
-Ethernet Header:
-   Source MAC: d4:57:63:c4:21:96
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 60150
-   Destination Port: 7000
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
-Ethernet Header:
-   Source MAC: d4:57:63:c4:21:96
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 60150
-   Destination Port: 7000
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49319
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49319
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49319
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49319
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49320
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 17.253.109.203
-   Destination IP: 17.253.109.203
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49320
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: d4:57:63:c4:21:96
-
-IP Header:
-   Source IP: 10.93.109.194
-   Destination IP: 10.93.109.194
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 7000
-   Destination Port: 60150
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 17.253.113.202
-   Destination IP: 17.253.113.202
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49319
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: d4:57:63:c4:21:96
-
-IP Header:
-   Source IP: 10.93.109.194
-   Destination IP: 10.93.109.194
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 7000
-   Destination Port: 60150
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49319
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 17.253.113.202
-   Destination IP: 17.253.113.202
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49319
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49319
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 17.253.113.202
-   Destination IP: 17.253.113.202
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49319
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49319
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 17.253.113.202
-   Destination IP: 17.253.113.202
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49319
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49319
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49319
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49319
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 17.253.113.202
-   Destination IP: 17.253.113.202
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49319
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49319
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 17.253.113.202
-   Destination IP: 17.253.113.202
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49319
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
-Ethernet Header:
-   Source MAC: 1c:57:dc:3d:e1:4c
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: UDP
-
-UDP Header:
-   Source Port: 55662
-   Destination Port: 8080
-   Packet Category: Other UDP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49319
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49319
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 17.253.113.202
-   Destination IP: 17.253.113.202
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49319
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 1c:57:dc:3d:e1:4c
-
-IP Header:
-   Source IP: 10.93.109.226
-   Destination IP: 10.93.109.226
-   Packet Category: Web Traffic (HTTP/HTTPS)
 No payload data.
 
 ----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
+Timestamp: 2024-12-02 11:41:59
 Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
+   Source MAC: 94:8e:d3:ba:8:35
    Destination MAC: 1c:57:dc:65:81:f2
 
 IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
+   Source IP: 10.22.135.115
+   Destination IP: 10.22.135.115
    Protocol: TCP
 
 TCP Header:
    Source Port: 443
-   Destination Port: 49319
+   Destination Port: 58591
    Packet Category: Other TCP Traffic
 
 ----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
+Timestamp: 2024-12-02 11:41:59
 Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
+   Source MAC: 94:8e:d3:ba:8:35
    Destination MAC: 1c:57:dc:65:81:f2
 
 IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
+   Source IP: 10.22.135.115
+   Destination IP: 10.22.135.115
    Protocol: TCP
 
 TCP Header:
    Source Port: 443
-   Destination Port: 49319
+   Destination Port: 58590
    Packet Category: Other TCP Traffic
 
 ----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
+Timestamp: 2024-12-02 11:41:59
 Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
+   Source MAC: 94:8e:d3:ba:8:35
    Destination MAC: 1c:57:dc:65:81:f2
 
 IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
+   Source IP: 10.22.135.115
+   Destination IP: 10.22.135.115
    Protocol: TCP
 
 TCP Header:
    Source Port: 443
-   Destination Port: 49319
+   Destination Port: 58590
    Packet Category: Other TCP Traffic
 
 ----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
+Timestamp: 2024-12-02 11:41:59
 Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
+   Source MAC: 94:8e:d3:ba:8:35
    Destination MAC: 1c:57:dc:65:81:f2
 
 IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
+   Source IP: 10.22.135.115
+   Destination IP: 10.22.135.115
    Protocol: TCP
 
 TCP Header:
    Source Port: 443
-   Destination Port: 49319
+   Destination Port: 58590
    Packet Category: Other TCP Traffic
 
 ----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
+Timestamp: 2024-12-02 11:41:59
 Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
+   Source MAC: 94:8e:d3:ba:8:35
    Destination MAC: 1c:57:dc:65:81:f2
 
 IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
+   Source IP: 10.22.135.115
+   Destination IP: 10.22.135.115
    Protocol: TCP
 
 TCP Header:
    Source Port: 443
-   Destination Port: 49319
+   Destination Port: 58590
    Packet Category: Other TCP Traffic
 
 ----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
+Timestamp: 2024-12-02 11:41:59
 Ethernet Header:
-   Source MAC: d4:57:63:c4:21:96
+   Source MAC: 94:8e:d3:ba:8:35
    Destination MAC: 1c:57:dc:65:81:f2
 
 IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 60150
-   Destination Port: 7000
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
+   Source IP: 10.22.135.115
+   Destination IP: 10.22.135.115
    Protocol: TCP
 
 TCP Header:
    Source Port: 443
-   Destination Port: 49319
+   Destination Port: 58590
    Packet Category: Other TCP Traffic
 
 ----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
+Timestamp: 2024-12-02 11:41:59
+Ethernet Header:
+   Source MAC: 94:8e:d3:ba:8:35
+   Destination MAC: 1c:57:dc:65:81:f2
+
+IP Header:
+   Source IP: 10.22.135.115
+   Destination IP: 10.22.135.115
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 443
+   Destination Port: 58588
+   Packet Category: Other TCP Traffic
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:41:59
+Ethernet Header:
+   Source MAC: 94:8e:d3:ba:8:35
+   Destination MAC: 1c:57:dc:65:81:f2
+
+IP Header:
+   Source IP: 10.22.135.115
+   Destination IP: 10.22.135.115
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 443
+   Destination Port: 58588
+   Packet Category: Other TCP Traffic
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:41:59
+Ethernet Header:
+   Source MAC: 94:8e:d3:ba:8:35
+   Destination MAC: 1c:57:dc:65:81:f2
+
+IP Header:
+   Source IP: 10.22.135.115
+   Destination IP: 10.22.135.115
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 443
+   Destination Port: 58588
+   Packet Category: Other TCP Traffic
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:41:59
 Ethernet Header:
    Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
+   Destination MAC: 0:0:a:a:a:a
 
 IP Header:
-   Source IP: 17.253.113.202
-   Destination IP: 17.253.113.202
+   Source IP: 52.12.47.65
+   Destination IP: 52.12.47.65
    Protocol: TCP
 
 TCP Header:
-   Source Port: 49319
+   Source Port: 58591
    Destination Port: 443
    Packet Category: Web Traffic (HTTP/HTTPS)
 
 ----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
+Timestamp: 2024-12-02 11:41:59
 Ethernet Header:
    Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
+   Destination MAC: 0:0:a:a:a:a
 
 IP Header:
-   Source IP: 17.253.113.202
-   Destination IP: 17.253.113.202
+   Source IP: 52.12.47.65
+   Destination IP: 52.12.47.65
    Protocol: TCP
 
 TCP Header:
-   Source Port: 49319
+   Source Port: 58590
    Destination Port: 443
    Packet Category: Web Traffic (HTTP/HTTPS)
 
 ----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49319
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49319
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
+Timestamp: 2024-12-02 11:41:59
 Ethernet Header:
    Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
+   Destination MAC: 0:0:a:a:a:a
 
 IP Header:
-   Source IP: 17.253.113.202
-   Destination IP: 17.253.113.202
+   Source IP: 52.12.47.65
+   Destination IP: 52.12.47.65
    Protocol: TCP
 
 TCP Header:
-   Source Port: 49319
+   Source Port: 58590
    Destination Port: 443
    Packet Category: Web Traffic (HTTP/HTTPS)
 
 ----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49319
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49319
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49319
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49319
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49319
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49319
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
+Timestamp: 2024-12-02 11:41:59
 Ethernet Header:
    Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
+   Destination MAC: 0:0:a:a:a:a
 
 IP Header:
-   Source IP: 17.253.113.202
-   Destination IP: 17.253.113.202
+   Source IP: 52.12.47.65
+   Destination IP: 52.12.47.65
    Protocol: TCP
 
 TCP Header:
-   Source Port: 49319
+   Source Port: 58590
    Destination Port: 443
    Packet Category: Web Traffic (HTTP/HTTPS)
 
 ----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49319
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
+Timestamp: 2024-12-02 11:41:59
 Ethernet Header:
    Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
+   Destination MAC: 0:0:a:a:a:a
 
 IP Header:
-   Source IP: 17.253.113.202
-   Destination IP: 17.253.113.202
+   Source IP: 52.12.47.65
+   Destination IP: 52.12.47.65
    Protocol: TCP
 
 TCP Header:
-   Source Port: 49319
+   Source Port: 58588
    Destination Port: 443
    Packet Category: Web Traffic (HTTP/HTTPS)
 
 ----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
+Timestamp: 2024-12-02 11:41:59
 Ethernet Header:
    Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
+   Destination MAC: 0:0:a:a:a:a
 
 IP Header:
-   Source IP: 34.199.57.147
-   Destination IP: 34.199.57.147
+   Source IP: 52.12.47.65
+   Destination IP: 52.12.47.65
    Protocol: TCP
 
 TCP Header:
-   Source Port: 49232
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-No payload data.
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49319
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49319
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49319
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49319
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49319
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49319
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49319
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49319
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49319
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49319
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49319
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 17.253.113.202
-   Destination IP: 17.253.113.202
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49319
+   Source Port: 58590
    Destination Port: 443
    Packet Category: Web Traffic (HTTP/HTTPS)
 
 ----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49319
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
+Timestamp: 2024-12-02 11:41:59
 Ethernet Header:
    Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
+   Destination MAC: 0:0:a:a:a:a
 
 IP Header:
-   Source IP: 17.253.113.202
-   Destination IP: 17.253.113.202
+   Source IP: 52.12.47.65
+   Destination IP: 52.12.47.65
    Protocol: TCP
 
 TCP Header:
-   Source Port: 49319
+   Source Port: 58590
    Destination Port: 443
    Packet Category: Web Traffic (HTTP/HTTPS)
 
 ----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
+Timestamp: 2024-12-02 11:41:59
 Ethernet Header:
    Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
+   Destination MAC: 0:0:a:a:a:a
 
 IP Header:
-   Source IP: 17.188.185.136
-   Destination IP: 17.188.185.136
+   Source IP: 52.12.47.65
+   Destination IP: 52.12.47.65
    Protocol: TCP
 
 TCP Header:
-   Source Port: 49182
-   Destination Port: 5223
-   Packet Category: Other TCP Traffic
+   Source Port: 58591
+   Destination Port: 443
+   Packet Category: Web Traffic (HTTP/HTTPS)
 
 ----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
+Timestamp: 2024-12-02 11:41:59
 Ethernet Header:
    Source MAC: 1c:57:dc:65:81:f2
+   Destination MAC: 0:0:a:a:a:a
+
+IP Header:
+   Source IP: 52.12.47.65
+   Destination IP: 52.12.47.65
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 58588
+   Destination Port: 443
+   Packet Category: Web Traffic (HTTP/HTTPS)
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:41:59
+Ethernet Header:
+   Source MAC: 1c:57:dc:65:81:f2
+   Destination MAC: 0:0:a:a:a:a
+
+IP Header:
+   Source IP: 52.12.47.65
+   Destination IP: 52.12.47.65
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 58588
+   Destination Port: 443
+   Packet Category: Web Traffic (HTTP/HTTPS)
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:41:59
+Ethernet Header:
+   Source MAC: 1c:57:dc:65:81:f2
+   Destination MAC: 0:0:a:a:a:a
+
+IP Header:
+   Source IP: 52.12.47.65
+   Destination IP: 52.12.47.65
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 58588
+   Destination Port: 443
+   Packet Category: Web Traffic (HTTP/HTTPS)
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:41:59
+Ethernet Header:
+   Source MAC: 1c:57:dc:65:81:f2
+   Destination MAC: 0:0:a:a:a:a
+
+IP Header:
+   Source IP: 52.12.47.65
+   Destination IP: 52.12.47.65
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 58588
+   Destination Port: 443
+   Packet Category: Web Traffic (HTTP/HTTPS)
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:41:59
+Ethernet Header:
+   Source MAC: 1c:57:dc:65:81:f2
+   Destination MAC: 0:0:a:a:a:a
+
+IP Header:
+   Source IP: 52.12.47.65
+   Destination IP: 52.12.47.65
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 58588
+   Destination Port: 443
+   Packet Category: Web Traffic (HTTP/HTTPS)
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:41:59
+Ethernet Header:
+   Source MAC: 1c:57:dc:65:81:f2
+   Destination MAC: 0:0:a:a:a:a
+
+IP Header:
+   Source IP: 52.12.47.65
+   Destination IP: 52.12.47.65
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 58588
+   Destination Port: 443
+   Packet Category: Web Traffic (HTTP/HTTPS)
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:00
+Ethernet Header:
+   Source MAC: 84:94:37:d0:fd:f9
    Destination MAC: ff:ff:ff:ff:ff:ff
 
 IP Header:
@@ -2386,2003 +710,426 @@ UDP Header:
    Packet Category: Other UDP Traffic
 
 ----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
+Timestamp: 2024-12-02 11:42:00
 Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
+   Source MAC: 94:8e:d3:ba:8:35
+   Destination MAC: 1c:57:dc:65:81:f2
 
 IP Header:
-   Source IP: 172.224.131.70
-   Destination IP: 172.224.131.70
+   Source IP: 10.22.135.115
+   Destination IP: 10.22.135.115
    Protocol: TCP
 
 TCP Header:
-   Source Port: 49171
+   Source Port: 443
+   Destination Port: 58590
+   Packet Category: Other TCP Traffic
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:00
+Ethernet Header:
+   Source MAC: 94:8e:d3:ba:8:35
+   Destination MAC: 1c:57:dc:65:81:f2
+
+IP Header:
+   Source IP: 10.22.135.115
+   Destination IP: 10.22.135.115
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 443
+   Destination Port: 58590
+   Packet Category: Other TCP Traffic
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:00
+Ethernet Header:
+   Source MAC: 94:8e:d3:ba:8:35
+   Destination MAC: 1c:57:dc:65:81:f2
+
+IP Header:
+   Source IP: 10.22.135.115
+   Destination IP: 10.22.135.115
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 443
+   Destination Port: 58590
+   Packet Category: Other TCP Traffic
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:00
+Ethernet Header:
+   Source MAC: 1c:57:dc:65:81:f2
+   Destination MAC: 0:0:a:a:a:a
+
+IP Header:
+   Source IP: 52.12.47.65
+   Destination IP: 52.12.47.65
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 58590
+   Destination Port: 443
+   Packet Category: Web Traffic (HTTP/HTTPS)
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:00
+Ethernet Header:
+   Source MAC: 1c:57:dc:65:81:f2
+   Destination MAC: 0:0:a:a:a:a
+
+IP Header:
+   Source IP: 52.12.47.65
+   Destination IP: 52.12.47.65
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 58590
+   Destination Port: 443
+   Packet Category: Web Traffic (HTTP/HTTPS)
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:00
+Ethernet Header:
+   Source MAC: 1c:57:dc:65:81:f2
+   Destination MAC: 0:0:a:a:a:a
+
+IP Header:
+   Source IP: 52.12.47.65
+   Destination IP: 52.12.47.65
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 58590
+   Destination Port: 443
+   Packet Category: Web Traffic (HTTP/HTTPS)
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:00
+Ethernet Header:
+   Source MAC: 94:8e:d3:ba:8:35
+   Destination MAC: 1c:57:dc:65:81:f2
+
+IP Header:
+   Source IP: 10.22.135.115
+   Destination IP: 10.22.135.115
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 443
+   Destination Port: 58591
+   Packet Category: Other TCP Traffic
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:00
+Ethernet Header:
+   Source MAC: 94:8e:d3:ba:8:35
+   Destination MAC: 1c:57:dc:65:81:f2
+
+IP Header:
+   Source IP: 10.22.135.115
+   Destination IP: 10.22.135.115
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 443
+   Destination Port: 58591
+   Packet Category: Other TCP Traffic
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:00
+Ethernet Header:
+   Source MAC: 94:8e:d3:ba:8:35
+   Destination MAC: 1c:57:dc:65:81:f2
+
+IP Header:
+   Source IP: 10.22.135.115
+   Destination IP: 10.22.135.115
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 443
+   Destination Port: 58591
+   Packet Category: Other TCP Traffic
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:00
+Ethernet Header:
+   Source MAC: 94:8e:d3:ba:8:35
+   Destination MAC: 1c:57:dc:65:81:f2
+
+IP Header:
+   Source IP: 10.22.135.115
+   Destination IP: 10.22.135.115
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 443
+   Destination Port: 58591
+   Packet Category: Other TCP Traffic
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:00
+Ethernet Header:
+   Source MAC: 94:8e:d3:ba:8:35
+   Destination MAC: 1c:57:dc:65:81:f2
+
+IP Header:
+   Source IP: 10.22.135.115
+   Destination IP: 10.22.135.115
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 443
+   Destination Port: 58591
+   Packet Category: Other TCP Traffic
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:00
+Ethernet Header:
+   Source MAC: 1c:57:dc:65:81:f2
+   Destination MAC: 0:0:a:a:a:a
+
+IP Header:
+   Source IP: 52.12.47.65
+   Destination IP: 52.12.47.65
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 58591
+   Destination Port: 443
+   Packet Category: Web Traffic (HTTP/HTTPS)
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:00
+Ethernet Header:
+   Source MAC: 1c:57:dc:65:81:f2
+   Destination MAC: 0:0:a:a:a:a
+
+IP Header:
+   Source IP: 52.12.47.65
+   Destination IP: 52.12.47.65
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 58591
+   Destination Port: 443
+   Packet Category: Web Traffic (HTTP/HTTPS)
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:00
+Ethernet Header:
+   Source MAC: 94:8e:d3:ba:8:35
+   Destination MAC: 1c:57:dc:65:81:f2
+
+IP Header:
+   Source IP: 10.22.135.115
+   Destination IP: 10.22.135.115
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 443
+   Destination Port: 58588
+   Packet Category: Other TCP Traffic
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:00
+Ethernet Header:
+   Source MAC: 1c:57:dc:65:81:f2
+   Destination MAC: 0:0:a:a:a:a
+
+IP Header:
+   Source IP: 52.12.47.65
+   Destination IP: 52.12.47.65
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 58588
+   Destination Port: 443
+   Packet Category: Web Traffic (HTTP/HTTPS)
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:00
+Ethernet Header:
+   Source MAC: 1c:57:dc:65:81:f2
+   Destination MAC: 0:0:a:a:a:a
+
+IP Header:
+   Source IP: 52.12.47.65
+   Destination IP: 52.12.47.65
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 58591
+   Destination Port: 443
+   Packet Category: Web Traffic (HTTP/HTTPS)
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:00
+Ethernet Header:
+   Source MAC: 1c:57:dc:65:81:f2
+   Destination MAC: 0:0:a:a:a:a
+
+IP Header:
+   Source IP: 52.12.47.65
+   Destination IP: 52.12.47.65
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 58590
    Destination Port: 443
    Packet Category: Web Traffic (HTTP/HTTPS)
 No payload data.
 
 ----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
+Timestamp: 2024-12-02 11:42:00
 Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 1:0:5e:0:0:fb
-
-IP Header:
-   Source IP: 224.0.0.251
-   Destination IP: 224.0.0.251
-   Protocol: UDP
-
-UDP Header:
-   Source Port: 5353
-   Destination Port: 5353
-   Packet Category: Other UDP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 10.31.6.11
-   Destination IP: 10.31.6.11
-   Protocol: UDP
-
-UDP Header:
-   Source Port: 65483
-   Destination Port: 53
-   Packet Category: DNS Query
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 10.31.6.11
-   Destination IP: 10.31.6.11
-   Protocol: UDP
-
-UDP Header:
-   Source Port: 63683
-   Destination Port: 53
-   Packet Category: DNS Query
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 10.31.6.11
-   Destination IP: 10.31.6.11
-   Protocol: UDP
-
-UDP Header:
-   Source Port: 59241
-   Destination Port: 53
-   Packet Category: DNS Query
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
+   Source MAC: 94:8e:d3:ba:8:35
    Destination MAC: 1c:57:dc:65:81:f2
 
 IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: UDP
-
-UDP Header:
-   Source Port: 53
-   Destination Port: 65483
-   Packet Category: Other UDP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: UDP
-
-UDP Header:
-   Source Port: 53
-   Destination Port: 63683
-   Packet Category: Other UDP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: UDP
-
-UDP Header:
-   Source Port: 53
-   Destination Port: 59241
-   Packet Category: Other UDP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 1:0:5e:0:0:fb
-
-IP Header:
-   Source IP: 224.0.0.251
-   Destination IP: 224.0.0.251
-   Protocol: UDP
-
-UDP Header:
-   Source Port: 5353
-   Destination Port: 5353
-   Packet Category: Other UDP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 10.31.6.11
-   Destination IP: 10.31.6.11
-   Protocol: UDP
-
-UDP Header:
-   Source Port: 55575
-   Destination Port: 53
-   Packet Category: DNS Query
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 17.188.185.136
-   Destination IP: 17.188.185.136
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49182
-   Destination Port: 5223
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 10.31.6.11
-   Destination IP: 10.31.6.11
-   Protocol: UDP
-
-UDP Header:
-   Source Port: 55818
-   Destination Port: 53
-   Packet Category: DNS Query
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 10.31.6.11
-   Destination IP: 10.31.6.11
-   Protocol: UDP
-
-UDP Header:
-   Source Port: 55438
-   Destination Port: 53
-   Packet Category: DNS Query
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: UDP
-
-UDP Header:
-   Source Port: 53
-   Destination Port: 55575
-   Packet Category: Other UDP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
+   Source IP: 10.22.135.115
+   Destination IP: 10.22.135.115
    Protocol: TCP
 
 TCP Header:
    Source Port: 443
-   Destination Port: 49319
+   Destination Port: 58588
    Packet Category: Other TCP Traffic
 
 ----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
+Timestamp: 2024-12-02 11:42:00
 Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
+   Source MAC: 94:8e:d3:ba:8:35
+   Destination MAC: 1c:57:dc:65:81:f2
 
 IP Header:
-   Source IP: 17.253.113.202
-   Destination IP: 17.253.113.202
+   Source IP: 10.22.135.115
+   Destination IP: 10.22.135.115
    Protocol: TCP
 
 TCP Header:
-   Source Port: 49319
+   Source Port: 443
+   Destination Port: 58588
+   Packet Category: Other TCP Traffic
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:00
+Ethernet Header:
+   Source MAC: 94:8e:d3:ba:8:35
+   Destination MAC: 1c:57:dc:65:81:f2
+
+IP Header:
+   Source IP: 10.22.135.115
+   Destination IP: 10.22.135.115
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 443
+   Destination Port: 58588
+   Packet Category: Other TCP Traffic
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:00
+Ethernet Header:
+   Source MAC: 1c:57:dc:65:81:f2
+   Destination MAC: 0:0:a:a:a:a
+
+IP Header:
+   Source IP: 52.12.47.65
+   Destination IP: 52.12.47.65
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 58588
    Destination Port: 443
    Packet Category: Web Traffic (HTTP/HTTPS)
 
 ----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
+Timestamp: 2024-12-02 11:42:00
 Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
+   Source MAC: 94:8e:d3:ba:8:35
    Destination MAC: 1c:57:dc:65:81:f2
 
 IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: UDP
-
-UDP Header:
-   Source Port: 53
-   Destination Port: 55818
-   Packet Category: Other UDP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 5223
-   Destination Port: 49182
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 5223
-   Destination Port: 49182
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 17.188.185.136
-   Destination IP: 17.188.185.136
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49182
-   Destination Port: 5223
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: UDP
-
-UDP Header:
-   Source Port: 53
-   Destination Port: 55438
-   Packet Category: Other UDP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
-Ethernet Header:
-   Source MAC: 1c:57:dc:3d:e1:4c
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: UDP
-
-UDP Header:
-   Source Port: 53875
-   Destination Port: 8080
-   Packet Category: Other UDP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 1c:57:dc:3d:e1:4c
-
-IP Header:
-   Source IP: 10.93.109.226
-   Destination IP: 10.93.109.226
-   Packet Category: Other UDP Traffic
-No payload data.
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 172.64.148.154
-   Destination IP: 172.64.148.154
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49212
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-No payload data.
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
+   Source IP: 10.22.135.115
+   Destination IP: 10.22.135.115
    Protocol: TCP
 
 TCP Header:
    Source Port: 443
-   Destination Port: 49212
+   Destination Port: 58588
    Packet Category: Other TCP Traffic
 
 ----------------------------------------------
-Timestamp: 2024-12-01 19:02:14
+Timestamp: 2024-12-02 11:42:00
 Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
+   Source MAC: 94:8e:d3:ba:8:35
+   Destination MAC: 1c:57:dc:65:81:f2
 
 IP Header:
-   Source IP: 172.64.148.154
-   Destination IP: 172.64.148.154
+   Source IP: 10.22.135.115
+   Destination IP: 10.22.135.115
    Protocol: TCP
 
 TCP Header:
-   Source Port: 49212
+   Source Port: 443
+   Destination Port: 58588
+   Packet Category: Other TCP Traffic
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:00
+Ethernet Header:
+   Source MAC: 94:8e:d3:ba:8:35
+   Destination MAC: 1c:57:dc:65:81:f2
+
+IP Header:
+   Source IP: 10.22.135.115
+   Destination IP: 10.22.135.115
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 443
+   Destination Port: 58588
+   Packet Category: Other TCP Traffic
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:00
+Ethernet Header:
+   Source MAC: 94:8e:d3:ba:8:35
+   Destination MAC: 1c:57:dc:65:81:f2
+
+IP Header:
+   Source IP: 10.22.135.115
+   Destination IP: 10.22.135.115
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 443
+   Destination Port: 58588
+   Packet Category: Other TCP Traffic
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:00
+Ethernet Header:
+   Source MAC: 1c:57:dc:65:81:f2
+   Destination MAC: 0:0:a:a:a:a
+
+IP Header:
+   Source IP: 52.12.47.65
+   Destination IP: 52.12.47.65
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 58588
    Destination Port: 443
    Packet Category: Web Traffic (HTTP/HTTPS)
 
 ----------------------------------------------
-Timestamp: 2024-12-01 19:02:15
+Timestamp: 2024-12-02 11:42:00
 Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49212
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:15
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 172.64.148.154
-   Destination IP: 172.64.148.154
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49212
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:15
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 1:0:5e:0:0:fb
-
-IP Header:
-   Source IP: 224.0.0.251
-   Destination IP: 224.0.0.251
-   Protocol: UDP
-
-UDP Header:
-   Source Port: 5353
-   Destination Port: 5353
-   Packet Category: Other UDP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:15
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 1:0:5e:0:0:fb
-
-IP Header:
-   Source IP: 224.0.0.251
-   Destination IP: 224.0.0.251
-   Protocol: UDP
-
-UDP Header:
-   Source Port: 5353
-   Destination Port: 5353
-   Packet Category: Other UDP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:15
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49319
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:15
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 17.253.113.202
-   Destination IP: 17.253.113.202
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49319
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:15
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49319
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:15
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49319
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:15
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49319
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:15
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 17.253.113.202
-   Destination IP: 17.253.113.202
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49319
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:15
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49319
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:15
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 17.253.113.202
-   Destination IP: 17.253.113.202
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49319
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:15
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49319
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:15
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 17.253.113.202
-   Destination IP: 17.253.113.202
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49319
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:15
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49319
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:15
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49319
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:15
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 17.253.113.202
-   Destination IP: 17.253.113.202
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49319
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:15
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49319
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:15
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49319
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:15
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49319
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:15
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 17.253.113.202
-   Destination IP: 17.253.113.202
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49319
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:15
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49319
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:15
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49319
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:15
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49319
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:15
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 17.253.113.202
-   Destination IP: 17.253.113.202
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49319
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:15
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49319
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:15
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 17.253.113.202
-   Destination IP: 17.253.113.202
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49319
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:15
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49319
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:15
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49319
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:15
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49319
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:15
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 17.253.113.202
-   Destination IP: 17.253.113.202
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49319
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:15
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49319
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:15
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49319
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:15
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 17.253.113.202
-   Destination IP: 17.253.113.202
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49319
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:15
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49319
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:15
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49319
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:15
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 17.253.113.202
-   Destination IP: 17.253.113.202
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49319
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:15
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 17.253.113.202
-   Destination IP: 17.253.113.202
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49319
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:15
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 17.253.113.202
-   Destination IP: 17.253.113.202
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49319
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:15
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49319
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:15
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49319
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:15
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49319
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:15
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 17.253.113.202
-   Destination IP: 17.253.113.202
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49319
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-No payload data.
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:15
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 17.253.113.202
-   Destination IP: 17.253.113.202
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49319
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-No payload data.
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:15
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 1:0:5e:0:0:fb
-
-IP Header:
-   Source IP: 224.0.0.251
-   Destination IP: 224.0.0.251
-   Protocol: UDP
-
-UDP Header:
-   Source Port: 5353
-   Destination Port: 5353
-   Packet Category: Other UDP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:15
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 1:0:5e:0:0:fb
-
-IP Header:
-   Source IP: 224.0.0.251
-   Destination IP: 224.0.0.251
-   Protocol: UDP
-
-UDP Header:
-   Source Port: 5353
-   Destination Port: 5353
-   Packet Category: Other UDP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:15
-Ethernet Header:
-   Source MAC: 1c:57:dc:3d:e1:4c
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: UDP
-
-UDP Header:
-   Source Port: 64100
-   Destination Port: 8080
-   Packet Category: Other UDP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:15
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 1c:57:dc:3d:e1:4c
-
-IP Header:
-   Source IP: 10.93.109.226
-   Destination IP: 10.93.109.226
-   Packet Category: Other UDP Traffic
-No payload data.
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:15
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 1:0:5e:0:0:fb
-
-IP Header:
-   Source IP: 224.0.0.251
-   Destination IP: 224.0.0.251
-   Protocol: UDP
-
-UDP Header:
-   Source Port: 5353
-   Destination Port: 5353
-   Packet Category: Other UDP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:15
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 1:0:5e:0:0:fb
-
-IP Header:
-   Source IP: 224.0.0.251
-   Destination IP: 224.0.0.251
-   Protocol: UDP
-
-UDP Header:
-   Source Port: 5353
-   Destination Port: 5353
-   Packet Category: Other UDP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:15
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 172.64.148.154
-   Destination IP: 172.64.148.154
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49321
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:15
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49321
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:15
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 172.64.148.154
-   Destination IP: 172.64.148.154
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49321
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:15
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 172.64.148.154
-   Destination IP: 172.64.148.154
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49321
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:15
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 172.64.148.154
-   Destination IP: 172.64.148.154
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49321
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:15
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49321
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:15
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49321
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:15
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49321
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:15
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 172.64.148.154
-   Destination IP: 172.64.148.154
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49321
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:15
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 172.64.148.154
-   Destination IP: 172.64.148.154
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49321
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:15
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 172.64.148.154
-   Destination IP: 172.64.148.154
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49321
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:15
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 172.64.148.154
-   Destination IP: 172.64.148.154
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49321
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:15
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 172.64.148.154
-   Destination IP: 172.64.148.154
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49321
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:16
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49321
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:16
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49321
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:16
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49321
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:16
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 172.64.148.154
-   Destination IP: 172.64.148.154
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49321
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:16
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 172.64.148.154
-   Destination IP: 172.64.148.154
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49321
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:16
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 172.64.148.154
-   Destination IP: 172.64.148.154
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49321
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:16
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49321
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:16
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49321
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:16
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49321
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:16
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49321
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:16
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 172.64.148.154
-   Destination IP: 172.64.148.154
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49321
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:16
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 172.64.148.154
-   Destination IP: 172.64.148.154
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49322
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:16
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 172.64.148.154
-   Destination IP: 172.64.148.154
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49321
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:16
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49321
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:16
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49322
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:16
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 2.21.39.20
-   Destination IP: 2.21.39.20
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49207
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:16
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 172.64.148.154
-   Destination IP: 172.64.148.154
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49322
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:16
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 172.64.148.154
-   Destination IP: 172.64.148.154
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49322
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:16
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 172.64.148.154
-   Destination IP: 172.64.148.154
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49322
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:16
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49207
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:16
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49207
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:16
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 2.21.39.20
-   Destination IP: 2.21.39.20
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49207
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-No payload data.
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:16
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 2.21.39.20
-   Destination IP: 2.21.39.20
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49207
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-No payload data.
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:16
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49322
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:16
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49322
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:16
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49322
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:16
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49322
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:16
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 172.64.148.154
-   Destination IP: 172.64.148.154
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49322
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:16
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 172.64.148.154
-   Destination IP: 172.64.148.154
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49322
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:16
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 172.64.148.154
-   Destination IP: 172.64.148.154
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49322
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:16
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 172.64.148.154
-   Destination IP: 172.64.148.154
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49322
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:16
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 172.64.148.154
-   Destination IP: 172.64.148.154
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49322
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:16
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49322
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:16
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49322
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:16
-Ethernet Header:
-   Source MAC: 1c:57:dc:3d:e1:4c
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: UDP
-
-UDP Header:
-   Source Port: 51272
-   Destination Port: 8080
-   Packet Category: Other UDP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:16
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 1c:57:dc:3d:e1:4c
-
-IP Header:
-   Source IP: 10.93.109.226
-   Destination IP: 10.93.109.226
-   Packet Category: Other UDP Traffic
-No payload data.
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:16
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
+   Source MAC: ea:96:44:dc:d2:63
    Destination MAC: ff:ff:ff:ff:ff:ff
 
 IP Header:
@@ -4396,9 +1143,453 @@ UDP Header:
    Packet Category: Other UDP Traffic
 
 ----------------------------------------------
-Timestamp: 2024-12-01 19:02:16
+Timestamp: 2024-12-02 11:42:00
 Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
+   Source MAC: 1c:57:dc:3d:e1:4c
+   Destination MAC: 1c:57:dc:65:81:f2
+
+IP Header:
+   Source IP: 10.22.135.115
+   Destination IP: 10.22.135.115
+   Protocol: UDP
+
+UDP Header:
+   Source Port: 49872
+   Destination Port: 8080
+   Packet Category: Other UDP Traffic
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:00
+Ethernet Header:
+   Source MAC: 1c:57:dc:65:81:f2
+   Destination MAC: 1c:57:dc:3d:e1:4c
+
+IP Header:
+   Source IP: 10.22.3.104
+   Destination IP: 10.22.3.104
+   Packet Category: Other UDP Traffic
+No payload data.
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:00
+Ethernet Header:
+   Source MAC: 94:8e:d3:ba:8:35
+   Destination MAC: 1c:57:dc:65:81:f2
+
+IP Header:
+   Source IP: 10.22.135.115
+   Destination IP: 10.22.135.115
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 443
+   Destination Port: 58591
+   Packet Category: Other TCP Traffic
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:00
+Ethernet Header:
+   Source MAC: 94:8e:d3:ba:8:35
+   Destination MAC: 1c:57:dc:65:81:f2
+
+IP Header:
+   Source IP: 10.22.135.115
+   Destination IP: 10.22.135.115
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 443
+   Destination Port: 58591
+   Packet Category: Other TCP Traffic
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:00
+Ethernet Header:
+   Source MAC: 94:8e:d3:ba:8:35
+   Destination MAC: 1c:57:dc:65:81:f2
+
+IP Header:
+   Source IP: 10.22.135.115
+   Destination IP: 10.22.135.115
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 443
+   Destination Port: 58591
+   Packet Category: Other TCP Traffic
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:00
+Ethernet Header:
+   Source MAC: 1c:57:dc:65:81:f2
+   Destination MAC: 0:0:a:a:a:a
+
+IP Header:
+   Source IP: 52.12.47.65
+   Destination IP: 52.12.47.65
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 58591
+   Destination Port: 443
+   Packet Category: Web Traffic (HTTP/HTTPS)
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:00
+Ethernet Header:
+   Source MAC: 1c:57:dc:65:81:f2
+   Destination MAC: 0:0:a:a:a:a
+
+IP Header:
+   Source IP: 52.12.47.65
+   Destination IP: 52.12.47.65
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 58591
+   Destination Port: 443
+   Packet Category: Web Traffic (HTTP/HTTPS)
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:00
+Ethernet Header:
+   Source MAC: 94:8e:d3:ba:8:35
+   Destination MAC: 1c:57:dc:65:81:f2
+
+IP Header:
+   Source IP: 10.22.135.115
+   Destination IP: 10.22.135.115
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 443
+   Destination Port: 58591
+   Packet Category: Other TCP Traffic
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:00
+Ethernet Header:
+   Source MAC: 1c:57:dc:65:81:f2
+   Destination MAC: 0:0:a:a:a:a
+
+IP Header:
+   Source IP: 52.12.47.65
+   Destination IP: 52.12.47.65
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 58591
+   Destination Port: 443
+   Packet Category: Web Traffic (HTTP/HTTPS)
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:00
+Ethernet Header:
+   Source MAC: a2:9b:b:52:56:9
+   Destination MAC: 1c:57:dc:65:81:f2
+
+IP Header:
+   Source IP: 10.22.135.115
+   Destination IP: 10.22.135.115
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 63320
+   Destination Port: 7000
+   Packet Category: Other TCP Traffic
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:00
+Ethernet Header:
+   Source MAC: 1c:57:dc:65:81:f2
+   Destination MAC: a2:9b:b:52:56:9
+
+IP Header:
+   Source IP: 10.22.2.250
+   Destination IP: 10.22.2.250
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 7000
+   Destination Port: 63320
+   Packet Category: Other TCP Traffic
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:00
+Ethernet Header:
+   Source MAC: a2:9b:b:52:56:9
+   Destination MAC: 1c:57:dc:65:81:f2
+
+IP Header:
+   Source IP: 10.22.135.115
+   Destination IP: 10.22.135.115
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 63320
+   Destination Port: 7000
+   Packet Category: Other TCP Traffic
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:00
+Ethernet Header:
+   Source MAC: 1c:57:dc:65:81:f2
+   Destination MAC: a2:9b:b:52:56:9
+
+IP Header:
+   Source IP: 10.22.2.250
+   Destination IP: 10.22.2.250
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 7000
+   Destination Port: 63320
+   Packet Category: Other TCP Traffic
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:00
+Ethernet Header:
+   Source MAC: a2:9b:b:52:56:9
+   Destination MAC: 1c:57:dc:65:81:f2
+
+IP Header:
+   Source IP: 10.22.135.115
+   Destination IP: 10.22.135.115
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 63320
+   Destination Port: 7000
+   Packet Category: Other TCP Traffic
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:00
+Ethernet Header:
+   Source MAC: 1c:57:dc:65:81:f2
+   Destination MAC: a2:9b:b:52:56:9
+
+IP Header:
+   Source IP: 10.22.2.250
+   Destination IP: 10.22.2.250
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 7000
+   Destination Port: 63320
+   Packet Category: Other TCP Traffic
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:00
+Ethernet Header:
+   Source MAC: 1c:57:dc:65:81:f2
+   Destination MAC: a2:9b:b:52:56:9
+
+IP Header:
+   Source IP: 10.22.2.250
+   Destination IP: 10.22.2.250
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 7000
+   Destination Port: 63320
+   Packet Category: Other TCP Traffic
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:00
+Ethernet Header:
+   Source MAC: 1c:57:dc:65:81:f2
+   Destination MAC: a2:9b:b:52:56:9
+
+IP Header:
+   Source IP: 10.22.2.250
+   Destination IP: 10.22.2.250
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 7000
+   Destination Port: 63320
+   Packet Category: Other TCP Traffic
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:00
+Ethernet Header:
+   Source MAC: 1c:57:dc:65:81:f2
+   Destination MAC: a2:9b:b:52:56:9
+
+IP Header:
+   Source IP: 10.22.2.250
+   Destination IP: 10.22.2.250
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 7000
+   Destination Port: 63320
+   Packet Category: Other TCP Traffic
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:00
+Ethernet Header:
+   Source MAC: a2:9b:b:52:56:9
+   Destination MAC: 1c:57:dc:65:81:f2
+
+IP Header:
+   Source IP: 10.22.135.115
+   Destination IP: 10.22.135.115
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 63320
+   Destination Port: 7000
+   Packet Category: Other TCP Traffic
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:00
+Ethernet Header:
+   Source MAC: a2:9b:b:52:56:9
+   Destination MAC: 1c:57:dc:65:81:f2
+
+IP Header:
+   Source IP: 10.22.135.115
+   Destination IP: 10.22.135.115
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 63320
+   Destination Port: 7000
+   Packet Category: Other TCP Traffic
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:00
+Ethernet Header:
+   Source MAC: 1c:57:dc:65:81:f2
+   Destination MAC: a2:9b:b:52:56:9
+
+IP Header:
+   Source IP: 10.22.2.250
+   Destination IP: 10.22.2.250
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 7000
+   Destination Port: 63320
+   Packet Category: Other TCP Traffic
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:00
+Ethernet Header:
+   Source MAC: 1c:57:dc:65:81:f2
+   Destination MAC: a2:9b:b:52:56:9
+
+IP Header:
+   Source IP: 10.22.2.250
+   Destination IP: 10.22.2.250
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 7000
+   Destination Port: 63320
+   Packet Category: Other TCP Traffic
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:00
+Ethernet Header:
+   Source MAC: a2:9b:b:52:56:9
+   Destination MAC: 1c:57:dc:65:81:f2
+
+IP Header:
+   Source IP: 10.22.135.115
+   Destination IP: 10.22.135.115
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 63320
+   Destination Port: 7000
+   Packet Category: Other TCP Traffic
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:00
+Ethernet Header:
+   Source MAC: a2:9b:b:52:56:9
+   Destination MAC: 1c:57:dc:65:81:f2
+
+IP Header:
+   Source IP: 10.22.135.115
+   Destination IP: 10.22.135.115
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 63320
+   Destination Port: 7000
+   Packet Category: Other TCP Traffic
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:00
+Ethernet Header:
+   Source MAC: 94:8e:d3:ba:8:35
+   Destination MAC: 1c:57:dc:65:81:f2
+
+IP Header:
+   Source IP: 10.22.135.115
+   Destination IP: 10.22.135.115
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 443
+   Destination Port: 58591
+   Packet Category: Other TCP Traffic
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:00
+Ethernet Header:
+   Source MAC: 1c:57:dc:65:81:f2
+   Destination MAC: 0:0:a:a:a:a
+
+IP Header:
+   Source IP: 44.213.196.185
+   Destination IP: 44.213.196.185
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 58456
+   Destination Port: 443
+   Packet Category: Web Traffic (HTTP/HTTPS)
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:00
+Ethernet Header:
+   Source MAC: 1c:57:dc:65:81:f2
+   Destination MAC: 0:0:a:a:a:a
+
+IP Header:
+   Source IP: 44.213.196.185
+   Destination IP: 44.213.196.185
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 58456
+   Destination Port: 443
+   Packet Category: Web Traffic (HTTP/HTTPS)
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:01
+Ethernet Header:
+   Source MAC: d4:54:8b:f5:16:80
+   Destination MAC: ff:ff:ff:ff:ff:ff
+
+IP Header:
+   Source IP: 255.255.255.255
+   Destination IP: 255.255.255.255
+   Protocol: UDP
+
+UDP Header:
+   Source Port: 68
+   Destination Port: 67
+   Packet Category: Other UDP Traffic
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:01
+Ethernet Header:
+   Source MAC: 94:8e:d3:ba:8:35
    Destination MAC: ff:ff:ff:ff:ff:ff
 
 IP Header:
@@ -4412,758 +1603,811 @@ UDP Header:
    Packet Category: Other UDP Traffic
 
 ----------------------------------------------
-Timestamp: 2024-12-01 19:02:16
+Timestamp: 2024-12-02 11:42:01
 Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 1:0:5e:0:0:fb
-
-IP Header:
-   Source IP: 224.0.0.251
-   Destination IP: 224.0.0.251
-   Protocol: UDP
-
-UDP Header:
-   Source Port: 5353
-   Destination Port: 5353
-   Packet Category: Other UDP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:16
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
+   Source MAC: 94:8e:d3:ba:8:35
    Destination MAC: 1c:57:dc:65:81:f2
 
 IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
+   Source IP: 10.22.135.115
+   Destination IP: 10.22.135.115
    Protocol: TCP
 
 TCP Header:
    Source Port: 443
-   Destination Port: 49322
+   Destination Port: 58456
    Packet Category: Other TCP Traffic
 
 ----------------------------------------------
-Timestamp: 2024-12-01 19:02:16
+Timestamp: 2024-12-02 11:42:01
 Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
+   Source MAC: 94:8e:d3:ba:8:35
    Destination MAC: 1c:57:dc:65:81:f2
 
 IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
+   Source IP: 10.22.135.115
+   Destination IP: 10.22.135.115
    Protocol: TCP
 
 TCP Header:
    Source Port: 443
-   Destination Port: 49322
+   Destination Port: 58456
    Packet Category: Other TCP Traffic
 
 ----------------------------------------------
-Timestamp: 2024-12-01 19:02:16
+Timestamp: 2024-12-02 11:42:01
 Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
+   Source MAC: 94:8e:d3:ba:8:35
+   Destination MAC: 1c:57:dc:65:81:f2
 
 IP Header:
-   Source IP: 172.64.148.154
-   Destination IP: 172.64.148.154
+   Source IP: 10.22.135.115
+   Destination IP: 10.22.135.115
    Protocol: TCP
 
 TCP Header:
-   Source Port: 49322
+   Source Port: 443
+   Destination Port: 58456
+   Packet Category: Other TCP Traffic
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:01
+Ethernet Header:
+   Source MAC: 1c:57:dc:65:81:f2
+   Destination MAC: 0:0:a:a:a:a
+
+IP Header:
+   Source IP: 44.213.196.185
+   Destination IP: 44.213.196.185
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 58456
    Destination Port: 443
    Packet Category: Web Traffic (HTTP/HTTPS)
 
 ----------------------------------------------
-Timestamp: 2024-12-01 19:02:16
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 172.64.148.154
-   Destination IP: 172.64.148.154
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49322
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:16
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 17.248.209.74
-   Destination IP: 17.248.209.74
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49323
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:16
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49322
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:16
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49323
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:16
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 17.248.209.74
-   Destination IP: 17.248.209.74
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49323
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:16
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 17.248.209.74
-   Destination IP: 17.248.209.74
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49323
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:16
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49323
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:16
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49323
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:16
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49323
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:16
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49323
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:16
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 17.248.209.74
-   Destination IP: 17.248.209.74
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49323
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:16
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 17.248.209.74
-   Destination IP: 17.248.209.74
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49323
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:17
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 17.248.209.74
-   Destination IP: 17.248.209.74
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49323
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:17
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 17.248.209.74
-   Destination IP: 17.248.209.74
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49323
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:17
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 17.248.209.74
-   Destination IP: 17.248.209.74
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49323
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:17
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49323
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:17
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49323
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:17
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49323
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:17
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 17.248.209.74
-   Destination IP: 17.248.209.74
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49323
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:17
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49323
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:17
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49323
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:17
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49323
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:17
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 17.248.209.74
-   Destination IP: 17.248.209.74
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49323
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:17
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 17.248.209.74
-   Destination IP: 17.248.209.74
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49323
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:17
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 17.248.209.74
-   Destination IP: 17.248.209.74
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49323
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:17
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49322
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:17
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 172.64.148.154
-   Destination IP: 172.64.148.154
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49322
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:17
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49323
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:17
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 2.21.39.20
-   Destination IP: 2.21.39.20
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49206
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:17
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49206
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:17
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49206
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:17
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 2.21.39.20
-   Destination IP: 2.21.39.20
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49206
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-No payload data.
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:17
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 2.21.39.20
-   Destination IP: 2.21.39.20
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49206
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-No payload data.
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:17
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49321
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:17
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49321
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:17
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 172.64.148.154
-   Destination IP: 172.64.148.154
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49321
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:17
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 172.64.148.154
-   Destination IP: 172.64.148.154
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49322
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:17
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49322
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:17
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49323
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:17
-Ethernet Header:
-   Source MAC: 4:47:2a:4:41:91
-   Destination MAC: 1c:57:dc:65:81:f2
-
-IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 443
-   Destination Port: 49323
-   Packet Category: Other TCP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:17
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 4:47:2a:4:41:91
-
-IP Header:
-   Source IP: 17.248.209.74
-   Destination IP: 17.248.209.74
-   Protocol: TCP
-
-TCP Header:
-   Source Port: 49323
-   Destination Port: 443
-   Packet Category: Web Traffic (HTTP/HTTPS)
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:17
-Ethernet Header:
-   Source MAC: 1c:57:dc:65:81:f2
-   Destination MAC: 1:0:5e:0:0:fb
-
-IP Header:
-   Source IP: 224.0.0.251
-   Destination IP: 224.0.0.251
-   Protocol: UDP
-
-UDP Header:
-   Source Port: 5353
-   Destination Port: 5353
-   Packet Category: Other UDP Traffic
-
-----------------------------------------------
-Timestamp: 2024-12-01 19:02:17
+Timestamp: 2024-12-02 11:42:01
 Ethernet Header:
    Source MAC: 1c:57:dc:3d:e1:4c
    Destination MAC: 1c:57:dc:65:81:f2
 
 IP Header:
-   Source IP: 10.93.162.208
-   Destination IP: 10.93.162.208
+   Source IP: 10.22.135.115
+   Destination IP: 10.22.135.115
    Protocol: UDP
 
 UDP Header:
-   Source Port: 60748
+   Source Port: 60848
    Destination Port: 8080
    Packet Category: Other UDP Traffic
 
 ----------------------------------------------
-Timestamp: 2024-12-01 19:0
+Timestamp: 2024-12-02 11:42:01
+Ethernet Header:
+   Source MAC: 1c:57:dc:65:81:f2
+   Destination MAC: 1c:57:dc:3d:e1:4c
+
+IP Header:
+   Source IP: 10.22.3.104
+   Destination IP: 10.22.3.104
+   Packet Category: Other UDP Traffic
+No payload data.
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:01
+Ethernet Header:
+   Source MAC: 1c:57:dc:65:81:f2
+   Destination MAC: 0:0:a:a:a:a
+
+IP Header:
+   Source IP: 142.250.184.4
+   Destination IP: 142.250.184.4
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 58592
+   Destination Port: 443
+   Packet Category: Web Traffic (HTTP/HTTPS)
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:02
+Ethernet Header:
+   Source MAC: 94:8e:d3:80:f4:e1
+   Destination MAC: 1c:57:dc:65:81:f2
+
+IP Header:
+   Source IP: 10.22.135.115
+   Destination IP: 10.22.135.115
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 443
+   Destination Port: 58592
+   Packet Category: Other TCP Traffic
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:02
+Ethernet Header:
+   Source MAC: 1c:57:dc:65:81:f2
+   Destination MAC: 0:0:a:a:a:a
+
+IP Header:
+   Source IP: 142.250.184.4
+   Destination IP: 142.250.184.4
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 58592
+   Destination Port: 443
+   Packet Category: Web Traffic (HTTP/HTTPS)
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:02
+Ethernet Header:
+   Source MAC: 1c:57:dc:65:81:f2
+   Destination MAC: 0:0:a:a:a:a
+
+IP Header:
+   Source IP: 142.250.184.4
+   Destination IP: 142.250.184.4
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 58592
+   Destination Port: 443
+   Packet Category: Web Traffic (HTTP/HTTPS)
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:02
+Ethernet Header:
+   Source MAC: 1c:57:dc:65:81:f2
+   Destination MAC: 0:0:a:a:a:a
+
+IP Header:
+   Source IP: 142.250.184.4
+   Destination IP: 142.250.184.4
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 58592
+   Destination Port: 443
+   Packet Category: Web Traffic (HTTP/HTTPS)
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:02
+Ethernet Header:
+   Source MAC: 94:8e:d3:80:f4:e1
+   Destination MAC: 1c:57:dc:65:81:f2
+
+IP Header:
+   Source IP: 10.22.135.115
+   Destination IP: 10.22.135.115
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 443
+   Destination Port: 58592
+   Packet Category: Other TCP Traffic
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:02
+Ethernet Header:
+   Source MAC: 94:8e:d3:80:f4:e1
+   Destination MAC: 1c:57:dc:65:81:f2
+
+IP Header:
+   Source IP: 10.22.135.115
+   Destination IP: 10.22.135.115
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 443
+   Destination Port: 58592
+   Packet Category: Other TCP Traffic
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:02
+Ethernet Header:
+   Source MAC: 94:8e:d3:80:f4:e1
+   Destination MAC: 1c:57:dc:65:81:f2
+
+IP Header:
+   Source IP: 10.22.135.115
+   Destination IP: 10.22.135.115
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 443
+   Destination Port: 58592
+   Packet Category: Other TCP Traffic
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:02
+Ethernet Header:
+   Source MAC: 94:8e:d3:80:f4:e1
+   Destination MAC: 1c:57:dc:65:81:f2
+
+IP Header:
+   Source IP: 10.22.135.115
+   Destination IP: 10.22.135.115
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 443
+   Destination Port: 58592
+   Packet Category: Other TCP Traffic
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:02
+Ethernet Header:
+   Source MAC: 94:8e:d3:80:f4:e1
+   Destination MAC: 1c:57:dc:65:81:f2
+
+IP Header:
+   Source IP: 10.22.135.115
+   Destination IP: 10.22.135.115
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 443
+   Destination Port: 58592
+   Packet Category: Other TCP Traffic
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:02
+Ethernet Header:
+   Source MAC: 94:8e:d3:80:f4:e1
+   Destination MAC: 1c:57:dc:65:81:f2
+
+IP Header:
+   Source IP: 10.22.135.115
+   Destination IP: 10.22.135.115
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 443
+   Destination Port: 58592
+   Packet Category: Other TCP Traffic
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:02
+Ethernet Header:
+   Source MAC: 1c:57:dc:65:81:f2
+   Destination MAC: 0:0:a:a:a:a
+
+IP Header:
+   Source IP: 142.250.184.4
+   Destination IP: 142.250.184.4
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 58592
+   Destination Port: 443
+   Packet Category: Web Traffic (HTTP/HTTPS)
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:02
+Ethernet Header:
+   Source MAC: 1c:57:dc:65:81:f2
+   Destination MAC: 0:0:a:a:a:a
+
+IP Header:
+   Source IP: 142.250.184.4
+   Destination IP: 142.250.184.4
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 58592
+   Destination Port: 443
+   Packet Category: Web Traffic (HTTP/HTTPS)
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:02
+Ethernet Header:
+   Source MAC: 1c:57:dc:65:81:f2
+   Destination MAC: 0:0:a:a:a:a
+
+IP Header:
+   Source IP: 142.250.184.4
+   Destination IP: 142.250.184.4
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 58592
+   Destination Port: 443
+   Packet Category: Web Traffic (HTTP/HTTPS)
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:02
+Ethernet Header:
+   Source MAC: 1c:57:dc:65:81:f2
+   Destination MAC: 0:0:a:a:a:a
+
+IP Header:
+   Source IP: 142.250.184.4
+   Destination IP: 142.250.184.4
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 58592
+   Destination Port: 443
+   Packet Category: Web Traffic (HTTP/HTTPS)
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:02
+Ethernet Header:
+   Source MAC: 94:8e:d3:80:f4:e1
+   Destination MAC: 1c:57:dc:65:81:f2
+
+IP Header:
+   Source IP: 10.22.135.115
+   Destination IP: 10.22.135.115
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 443
+   Destination Port: 58592
+   Packet Category: Other TCP Traffic
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:02
+Ethernet Header:
+   Source MAC: 34:b1:eb:ee:a4:7e
+   Destination MAC: ff:ff:ff:ff:ff:ff
+
+IP Header:
+   Source IP: 255.255.255.255
+   Destination IP: 255.255.255.255
+   Protocol: UDP
+
+UDP Header:
+   Source Port: 68
+   Destination Port: 67
+   Packet Category: Other UDP Traffic
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:02
+Ethernet Header:
+   Source MAC: 1c:57:dc:3d:e1:4c
+   Destination MAC: 1c:57:dc:65:81:f2
+
+IP Header:
+   Source IP: 10.22.135.115
+   Destination IP: 10.22.135.115
+   Protocol: UDP
+
+UDP Header:
+   Source Port: 64727
+   Destination Port: 8080
+   Packet Category: Other UDP Traffic
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:02
+Ethernet Header:
+   Source MAC: 1c:57:dc:65:81:f2
+   Destination MAC: 1c:57:dc:3d:e1:4c
+
+IP Header:
+   Source IP: 10.22.3.104
+   Destination IP: 10.22.3.104
+   Packet Category: Other UDP Traffic
+No payload data.
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:02
+Ethernet Header:
+   Source MAC: bc:d0:74:ec:aa:f9
+   Destination MAC: ff:ff:ff:ff:ff:ff
+
+IP Header:
+   Source IP: 255.255.255.255
+   Destination IP: 255.255.255.255
+   Protocol: UDP
+
+UDP Header:
+   Source Port: 68
+   Destination Port: 67
+   Packet Category: Other UDP Traffic
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:02
+Ethernet Header:
+   Source MAC: a4:83:e7:5c:2a:b7
+   Destination MAC: ff:ff:ff:ff:ff:ff
+
+IP Header:
+   Source IP: 255.255.255.255
+   Destination IP: 255.255.255.255
+   Protocol: UDP
+
+UDP Header:
+   Source Port: 68
+   Destination Port: 67
+   Packet Category: Other UDP Traffic
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:03
+Ethernet Header:
+   Source MAC: 2e:cc:9d:b9:7b:62
+   Destination MAC: ff:ff:ff:ff:ff:ff
+
+IP Header:
+   Source IP: 255.255.255.255
+   Destination IP: 255.255.255.255
+   Protocol: UDP
+
+UDP Header:
+   Source Port: 68
+   Destination Port: 67
+   Packet Category: Other UDP Traffic
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:03
+Ethernet Header:
+   Source MAC: 1c:57:dc:65:81:f2
+   Destination MAC: 0:0:a:a:a:a
+
+IP Header:
+   Source IP: 142.250.184.4
+   Destination IP: 142.250.184.4
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 58592
+   Destination Port: 443
+   Packet Category: Web Traffic (HTTP/HTTPS)
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:03
+Ethernet Header:
+   Source MAC: 1c:57:dc:65:81:f2
+   Destination MAC: 0:0:a:a:a:a
+
+IP Header:
+   Source IP: 52.12.47.65
+   Destination IP: 52.12.47.65
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 58591
+   Destination Port: 443
+   Packet Category: Web Traffic (HTTP/HTTPS)
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:03
+Ethernet Header:
+   Source MAC: 1c:57:dc:65:81:f2
+   Destination MAC: 0:0:a:a:a:a
+
+IP Header:
+   Source IP: 52.12.47.65
+   Destination IP: 52.12.47.65
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 58588
+   Destination Port: 443
+   Packet Category: Web Traffic (HTTP/HTTPS)
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:03
+Ethernet Header:
+   Source MAC: 1c:57:dc:65:81:f2
+   Destination MAC: 0:0:a:a:a:a
+
+IP Header:
+   Source IP: 52.12.47.65
+   Destination IP: 52.12.47.65
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 58591
+   Destination Port: 443
+   Packet Category: Web Traffic (HTTP/HTTPS)
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:03
+Ethernet Header:
+   Source MAC: 1c:57:dc:65:81:f2
+   Destination MAC: 0:0:a:a:a:a
+
+IP Header:
+   Source IP: 52.12.47.65
+   Destination IP: 52.12.47.65
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 58588
+   Destination Port: 443
+   Packet Category: Web Traffic (HTTP/HTTPS)
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:03
+Ethernet Header:
+   Source MAC: 94:8e:d3:80:f4:e1
+   Destination MAC: 1c:57:dc:65:81:f2
+
+IP Header:
+   Source IP: 10.22.135.115
+   Destination IP: 10.22.135.115
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 443
+   Destination Port: 58592
+   Packet Category: Other TCP Traffic
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:03
+Ethernet Header:
+   Source MAC: 94:8e:d3:80:f4:e1
+   Destination MAC: 1c:57:dc:65:81:f2
+
+IP Header:
+   Source IP: 10.22.135.115
+   Destination IP: 10.22.135.115
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 443
+   Destination Port: 58592
+   Packet Category: Other TCP Traffic
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:03
+Ethernet Header:
+   Source MAC: 1c:57:dc:65:81:f2
+   Destination MAC: 0:0:a:a:a:a
+
+IP Header:
+   Source IP: 142.250.184.4
+   Destination IP: 142.250.184.4
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 58592
+   Destination Port: 443
+   Packet Category: Web Traffic (HTTP/HTTPS)
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:03
+Ethernet Header:
+   Source MAC: 1c:57:dc:65:81:f2
+   Destination MAC: 0:0:a:a:a:a
+
+IP Header:
+   Source IP: 142.250.184.4
+   Destination IP: 142.250.184.4
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 58592
+   Destination Port: 443
+   Packet Category: Web Traffic (HTTP/HTTPS)
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:03
+Ethernet Header:
+   Source MAC: bc:d0:74:ec:aa:f9
+   Destination MAC: ff:ff:ff:ff:ff:ff
+
+IP Header:
+   Source IP: 255.255.255.255
+   Destination IP: 255.255.255.255
+   Protocol: UDP
+
+UDP Header:
+   Source Port: 68
+   Destination Port: 67
+   Packet Category: Other UDP Traffic
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:03
+Ethernet Header:
+   Source MAC: 1c:57:dc:3d:e1:4c
+   Destination MAC: 1c:57:dc:65:81:f2
+
+IP Header:
+   Source IP: 10.22.135.115
+   Destination IP: 10.22.135.115
+   Protocol: UDP
+
+UDP Header:
+   Source Port: 50666
+   Destination Port: 8080
+   Packet Category: Other UDP Traffic
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:03
+Ethernet Header:
+   Source MAC: 94:8e:d3:ba:8:35
+   Destination MAC: 1c:57:dc:65:81:f2
+
+IP Header:
+   Source IP: 10.22.135.115
+   Destination IP: 10.22.135.115
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 443
+   Destination Port: 58588
+   Packet Category: Other TCP Traffic
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:03
+Ethernet Header:
+   Source MAC: 94:8e:d3:ba:8:35
+   Destination MAC: 1c:57:dc:65:81:f2
+
+IP Header:
+   Source IP: 10.22.135.115
+   Destination IP: 10.22.135.115
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 443
+   Destination Port: 58588
+   Packet Category: Other TCP Traffic
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:03
+Ethernet Header:
+   Source MAC: 94:8e:d3:ba:8:35
+   Destination MAC: 1c:57:dc:65:81:f2
+
+IP Header:
+   Source IP: 10.22.135.115
+   Destination IP: 10.22.135.115
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 443
+   Destination Port: 58591
+   Packet Category: Other TCP Traffic
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:03
+Ethernet Header:
+   Source MAC: 94:8e:d3:ba:8:35
+   Destination MAC: 1c:57:dc:65:81:f2
+
+IP Header:
+   Source IP: 10.22.135.115
+   Destination IP: 10.22.135.115
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 443
+   Destination Port: 58591
+   Packet Category: Other TCP Traffic
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:03
+Ethernet Header:
+   Source MAC: 94:8e:d3:ba:8:35
+   Destination MAC: 1c:57:dc:65:81:f2
+
+IP Header:
+   Source IP: 10.22.135.115
+   Destination IP: 10.22.135.115
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 443
+   Destination Port: 58591
+   Packet Category: Other TCP Traffic
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:03
+Ethernet Header:
+   Source MAC: 1c:57:dc:65:81:f2
+   Destination MAC: 0:0:a:a:a:a
+
+IP Header:
+   Source IP: 52.12.47.65
+   Destination IP: 52.12.47.65
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 58588
+   Destination Port: 443
+   Packet Category: Web Traffic (HTTP/HTTPS)
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:03
+Ethernet Header:
+   Source MAC: 1c:57:dc:65:81:f2
+   Destination MAC: 0:0:a:a:a:a
+
+IP Header:
+   Source IP: 52.12.47.65
+   Destination IP: 52.12.47.65
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 58591
+   Destination Port: 443
+   Packet Category: Web Traffic (HTTP/HTTPS)
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:03
+Ethernet Header:
+   Source MAC: 1c:57:dc:65:81:f2
+   Destination MAC: 1c:57:dc:3d:e1:4c
+
+IP Header:
+   Source IP: 10.22.3.104
+   Destination IP: 10.22.3.104
+   Packet Category: Web Traffic (HTTP/HTTPS)
+No payload data.
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:03
+Ethernet Header:
+   Source MAC: de:a7:db:aa:5:78
+   Destination MAC: ff:ff:ff:ff:ff:ff
+
+IP Header:
+   Source IP: 255.255.255.255
+   Destination IP: 255.255.255.255
+   Protocol: UDP
+
+UDP Header:
+   Source Port: 68
+   Destination Port: 67
+   Packet Category: Other UDP Traffic
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:04
+Ethernet Header:
+   Source MAC: f2:98:d7:d9:29:48
+   Destination MAC: ff:ff:ff:ff:ff:ff
+
+IP Header:
+   Source IP: 255.255.255.255
+   Destination IP: 255.255.255.255
+   Protocol: UDP
+
+UDP Header:
+   Source Port: 68
+   Destination Port: 67
+   Packet Category: Other UDP Traffic
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:04
+Ethernet Header:
+   Source MAC: 8a:c4:9b:62:9b:19
+   Destination MAC: ff:ff:ff:ff:ff:ff
+
+IP Header:
+   Source IP: 255.255.255.255
+   Destination IP: 255.255.255.255
+   Protocol: UDP
+
+UDP Header:
+   Source Port: 68
+   Destination Port: 67
+   Packet Category: Other UDP Traffic
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:04
+Ethernet Header:
+   Source MAC: 94:8e:d3:80:f4:e1
+   Destination MAC: 1c:57:dc:65:81:f2
+
+IP Header:
+   Source IP: 10.22.135.115
+   Destination IP: 10.22.135.115
+   Protocol: TCP
+
+TCP Header:
+   Source Port: 443
+   Destination Port: 58578
+   Packet Category: Other TCP Traffic
+
+----------------------------------------------
+Timestamp: 2024-12-02 11:42:04
+Ethernet Header:
+   Source MAC: 94:8e:d3:80:f4:e1
+   Destin

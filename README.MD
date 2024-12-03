@@ -21,6 +21,7 @@ A powerful network packet analysis tool with a user-friendly Streamlit interface
 - **Metrics & Statistics**: Monitor captured and sent packet counts
 - **Connection Test**: Test the connection to the pointed IP address
 - **Logger**: Log per-session information
+- **Interoperability**: Support for multiple Windows, MacOS and Linux
 
 ## 🚀 Installation
 
@@ -46,6 +47,7 @@ make
 
 ### Step 4: Run the Streamlit App
 ```
+cd src/app
 streamlit run app.py
 ```
 
