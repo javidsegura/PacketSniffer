@@ -18,10 +18,11 @@ PATH = "../../other/PacketsResultsCSV.csv"
 
 def start_sniffer():
     os.system("../packetSniffer/bin/packet_sniffer > ../packetSniffer/log/logger.txt &")
+    os.system("./utils/server.c")
 
 def stop_sniffer():
     os.system("pkill -f packet_sniffer")
-
+    os.system("pkill -f server.c")
 
 HOST_IP_ADDRESS = str(subprocess.check_output(['ipconfig', 'getifaddr', 'en0']).decode('utf-8').strip()) # Gets local IP addrs
 PORT = "None" #default values
