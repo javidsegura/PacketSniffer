@@ -1,4 +1,4 @@
-""" Translated the payload of the packet (in bytes) to a readable string (in Unicode)"""
+""" Translated the payload of the packet (in hexadecimal) to a readable string (in Unicode)"""
 
 import pandas as pd
 

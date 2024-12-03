@@ -1,10 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#ifdef _WIN32
+#include <winsock2.h>
+#else
 #include <unistd.h>
 #include <arpa/inet.h>
 #include <sys/socket.h>
 #include <netinet/in.h>
+#endif
 
 #define BUFFER_SIZE 1024
 #define PORT 8080
@@ -31,11 +35,12 @@ int main() {
     if (bind(server_fd, (struct sockaddr*)&server_addr, sizeof(server_addr)) < 0) {
         perror("Bind failed");
         close(server_fd);
-        exit(EXIT_FAILURE);
+        exit(EXIT_FAILURE); // Macro for 1
     }
 
     printf("Server listening on %s:%d\n", inet_ntoa(server_addr.sin_addr), PORT);
 
+    // Infinite loop listening for packets
     while (1) {
         // Receive packet
         ssize_t received_bytes = recvfrom(server_fd, buffer, BUFFER_SIZE, 0,

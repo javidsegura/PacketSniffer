@@ -15,8 +15,10 @@ def get_sidebar():
       if st.session_state.IP_ADDRESS_POINTED != 'None':
             if st.button("Test Connection"):
                   try:
-                        response = subprocess.run(['ping', '-c', '1', st.session_state.IP_ADDRESS_POINTED], 
-                                          capture_output=True, text=True)
+                        # Running ping command toward the pointed IP address
+                        response = subprocess.run(['ping', '-c', '1',  
+                                                st.session_state.IP_ADDRESS_POINTED],   
+                                                capture_output=True, text=True)
                         st.write(f"Ping test to {st.session_state.IP_ADDRESS_POINTED}:")
                         st.code(response.stdout)
                   except Exception as e:
